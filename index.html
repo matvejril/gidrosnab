@@ -11,539 +11,153 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link href="css/index.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../Users/Matvey/Desktop/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="wrap">
+<body>
 <header class="header">
-    <div class="header__top">
-        <div class="menu__overlay js_overlay"></div>
-
-        <div class="container header__container">
-
-            <a href="#" class="button media__button media__border__none button_theme_white media__visible button__menu js_open_menu">
-                <i class="fa fa-navicon button__icon button__icon__theme__white"></i>
-                <span class="button__text">Меню</span>
+    <div class="container">
+        <div class="header-box">
+            <a class="logo" href="#">
+                <img src="images/header/logo.png" alt="logo">
+                <p class="logo__name">Гидроснаб</p>
+                <p class="logo__subtitle">Торговый дом новосибирского машиностроительного завода</p>
             </a>
-
-            <div class="header__logo">
-                <a href="/" class="logo__inner"><img src="/images/logo.png"></a>
+            <div class="call-request">
+                <p>(383) 363-66-00</p>
+                <a href="#">Заказать звонок</a>
             </div>
-
-            <div class="header__inner">
-                <div class="header__menu js_menu">
-                    <a href="#" class="form__link__close js_close_menu media__visible">
-                        <i class="icon-close form__link__icon__close"></i>
-                    </a>
-                    <nav class="menu__nav">
-                        <div class="city__container media__visible">
-                            <div class="city__label">Ваш регион:</div>
-                            <a href="#" class="js-location-change">&nbsp;Новосибирская область</a>
-                        </div>
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="/personal" data-rel="personal" class="menu__link js_menu_filter_trigger menu__link_active" data-value="personal"> <i class="icon__menu ic-home media__visible"></i><span>Персональная</span></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="/commert" data-rel="commert" class="menu__link js_menu_filter_trigger" data-value="commert"> <i class="icon__menu ic-buliding media__visible"></i><span>Коммерческая</span></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="/catalog-poselki/novosibirsk-i-nso/" class="menu__link"> <i class="icon__menu ic-houses media__visible"></i><span>Коттеджные поселки</span></a>
-                            </li>
-                            <li class="menu__item menu__dropdown__parent js-dropdown">
-                                <a href="#" class="menu__link menu__dropdown__link">Еще <i class="fa fa-caret-down"></i></a>
-                                <div class="menu__dropdown__container" style="display: none;">
-                                    <ul class="menu__dropdown__list">
-                                        <li class="menu__item">
-                                            <a href="/articles" class="menu__link">
-                                                <i class="icon__menu ic-file-text-o"></i>
-                                                <span>Статьи о недвижимости</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="/consult" class="menu__link">
-                                                <i class="icon__menu ic-gavel"></i>
-                                                <span>Услуги оформления недвижимости</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link is_parent js_parent_menu">
-                                                <i class="icon__menu ic-info"></i>
-                                                <span>О Сервисе ДомоГис</span>
-                                                <i class="fa fa-caret-down"></i>
-                                            </a>
-                                            <div class="submenu">
-                                                <ul class="menu__list">
-                                                    <li class="menu__item media__visible__block">
-                                                        <a href="http://#3" class="menu__link js_present_content"><span>Краткая справка</span></a>
-                                                    </li>
-                                                    <li class="menu__item">
-                                                        <a href="/page/about" class="menu__link"><span>О Сервисе</span></a>
-                                                    </li>
-                                                    <li class="menu__item">
-                                                        <a href="/page/partnership" class="menu__link"><span>О сотрудничестве</span></a>
-                                                    </li>
-                                                    <li class="menu__item">
-                                                        <a href="/page/terms" class="menu__link"><span>Пользовательское соглашение</span></a>
-                                                    </li>
-                                                    <li class="menu__item">
-                                                        <a href="/page/confidential" class="menu__link"><span>Политика конфиденциальности</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                        <li class="menu__delimer media__visible__block"></li>
-                                        <li class="menu__item media__visible__block">
-                                            <a href="javascript:void(0)" class="menu__link js-question">
-                                                <i class="icon__menu fa fa-envelope-o"></i>
-                                                <span>Задать вопрос / написать нам</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item media__visible__block">
-                                            <a href="/favourites" class="menu__link">
-                                                <i class="icon__menu icon-black"></i>
-                                                <span>Избранное</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="menu__item media__visible__block">
-                                            <a href="/compare" class="menu__link">
-                                                <i class="icon__menu icon-business"></i>
-                                                <span>Сравнение</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="menu__delimer"></li>
-
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link" data-remodal-target="help_modal">
-                                                <span class="icon__menu">
-                                                <i class="ic-icon">
-                                                  <i class="path1"></i>
-                                                  <i class="path2"></i>
-                                                </i>
-                                                </span>
-                                                <span>Значение маркеров</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link" data-remodal-target="help_borders">
-                                                <i class="icon__menu ic-object-group"></i>
-                                                <span>Режим показать границы</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item media__hidden">
-                                            <a href="#" class="menu__link" data-remodal-target="help_draw_borders">
-                                                <i class="icon__menu ic-pencil"></i>
-                                                <span>Обвести область</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link" data-remodal-target="help_filter">
-                                                <i class="icon__menu ic-filter"></i>
-                                                <span>Фильтр</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link" data-remodal-target="help_search">
-                                                <i class="icon__menu ic-search"></i>
-                                                <span>Поиск</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link" data-remodal-target="help_map">
-                                                <i class="icon__menu ic-clone"></i>
-                                                <span>Режим карты</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a href="#" class="menu__link" data-remodal-target="help_ruler">
-                                                <i class="icon__menu ic-ruler"></i>
-                                                <span>Линейка</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu__delimer"></li>
-                                        <li class="menu__item">
-                                            <a href="https://www.youtube.com/watch?v=DnT3fG242AA" class="menu__link popup-youtube menu__item--youtube">
-                                                <img src="https://img.youtube.com/vi/DnT3fG242AA/0.jpg" width="200">
-                                                <i class="icon__video fa fa-youtube-play"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="search-block">
+                <a href="#">info@nskmz.ru</a>
+                <div class="change-lang">
+                    <p class="change-lang__ru change-lang__active">ru</p>
+                    <p class="change-lang__en">en</p>
                 </div>
-                <div class="header__actions">
-                    <a href="/login" class="button media__button header__button__application button__size_l media__hidden js-main-login">
-                        <span class="button__text">Подать объявление</span>
-                    </a>
-                    <a href="/login" class="button media__button button_theme_white header__button__login button__size_l js-main-login media__border__none">
-                        <i class="fa fa-user button__icon button__icon__theme__white"></i>
-                        <span class="button__text">Войти</span>
-                    </a>
-                </div>
+                <form class="search" name="search">
+                    <input type="text" class="search__input" name="search-input">
+                    <button type="submit" class="search__button" name="search-button">
+                        <span class=""></span>
+                    </button>
+                </form>
             </div>
         </div>
-    </div>
-    <div class="header__bottom">
-        <div class="container header__container">
-            <div class="city__container">
-                <span class="city__label">Ваш регион:</span>
-                <a href="#" class="js-location-change">&nbsp;Новосибирская область</a>
-                <input type="hidden" name="latitude" value="55.0049480">
-                <input type="hidden" name="longitude" value="82.9303860">
-                <input type="hidden" name="map_zoom" value="10.00">
-                <input type="hidden" name="marker_zoom" value="10.00">
-            </div>
-
-            <div class="ref__inner media__hidden">
-                <a href="#2" target="_blank" class="ref__item js_present_content">
-                    <img src="/images/youtube24.png" style="width:19px">
-                    <span class="ref__text">найти недвижимость</span>
-                </a>
-            </div>
-            <div class="ref__inner bordered media__hidden">
-                <a href="#1" target="_blank" class="ref__item js_present_content">
-                    <span class="ref__text">продать недвижимость</span>
-                </a>
-            </div>
-
-            <div class="ref__container">
-                <div class="ref__inner">
-
-                    <a href="javascript:void(0)" class="ref__item js-question">
-                        <i class="ref__icon fa fa-envelope-o"></i>
-                        <span class="ref__text">Задать вопрос / написать нам</span>
-                    </a>
-                </div>
-                <!--div class="ref__inner media__hidden ">
-                              <a href="/consult" class="ref__item">
-                                  <i class="ref__icon fa fa-gavel"></i>
-                                  <span class="ref__text">Юридическая консультация</span>
-                              </a>
-                          </div-->
-                <div class="ref__inner media__padding__container">
-                    <a href="/favourites" class="ref__item">
-                        <i class="ref__icon icon-black"></i>
-                        <span class="ref__text">Избранное</span>
-                    </a>
-                    <a href="/compare" class="ref__item">
-                        <i class="ref__icon icon-business"></i>
-                        <span class="ref__text">Сравнение</span>
-                    </a>
-                </div>
-            </div>
         </div>
-    </div>
 </header>
 
-<div class="contact-us">
+<div class="main-nav">
     <div class="container">
-        <ul class="contact-us__list">
-            <li class="contact-us__item contact-us_active">
-                <a href="/o-servise/prodat-personalnuyu-nedvizhimost">Продать персональную<br>недвижимость</a>
+        <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item_active">
+                <a href="#">Главная</a>
             </li>
-            <li class="contact-us__item">
-                <a href="/page/partnership">О сотрудничестве</a>
+            <li class="main-nav__item">
+                <a href="#">Каталог</a>
             </li>
-            <li class="contact-us__item">
-                <a href="/o-servise/ot-avtora">От автора сервиса</a>
+            <li class="main-nav__item">
+                <a href="#">О компании</a>
             </li>
-            <li class="contact-us__item">
-                <a href="/o-servise/kontakt">Контакты</a>
+            <li class="main-nav__item">
+                <a href="#">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">...</a>
             </li>
         </ul>
     </div>
 </div>
 
 <div class="banner">
-    <div class="container banner_inner">
-        <img src="images/banner-pc.jpg" class="banner__exhortation_pc" alt="exhortation-pc">
-        <img src="images/banner-mobile.jpg" class="banner__exhortation_mobile" alt="exhortation-mobile">
+    <div class="container">
+
     </div>
 </div>
 
-<div class="sections">
-    <div class="steps-sale">
-        <div class="container">
-            <h2 class="steps-sale__title">Как продать Дом, Дачу или Участок?</h2>
-            <div class="steps-sale__content">
-                <img class="steps-sale__kernel" src="images/steps-sale/kernel.png" alt="kernel">
+<div class="container">
+    <ul class="our-advantages">
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+</div>
 
-                <ul class="steps-sale__list">
-                    <li class="steps-sale-item steps-sale-item_add">
-                        <h5>Подать бесплатно объявление о продаже <br>
-                            на DomoGis.ru
-                        </h5>
-                        <a href="/login" class="button_orange js-main-login">
-                            <span class="button__text">Подать объявление</span>
-                        </a>
-                    </li>
-                    <li class="steps-sale-item steps-sale-item_wait">
-                        <h5>Дождаться звонков покупателей</h5>
-                        <img src="images/steps-sale/wait.png" alt="wait">
-                    </li>
-                    <li class="steps-sale-item steps-sale-item_deal">
-                        <h5>Провести сделку</h5>
-                        <ul>
-                            <li>Вариант 1: Самостоятельно подготовить документы</li>
-                            <li>Вариант 2: Воспользоваться <a href="#">услугами по сопровождению</a></li>
-                        </ul>
-                    </li>
-                    <li class="steps-sale-item steps-sale-item_calculation">
-                        <h5>Зарегистрировать сделку и получить оплату</h5>
-                    </li>
-                </ul>
-            </div>
+<div>
+    <div class="container">
 
-
-        </div>
     </div>
-    <div class="our-advantages">
-        <div class="container">
-            <h2 class="our-advantages__title">Сервис DomoGis.ru - продажа без каких-либо комиссионных</h2>
-            <div class="our-advantages__content">
-                <div class="our-advantages__video">
-                    <iframe class="our-advantages__video-player" width="405" height="227" src="https://www.youtube.com/embed/5gjGsErp3-0"
-                            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-                    </iframe>
-                    <p class="our-advantages__arrow">Видео как &#171;продать недвижимость&#187;</p>
-                </div>
-                <div class="our-advantages__text">
-                    <h4 class="our-advantages__subtitle">А также много других преимуществ:</h4>
-                    <ul class="our-advantages__list">
-                        <li class="advantage advantage_second-ad">
-                            <h5>Ваше объявление всегда<br>
-                                на главной странице
-                            </h5>
-                            <p>Объявление не затеряется в списках, оно всегда на виду - на карте!</p>
-                        </li>
-                        <li class="advantage advantage_fast-add">
-                            <h5>Подать объявление быстро<br>
-                                и просто
-                            </h5>
-                            <p>Минимум действий, понятный интерфейс, удобный доступ с любого
-                            устройства, есть видеоподсказки, тех. поддержка</p>
-                        </li>
-                        <li class="advantage advantage_non-conflicts">
-                            <h5>Отсутствие конфликта интересов</h5>
-                            <p>Вы общаетесь и договариваетесь с покупателем напрямую, и сами решаете,
-                                на каких условиях готовы продать</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="our-advantages__quote">
-                <p class="our-advantages__quote-open"></p>
-                <p class="our-advantages__quote-text">Сэкономленные деньги - все равно, что заработанные</p>
-                <p class="our-advantages__quote-author">Народная мудрость</p>
-                <p class="our-advantages__quote-close"></p>
-            </div>
-        </div>
-    </div>
-    <div class="profitable-sale">
-        <div class="container">
-            <h2 class="profitable-sale__title">Как дороже и быстрее пордать свою недвижимость?</h2>
-            <div class="profitable-sale__content">
-                <figure>
-                    <img src="images/profitable-sale/good-photo.png" alt="photo">
-                    <figcaption>
-                        <p>Сделать хорошие фото</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/profitable-sale/detailed-description.png" alt="description">
-                    <figcaption>
-                        <p>Сделать подробное описание</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/profitable-sale/make-geodesy.png" alt="surveying">
-                    <figcaption>
-                        <p>Если не сделано межевание<br>участка - определить границу </p>
-                        <a href="/articles/pochemu-vazhno-stavit-zemelnyy-uchastok-na-kadastrovyy-uchetutochnyat-granitsy-zemelnogo-uchastka">
-                            (читать статью)
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-    <div class="quick-questions">
-        <h2 class="quick-questions__title">И несколько Важных часто задаваемых вопросов:</h2>
-        <div class="estate-objects">
-            <div class="container">
-                <h3 class="estate-objects__title">Какие объекты можно разместить в разделе персональная недвижимость на сайте DomoGis.ru?</h3>
-                <div class="estate-objects__content">
-                    <div class="estate-objects__allowed">
-                        <h5>Можно</h5>
-                        <ul class="estate-objects__allowed-list">
-                            <li class="estate-object estate-object_station">Участок</li>
-                            <li class="estate-object estate-object_country-house">Дача</li>
-                            <li class="estate-object estate-object_townhouse">Таунхаус</li>
-                            <li class="estate-object estate-object_house">Дом / коттедж</li>
-                            <li class="estate-object estate-object_part-house">Часть дома</li>
-                            <li class="estate-object estate-object_garage">Гараж</li>
-                        </ul>
-                    </div>
-                    <div class="estate-objects__forbidden">
-                        <h5>Нельзя</h5>
-                        <ul class="estate-objects__forbidden-list">
-                            <li class="estate-object estate-object_apartment">Квартиры</li>
-                            <li class="estate-object estate-object_office">Офисы</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="estate-region">
-            <div class="container">
-                <h3 class="estate-region__title">
-                    В каких регионах можно разместить объявление о продаже недвижимости?
-                </h3>
-                <div class="estate-region__content">
-                    <h5>В первой половине 2018 объявления можно добавлять в*:</h5>
-                    <ul class="estate-region__list">
-                        <li>Новосибирская область</li>
-                        <li>Алтайский край</li>
-                        <li>Республика Алтай</li>
-                        <li>Кемеровская область</li>
-                        <li>Томская область</li>
-                    </ul>
-                    <h6>А покупатели будут как с Вашего региона,
-                        так и со всей России!</h6>
-                    <p>* в Новосибирской области сайт более широко представлен,<br>
-                        т.к. запустился с 01.09.17, в остальных регионах с 01.01.2018
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="interesting-site">
-            <div class="container">
-                <h2 class="interesting-site__title">Чем интересен наш сайт DomoGis.ru покупателям недвижимости?</h2>
-                <div class="interesting-site__content">
-                    <ul class="interesting-site__list">
-                        <li class="interesting-item interesting-item_map">
-                            <h5>Объявление на карте</h5>
-                            <p>Самый удобный и быстрый
-                                поиск нужной недвижимости
-                            </p>
-                        </li>
+</div>
 
-                        <li class="interesting-item interesting-item_any-device">
-                            <h5>На любом устройстве</h5>
-                            <p>Пользоваться одинаково удобно - на
-                                компьютере, смартфоне и планшете
-                                100% адаптированная версия
-                            </p>
-                        </li>
 
-                        <li class="interesting-item interesting-item_stations">
-                            <h5>Видны границы участка</h5>
-                            <p>Объекты недвижимости показаны
-                                не просто точкой, а с границами
-                                участка - наглядно и понятно
-                            </p>
-                        </li>
-                        <li class="interesting-item interesting-item_characteristics">
-                            <h5>Подробные характеристики</h5>
-                            <p>Детальная информация, характерная
-                                только для недвижимости на земле
-                                (дома, дачи, участки)
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="interesting-site__video">
-                        <iframe class="interesting-site__video-player" width="405" height="227" src="https://www.youtube.com/embed/DnT3fG242AA" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <p class="interesting-site__arrow">Видео как &#171;ищут недвижимость&#187;</p>
-            </div>
+<div class="container">
+    <div class="our-partners">
+        <div class="our-partners__title">
         </div>
-        <div class="get-started">
-            <div class="container">
-                <h2 class="get-started__title">Как зарегистроваться и подать объявления?</h2>
-                <div class="get-started__content">
-                    <div class="get-started__video">
-                        <iframe class="get-started__video-player" width="405" height="227" src="https://www.youtube.com/embed/9jIxWfz1dgs"
-                                frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="get-started__exhortation">
-                        <h4 class="get-started__subtitle">
-                            Пора продать свою недвижимость!
-                        </h4>
-                        <a href="/login" class="button_orange js-main-login">
-                            <span class="button__text">Подать объявление</span>
-                        </a>
-                        <ul class="get-started__info-list">
-                            <li class="get-started__info-item get-started__info-item_time">Займет около 10 минут</li>
-                            <li class="get-started__info-item get-started__info-item_money">Подача объявления<br>бесплатно</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="get-started__arrow">Видео&#171;как зарегистрировать&#187;</p>
-            </div>
+        <div class="our-partners__slider">
         </div>
     </div>
 </div>
+
+
+<div class="container">
+    <div class="our-clients">
+        <div class="our-clients__title">
+        </div>
+        <div class="our-clients__slider">
+        </div>
+    </div>
+</div>
+
+<div class="our-coordinates">
+
+</div>
+
+
 <footer class="footer">
-    <div class="footer__container container">
-        <div class="footer__left_column">
-            <div class="footer__logo">
-                <a href="/" class="footer__logo__inner">
-                    <img src="/images/logo-f.png">
-                </a>
-            </div>
-            <div class="footer__copyrights">
-            </div>
-        </div>
-        <div class="footer__center__column">
-            <div class="footer__menu">
-                <ul class="footer__menu__list">
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Персональная</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Коммерческая</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Каталог коттеджных поселков</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Юридическая консультация</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">О проекте</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Пользовательское соглашение</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Пользовательское соглашение</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Политика конфиденциальност</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link">Лицензионное соглашение</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__right__column">
-            <div class="footer__developers">
-            </div>
+    <div class="footer__nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Политика конфидециальности</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Видеогалерея</a></li>
+            <li><a href="#">Каталоги pdf</a></li>
+        </ul>
+        <div class="footer__catalog">
+            <h3><a href="#">Каталог</a></h3>
+            <ul>
+                <li><a href="#">Оборудование для ремонта и обслуживания...</a></li>
+                <li><a href="#">Рукава высокого давления, оборудование...</a></li>
+                <li><a href="#">Промышленный гидравлический инструмент...</a></li>
+                <li><a href="#">Решения в области раздачи, перекачивания...</a></li>
+                <li><a href="#">Ремонт и сервисное обслуживание</a></li>
+            </ul>
         </div>
     </div>
+    <div class="footer__contact-us">
+        <div class="call-request">
+            <p>(383) 363-66-00</p>
+            <a href="#">Заказать звонок</a>
+        </div>
+        <ul class="social">
+            <li class="social__twitter"></li>
+            <li class="social__tumblr"></li>
+            <li class="social__vk"></li>
+            <li class="social__facebook"></li>
+            <li class="social__gplus"></li>
+            <li class="social__insta"></li>
+            <li class="social__youtube"></li>
+            <li class="social__whatsapp"></li>
+        </ul>
+    </div>
+    <p class="footer__copyrighted">
+
+    </p>
 </footer>
+
 </body>
 </html>
