@@ -1,0 +1,86 @@
+.banner-nav {
+    position: relative;
+    &__line {
+        &:first-child {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__item {
+        width: 630px;
+        display: inline-block;
+        padding: 72px 0 72px 0;
+        position: relative;
+        white-space: nowrap;
+        //z-index: 1;
+        .banner-nav__icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bolder;
+            color: #ffffff;
+            vertical-align: middle;
+        }
+    }
+
+    &__item_equipment {
+        background: url(../images/banner/bg1.png) no-repeat center;
+        .banner-nav__icon {
+            margin: 0 40px 0 60px;
+        }
+    }
+    &__item_sleeves {
+        background: url(../images/banner/bg2.png) no-repeat center;
+        float: right;
+        .banner-nav__icon {
+            margin: 0 32px 0 69px;
+        }
+    }
+    &__item_hydraulic {
+        background: url(../images/banner/bg3.png) no-repeat center;
+        .banner-nav__icon {
+            margin: 0 40px 0 60px;
+        }
+    }
+    &__item_mechanization {
+        background: url(../images/banner/bg4.png) no-repeat center;
+        float: right;
+        .banner-nav__icon {
+            margin: 0 32px 0 69px;
+        }
+    }
+    &__repair-service {
+        width: 414px;
+        position: absolute;
+        background: url(../images/banner/bg5.png) no-repeat center;
+        top: calc(~'50% - 177px');
+        left: calc(~'50% - 207px');
+        padding: 33px 0 33px 0;
+        z-index: 1;
+        text-align: center;
+        .banner-nav__icon {
+            display: inline-block;
+        }
+        p {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bolder;
+            color: #ffffff;
+        }
+    }
+}
+
+.bg0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}

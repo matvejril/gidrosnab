@@ -1,16 +1,38 @@
 .search-block {
-  a {
+  &__top {
+    width: 100%;
+    margin: 25px 0 15px 0;
+  }
+  &__mail {
+    width: calc(~"100% - 66px");
+    display: inline-block;
     font-family: Arial, sans-serif;
-    font-size: 19px;
+    font-size: 27px;
     color: #505F73;
   }
 }
 
 .search {
+  height: 27px;
+  border: 2px solid #c3c3c3;
+  border-radius: 10px;
+  background-color: #ffffff;
   input {
-    padding: 3px 8px 3px 8px;
+    float: left;
+    height: 100%;
+    width: calc(~"100% - 45px");
+    padding: 0 8px 0 8px;
     outline: none;
-    border: 1px solid #c3c3c3;
-    border-radius: 3px;
+    border: none;
+    background-color: transparent;
+  }
+  button {
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #505F73;
+    font-size: 24px;
   }
 }

@@ -8,15 +8,20 @@
 .header-box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  .header-box {
-    width: calc(~"100%/3");
+  .logo {
+    width: 476px;
   }
 
   .call-request {
-    width: calc(~"100%/3");
+    width: 310px;
+    margin-top: 15px;
+    margin-left: 15px;
+    //width: calc(~"100%/3 - 198px");
   }
   .search-block {
-    width: calc(~"100%/3");
+    width: 23.5%;
+    min-width: 250px;
   }
 }
