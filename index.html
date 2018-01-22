@@ -1,5 +1,4 @@
-<!DOCTYPE
-        html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +10,15 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <script src="plugins/jquery-3.3.1.js"></script>
+    <script src="plugins/slick/slick.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="scripts/bundle.js"></script>
 </head>
 
 <body>
@@ -143,27 +150,108 @@
     <area shape="poly" alt="" title="" coords="101,0,626,0,626,336,100,336,0,170" href="mechanization.com">
 </map>
 
-<!--<map name="#imgmap-repair-service">-->
-    <!--<area shape="poly" alt="" title="" coords="101,0,626,0,626,336,100,336,0,170" href="repair-service.com">-->
-<!--</map>-->
-
 <map name="#imgmap-repair-service">
     <area shape="poly" alt="" title="" coords="0,179,105,0,305,0,415,179,305,355,105,355" href="repair-service.com">
 </map>
 
 <div class="container">
-    <ul class="our-advantages">
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-    </ul>
+    <div class="our-advantages">
+        <div>
+            <img src="images/our-advantages/arms-icon.png" alt="arms">
+            <p><span>18 </span>лет <br>
+                стабильной<br>
+                работы<br>
+                на рынке
+            </p>
+        </div>
+        <div>
+            <img src="images/our-advantages/like-icon.png" alt="like">
+            <p>более<br>
+                <span>300</span>
+                довольных<br>
+                клиентов<br>
+                ежегодно
+            </p>
+        </div>
+        <div>
+            <img src="images/our-advantages/people-icon.png" alt="people">
+            <p>более<br>
+                <span>100</span><br>
+                профессионалов<br>
+                своего дела
+            </p>
+        </div>
+        <div>
+            <img src="images/our-advantages/rocket-icon.png" alt="rocket">
+            <p>более<br>
+                <span>3000</span><br>
+                позиций<br>
+                номенклатуры
+            </p>
+        </div>
+        <div>
+            <img src="images/our-advantages/crown-icon.png" alt="crown">
+            <p>более<br>
+                <span>1000</span>единиц<br>
+                оригинального<br>
+                оборудования<br>
+                и инструмента
+            </p>
+        </div>
+    </div>
 </div>
 
-<div>
+<div class="company-news">
     <div class="container">
-
+        <div class="company-news__box">
+            <div class="news">
+                <div class="news__title">
+                    <img src="images/other-icons/news-icon.png" alt="news">
+                    <p>Новости</p>
+                </div>
+                <ul class="news__list">
+                    <li class="news-item">
+                        <p class="news-item__data">4 июля 2017</p>
+                        <p class="news-item__content">Семинар представителей Techmaflex и «Гидроснаб ТД НМЗ»</p>
+                    </li>
+                    <li class="news-item">
+                        <p class="news-item__data">3 июля 2017</p>
+                        <p class="news-item__content">Поставка шинного манипулятора для угледобывающей отрасли</p>
+                    </li>
+                    <li class="news-item">
+                        <p class="news-item__data">7 июля 2017</p>
+                        <p class="news-item__content">Гидроснаб принял участие в 18-й международной специализированной выставке «Строительная Техника и Технология / СТТ 2017»</p>
+                    </li>
+                    <li class="news-item">
+                        <p class="news-item__data">6 октября 2016</p>
+                        <p class="news-item__content">Несис заявил о возврате крупных инвесторов к золоту</p>
+                    </li>
+                </ul>
+                <div class="news__actions">
+                    <a href="#">
+                        <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-company">
+                <div class="about-company__title">
+                    <img src="images/other-icons/about-company-icon.png" alt="about-company">
+                    <p>О компании</p>
+                </div>
+                <div class="about-company__content">
+                    <p>Компания Гидроснаб основана в 1999 году. Сегодня мы – производственно-коммерчес-кий холдинг, предлагающий
+                        комплексные технические решения для горнодобывающей, нефтегазовой, машиностроительной, лесопромышленной отраслей.
+                        С нами Вы найдёте решение любых задач в области:
+                    </p>
+                    <ul>
+                        <li>- оборудования для ремонта и обслуживания карьерной и строительной техники;</li>
+                        <li>- рукавов высокого давления, компонентов гидросистем, оборудования для производства РВД;</li>
+                        <li>- промышленного гидравлического инструмента и средств малой механизации;</li>
+                        <li>- раздачи, перекачивания и транспортировки гидравлической жидкости и смазки.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -171,8 +259,17 @@
 <div class="container">
     <div class="our-partners">
         <div class="our-partners__title">
+            <img src="images/other-icons/arms-icon.png" alt="arms">
+            <p>Наши партнёры</p>
         </div>
         <div class="our-partners__slider">
+            <div><img src="images/our-partners/eaton.png" alt="eaton"></div>
+            <div><img src="images/our-partners/graco.png" alt="graco"></div>
+            <div><img src="images/our-partners/tehmaflex.png" alt="tehmaflex"></div>
+            <div><img src="images/our-partners/elsa.png" alt="elsa"></div>
+            <div><img src="images/our-partners/tehmaflex.png" alt="tehmaflex"></div>
+            <div><img src="images/our-partners/eaton.png" alt="eaton"></div>
+            <div><img src="images/our-partners/graco.png" alt="graco"></div>
         </div>
     </div>
 </div>
@@ -181,61 +278,81 @@
 <div class="container">
     <div class="our-clients">
         <div class="our-clients__title">
+            <img src="images/other-icons/arms-icon.png" alt="arms">
+            <p>Наши клиенты</p>
         </div>
         <div class="our-clients__slider">
+            <div><img src="images/our-clients/evraz.png" alt="eaton"></div>
+            <div><img src="images/our-clients/nornickel.png" alt="graco"></div>
+            <div><img src="images/our-clients/rusdrag.png" alt="tehmaflex"></div>
+            <div><img src="images/our-clients/suec.png" alt="elsa"></div>
+            <div><img src="images/our-clients/nornickel.png" alt="graco"></div>
+            <div><img src="images/our-clients/rusdrag.png" alt="tehmaflex"></div>
         </div>
     </div>
 </div>
 
-<div class="our-coordinates">
 
+<div class="container">
+    <div class="our-coordinates" id="map">
+    </div>
 </div>
+
+
 
 
 <footer class="footer">
-    <div class="footer__nav">
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Политика конфидециальности</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Фотогалерея</a></li>
-            <li><a href="#">Видеогалерея</a></li>
-            <li><a href="#">Каталоги pdf</a></li>
-        </ul>
-        <div class="footer__catalog">
-            <h3><a href="#">Каталог</a></h3>
-            <ul>
-                <li><a href="#">Оборудование для ремонта и обслуживания...</a></li>
-                <li><a href="#">Рукава высокого давления, оборудование...</a></li>
-                <li><a href="#">Промышленный гидравлический инструмент...</a></li>
-                <li><a href="#">Решения в области раздачи, перекачивания...</a></li>
-                <li><a href="#">Ремонт и сервисное обслуживание</a></li>
-            </ul>
+    <div class="container">
+        <div class="footer__box">
+            <div class="footer__nav">
+                <ul class="footer__nav-1">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфидециальности</a></li>
+                </ul>
+                <ul class="footer__nav-2">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Видеогалерея</a></li>
+                    <li><a href="#">Каталоги pdf</a></li>
+                </ul>
+                <div class="footer-catalog">
+                    <a class="footer-catalog__title" href="#">Каталог</a>
+                    <ul class="footer-catalog__list">
+                        <li><a href="#">Оборудование для ремонта и обслуживания...</a></li>
+                        <li><a href="#">Рукава высокого давления, оборудование...</a></li>
+                        <li><a href="#">Промышленный гидравлический инструмент...</a></li>
+                        <li><a href="#">Решения в области раздачи, перекачивания...</a></li>
+                        <li><a href="#">Ремонт и сервисное обслуживание</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact-us">
+                <div class="call-request">
+                    <p>(383) 363-66-00</p>
+                    <a href="#">Заказать звонок</a>
+                </div>
+                <ul class="social">
+                    <li class="social__twitter"></li>
+                    <li class="social__tumblr"></li>
+                    <li class="social__vk"></li>
+                    <li class="social__facebook"></li>
+                    <li class="social__gplus"></li>
+                    <li class="social__insta"></li>
+                    <li class="social__youtube"></li>
+                    <li class="social__whatsapp"></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="footer__contact-us">
-        <div class="call-request">
-            <p>(383) 363-66-00</p>
-            <a href="#">Заказать звонок</a>
-        </div>
-        <ul class="social">
-            <li class="social__twitter"></li>
-            <li class="social__tumblr"></li>
-            <li class="social__vk"></li>
-            <li class="social__facebook"></li>
-            <li class="social__gplus"></li>
-            <li class="social__insta"></li>
-            <li class="social__youtube"></li>
-            <li class="social__whatsapp"></li>
-        </ul>
-    </div>
-    <p class="footer__copyrighted">
 
-    </p>
+    <div class="footer__copyrighted">
+        <div class="container">
+            <p>&#169; 2017 НМЗ. Все права защищены. All rights reserved.</p>
+        </div>
+    </div>
+
 </footer>
 
 </body>
