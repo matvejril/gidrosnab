@@ -1,0 +1,53 @@
+.about-company {
+  width: 33%;
+  min-width: 464px;
+  &__title {
+    margin: 0 0 60px 0;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    p {
+      position: relative;
+      width: calc(~"100% - 202px");
+      background-color: #505f73;
+      padding: 7px 39px 7px 50px;
+      font-size: 38px;
+      margin: 0;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      &::before {
+        content: '';
+        border: 28px solid transparent;
+        border-left: 16px solid #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    img {
+      display: inline-block;
+      margin: 0 5px 0 0;
+      vertical-align: middle;
+    }
+  }
+  &__content {
+    display: inline-block;
+    width: 84%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    color: #000000;
+    float: right;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+  }
+}

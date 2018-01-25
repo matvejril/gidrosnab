@@ -1,0 +1,73 @@
+.our-clients {
+  padding: 22px 0 24px 0;
+  margin-bottom: 30px;
+  background-color: #e6e6e6;
+  &__title {
+    width: 96%;
+    margin: 0 auto 20px auto;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    p {
+      position: relative;
+      width: calc(~"100% - 202px");
+      background-color: #505f73;
+      padding: 7px 39px 7px 50px;
+      font-size: 38px;
+      margin: 0;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      &::before {
+        content: '';
+        border: 28px solid transparent;
+        border-left: 16px solid #e6e6e6;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    img {
+      display: inline-block;
+      margin: 0 5px 0 0;
+      vertical-align: middle;
+    }
+  }
+  &__slider {
+    width: 90%;
+    margin: 0 auto;
+    .slick-slide {
+      float: none;
+      display: inline-block !important;
+      vertical-align: middle;
+      text-align: center;
+      outline: none;
+      img {
+        //margin: 0 20px 0 20px;
+        padding: 0 20px 0 20px;
+        display: inline-block;
+      }
+    }
+  }
+  .slick-prev {
+    left: -40px;
+    top: 30px;
+    &:before {
+      content: url("../images/slider/arr-left.png");
+      display: block;
+    }
+  }
+
+  .slick-next {
+    right: -40px;
+    top: 30px;
+    &:before {
+      content: url("../images/slider/arr-right.png");
+      display: block;
+    }
+  }
+
+
+}
+

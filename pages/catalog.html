@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DomoGis</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="../plugins/jquery-3.3.1.js"></script>
+    <script src="../plugins/slick/slick.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="../scripts/bundle.js"></script>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-box">
+            <a class="logo" href="#">
+                <img src="../images/logo-rus.png" alt="logo">
+            </a>
+            <div class="call-request">
+                <p>(383) 363-66-00</p>
+                <a href="#">Заказать звонок</a>
+            </div>
+            <div class="search-block">
+                <div class="search-block__top">
+                    <a class="search-block__mail" href="#">info@nskmz.ru</a>
+                    <div class="change-lang">
+                        <a href="#" class="change-lang__ru change-lang__active">ru</a>/<a href="#" class="change-lang__en">en</a>
+                    </div>
+                </div>
+                <form class="search" name="search">
+                    <input type="text" class="search__input" name="search-input">
+                    <button type="submit" class="search__button" name="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-nav">
+    <div class="container">
+        <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item_active">
+                <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">О компании</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="container">
+        <div class="banner-nav">
+            <div class="banner-nav__line">
+                <div class="banner-nav__item banner-nav__item_equipment">
+                    <img usemap="#imgmap-equipment" class="bg0" src="../images/banner/laying-bg-left.png" alt="bg0">
+                    <img class="banner-nav__icon" src="../images/banner/equipment-icon.png" alt="equipment repair">
+                    <p>Оборудование<br>
+                        для ремонта<br>
+                        и обслуживания <br>
+                        карьерной<br>
+                        и строительной<br>
+                        техники
+                    </p>
+                </div>
+                <div class="banner-nav__item banner-nav__item_sleeves">
+                    <img usemap="#imgmap-sleeves" class="bg0" src="../images/banner/laying-bg-right.png" alt="bg0">
+                    <img class="banner-nav__icon" src="../images/banner/sleeves-icon.png" alt="sleeves">
+                    <p>Рукава высокого<br>
+                        давления,<br>
+                        оборудование<br>
+                        и комплектующие<br>
+                        для их производства
+                    </p>
+                </div>
+            </div>
+            <div class="banner-nav__line">
+                <div class="banner-nav__item banner-nav__item_hydraulic">
+                    <img usemap="#imgmap-hydraulic" class="bg0" src="../images/banner/laying-bg-left.png" alt="bg0">
+                    <img class="banner-nav__icon" src="../images/banner/hydraulic-icon.png" alt="hydraulic fluid">
+                    <p>Решения<br>
+                        в области раздачи,<br>
+                        перекачивания<br>
+                        гидравлической<br>
+                        жидкости<br>
+                        и смазки
+                    </p>
+                </div>
+                <div class="banner-nav__item banner-nav__item_mechanization">
+                    <img usemap="#imgmap-mechanization" class="bg0" src="../images/banner/laying-bg-right.png" alt="bg0">
+                    <img class="banner-nav__icon" src="../images/banner/mechanization-icon.png" alt="small-scale mechanization">
+                    <p>Промышленный<br>
+                        гидравлический<br>
+                        инструмент<br>
+                        и средства малой<br>
+                        механизации
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="banner-nav__repair-service">
+            <img usemap="#imgmap-repair-service" class="bg0" src="../images/banner/laying-bg-right.png" alt="bg0">
+            <img class="banner-nav__icon" src="../images/banner/repair-service.png" alt="repair and service">
+            <p>Ремонт<br>
+                и сервисное<br>
+                обслуживание
+            </p>
+        </div>
+    </div>
+</div>
+
+<map name="#imgmap-equipment">
+    <area shape="poly" alt="" title="" coords="0,0,526,0,623,170,526,338,0,338" href="equipment.com">
+</map>
+
+<map name="#imgmap-sleeves">
+    <area shape="poly" alt="" title="" coords="101,0,626,0,626,336,100,336,0,170" href="sleeves.com">
+</map>
+
+<map name="#imgmap-hydraulic">
+    <area shape="poly" alt="" title="" coords="0,0,526,0,623,170,526,338,0,338" href="hydraulic.com">
+</map>
+
+<map name="#imgmap-mechanization">
+    <area shape="poly" alt="" title="" coords="101,0,626,0,626,336,100,336,0,170" href="mechanization.com">
+</map>
+
+<map name="#imgmap-repair-service">
+    <area shape="poly" alt="" title="" coords="0,179,105,0,305,0,415,179,305,355,105,355" href="repair-service.com">
+</map>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__box">
+            <div class="footer__nav">
+                <ul class="footer__nav-1">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфидециальности</a></li>
+                </ul>
+                <ul class="footer__nav-2">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Видеогалерея</a></li>
+                    <li><a href="#">Каталоги pdf</a></li>
+                </ul>
+                <div class="footer-catalog">
+                    <a class="footer-catalog__title" href="#">Каталог</a>
+                    <ul class="footer-catalog__list">
+                        <li><a href="#">Оборудование для ремонта и обслуживания...</a></li>
+                        <li><a href="#">Рукава высокого давления, оборудование...</a></li>
+                        <li><a href="#">Промышленный гидравлический инструмент...</a></li>
+                        <li><a href="#">Решения в области раздачи, перекачивания...</a></li>
+                        <li><a href="#">Ремонт и сервисное обслуживание</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact-us">
+                <div class="call-request">
+                    <p>(383) 363-66-00</p>
+                    <a href="#">Заказать звонок</a>
+                </div>
+                <ul class="social">
+                    <li><a class="social__twitter" href="#"></a></li>
+                    <li><a class="social__tumblr" href="#"></a></li>
+                    <li><a class="social__vk" href="#"></a></li>
+                    <li><a class="social__facebook" href="#"></a></li>
+                    <li><a class="social__gplus" href="#"></a></li>
+                    <li><a class="social__insta" href="#"></a></li>
+                    <li><a class="social__youtube" href="#"></a></li>
+                    <li><a class="social__whatsapp" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__copyrighted">
+        <div class="container">
+            <p>&#169; 2017 НМЗ. Все права защищены. All rights reserved.</p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
