@@ -1,10 +1,30 @@
 .catalog-item {
-  padding: 55px 0 55px 0;
-  background: url(../images/banner/banner-bg.jpg) no-repeat center top;
+  margin: 0;
+  padding: 20px 0 20px;
   &__box {
-    width: 89.5%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__nav {
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      width: 100%;
+      border-top: 1px solid;
+      display: table;
+      a {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__content {
+    width: calc(~'100% - 600px');
+    padding: 0;
+    margin: 0;
   }
 }
