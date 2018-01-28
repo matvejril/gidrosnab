@@ -3912,7 +3912,7 @@ template {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 39px;
 }
 .production-card__img {
   max-width: 500px;
@@ -3942,6 +3942,38 @@ template {
 }
 .production-card__paragraph:last-child {
   margin: 0;
+}
+.production-card__table {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+.production-card__table td,
+.production-card__table th {
+  padding: 4px 0;
+}
+.production-card__table thead {
+  background-color: #cccccc;
+  font-size: 15px;
+}
+.production-card__table thead tr:first-child th {
+  font-weight: normal;
+}
+.production-card__table thead tr:first-child th:first-child {
+  padding-left: 30px;
+  text-align: left;
+}
+.production-card__table tbody {
+  font-size: 13px;
+}
+.production-card__table tbody tr:nth-child(2n) {
+  background-color: #cccccc;
+}
+.production-card__table tbody td {
+  text-align: center;
+}
+.production-card__table tbody td:first-child {
+  padding-left: 30px;
+  text-align: left;
 }
 .production-card_equipment .production-card__title {
   color: #d67e29;

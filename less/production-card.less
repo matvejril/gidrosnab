@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: 39px;
     }
     &__img {
         max-width: 500px;
@@ -34,6 +34,44 @@
             margin: 0;
         }
     }
+    &__table {
+        width: 100%;
+        font-family: Arial, sans-serif;
+        td, th {
+            padding: 4px 0;
+        }
+        thead {
+            background-color: #cccccc;
+            font-size: 15px;
+            tr {
+                &:first-child {
+                    th {
+                        font-weight: normal;
+                        &:first-child {
+                            padding-left: 30px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        tbody {
+            font-size: 13px;
+            tr {
+                &:nth-child(2n) {
+                    background-color: #cccccc;
+                }
+            }
+            td {
+                text-align: center;
+                &:first-child {
+                    padding-left: 30px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
 
     &_equipment {
         .production-card__title {
