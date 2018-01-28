@@ -1,0 +1,63 @@
+.production-card {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    &__img {
+        max-width: 500px;
+        width: 47%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__description {
+        width: 50%;
+    }
+    &__title {
+        width: 90%;
+        margin: -2px 0 18px 0;
+        font-family: "Arial Narrow", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    &__paragraph {
+        margin: 0 0 18px 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &_equipment {
+        .production-card__title {
+            color: #d67e29;
+        }
+    }
+    &_sleeves {
+        .production-card__title {
+            color: #4477b9;
+        }
+    }
+    &_hydraulic {
+        .production-card__title {
+            color: #2d4691;
+        }
+    }
+    &_mechanization {
+        .production-card__title {
+            color: #cb5329;
+        }
+    }
+    &_services {
+        .production-card__title {
+            color: #717171;
+        }
+    }
+}

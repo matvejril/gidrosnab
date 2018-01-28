@@ -2839,6 +2839,21 @@ template {
 .main-nav__item_active {
   font-weight: 800;
 }
+.main-nav_equipment {
+  background-color: #d67e29;
+}
+.main-nav_sleeves {
+  background-color: #4477b9;
+}
+.main-nav_hydraulic {
+  background-color: #2d4691;
+}
+.main-nav_mechanization {
+  background-color: #cb5329;
+}
+.main-nav_services {
+  background-color: #717171;
+}
 .footer {
   background-color: #E7E7E7;
   padding-top: 25px;
@@ -2890,11 +2905,6 @@ template {
   width: 34%;
   min-width: 475px;
   text-align: right;
-}
-.footer__contact-us .call-request {
-  text-align: left;
-  display: inline-block;
-  width: 310px;
 }
 .footer__copyrighted {
   border-top: 1px solid #505f73;
@@ -3016,6 +3026,7 @@ template {
 .social {
   padding: 0;
   margin: 0;
+  display: inline-block;
   list-style-type: none;
   white-space: nowrap;
 }
@@ -3040,7 +3051,7 @@ template {
   background: url(../images/social-icons/facebook.png) no-repeat center;
 }
 .social__gplus {
-  background: url(../images/social-icons/g+.png) no-repeat center;
+  background: url(../images/social-icons/gplus.png) no-repeat center;
 }
 .social__insta {
   background: url(../images/social-icons/insta.png) no-repeat center;
@@ -3053,20 +3064,77 @@ template {
 }
 .call-request {
   padding-left: 80px;
-  background: url(../images/other-icons/call-request-icon.png) no-repeat center left;
+  background: url(../images/call-request/phone-icon-main.png) no-repeat center left;
 }
 .call-request p {
-  margin: 12px 0 9px 15px;
   font-family: Arial, sans-serif;
   font-size: 40px;
   color: #505F73;
   white-space: nowrap;
 }
 .call-request a {
-  margin-left: 15px;
   font-family: Arial, sans-serif;
   font-size: 22px;
   color: #ff5c00;
+}
+.call-request_header {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.call-request_header p {
+  margin: 12px 0 9px 15px;
+}
+.call-request_header a {
+  margin-left: 15px;
+}
+.call-request_footer {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}
+.call-request_footer p {
+  margin: 0 0 6px 15px;
+}
+.call-request_footer a {
+  text-align: left;
+  margin-left: 17px;
+}
+.call-request_equipment {
+  background: url(../images/call-request/phone-icon-equipment.png) no-repeat center left;
+}
+.call-request_equipment p {
+  color: #d67e29;
+}
+.call-request_equipment a {
+  color: #505f73;
+}
+.call-request_sleeves {
+  background: url(../images/call-request/phone-icon-sleeves.png) no-repeat center left;
+}
+.call-request_sleeves p {
+  color: #4477b9;
+}
+.call-request_sleeves a {
+  color: #ff5c00;
+}
+.call-request_hydraulic {
+  background: url(../images/call-request/phone-icon-hydraulic.png) no-repeat center left;
+}
+.call-request_hydraulic p {
+  color: #2d4691;
+}
+.call-request_hydraulic a {
+  color: #ff5c00;
+}
+.call-request_mechanization {
+  background: url(../images/call-request/phone-icon-mechanization.png) no-repeat center left;
+}
+.call-request_mechanization p {
+  color: #cb5329;
+}
+.call-request_mechanization a {
+  color: #516073;
 }
 .search-block__top {
   width: 100%;
@@ -3078,6 +3146,21 @@ template {
   font-family: Arial, sans-serif;
   font-size: 27px;
   color: #505F73;
+}
+.search-block_equipment .search-block__mail {
+  color: #d67e29;
+}
+.search-block_sleeves .search-block__mail {
+  color: #4477b9;
+}
+.search-block_hydraulic .search-block__mail {
+  color: #2d4691;
+}
+.search-block_mechanization .search-block__mail {
+  color: #cb5329;
+}
+.search-block_services .search-block__mail {
+  color: #717171;
 }
 .search {
   height: 27px;
@@ -3102,6 +3185,21 @@ template {
   outline: none;
   color: #505F73;
   font-size: 24px;
+}
+.search_equipment i {
+  color: #d67e29;
+}
+.search_sleeves i {
+  color: #4477b9;
+}
+.search_hydraulic i {
+  color: #2d4691;
+}
+.search_mechanization i {
+  color: #cb5329;
+}
+.search_services i {
+  color: #717171;
 }
 .change-lang {
   display: inline-block;
@@ -3647,48 +3745,218 @@ template {
   transform: rotate(-8.9deg);
   z-index: 4;
 }
-.catalog-item {
-  margin: 0;
-  padding: 20px 0 20px;
+.catalog {
+  padding: 0 0 37px;
 }
-.catalog-item__box {
+.catalog__logo {
+  white-space: nowrap;
+  min-height: 122px;
+  display: table;
+}
+.catalog__logo img {
+  vertical-align: middle;
+}
+.catalog__logo p {
+  width: calc(100% - 115px);
+  display: inline-block;
+  margin: -3px 0 0 5px;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #717171;
+  vertical-align: top;
+  white-space: normal;
+}
+.catalog__logo-link {
+  display: table-cell;
+  vertical-align: middle;
+}
+.catalog__box {
   display: flex;
   justify-content: space-between;
 }
-.catalog-item__nav {
-  width: 600px;
+.catalog__nav {
+  width: 400px;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-.catalog-item__nav li {
+.catalog__nav li {
   width: 100%;
-  border-top: 1px solid;
-  display: table;
+  border-top: 1px solid #bdbdbd;
+  text-align: right;
 }
-.catalog-item__nav li a {
-  display: table-cell;
+.catalog__nav li a {
+  width: 78%;
+  text-align: left;
+  padding: 7px 0 2px 0;
+  display: inline-block;
   vertical-align: middle;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #040404;
 }
-.catalog-item__content {
-  width: calc(100% - 600px);
+.catalog__nav li:last-child {
+  border-bottom: 1px solid #bdbdbd;
+}
+.catalog__content {
+  width: calc(100% - 442px);
   padding: 0;
   margin: 0;
 }
-.catalog-content__list {
+.catalog_hydraulic .catalog__nav li a {
+  width: 79%;
+  padding: 9px 0 9px 0;
+}
+.catalog_sleeves li a {
+  width: 79%;
+  padding: 12px 0 8px 0;
+}
+.catalog_services .catalog__logo {
+  max-width: 400px;
+}
+.catalog_services .catalog__nav li {
+  text-align: left;
+}
+.catalog_services .catalog__nav li p {
+  width: 157px;
+  margin: 12px 0 0 0;
+  font-family: Arial, sans-serif;
+  vertical-align: top;
+  display: inline-block;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 19px;
+}
+.catalog_services .catalog__nav li a {
+  font-family: Arial, sans-serif;
+  width: calc(100% - 162px);
+  display: inline-block;
+  text-transform: none;
+  padding: 14px 0 17px 0;
+  font-size: 16px;
+}
+.catalog_services .catalog__content {
+  margin-top: -35px;
+}
+.catalog-sort {
+  margin-bottom: 12px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.catalog-sort__text {
+  color: black;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.catalog-sort__btn {
+  padding: 1px 4px 0 4px;
+  background-color: transparent;
+  outline: none;
+  color: #9c9c9c;
+  border: 1px solid #9c9c9c;
+  text-transform: lowercase;
+}
+.catalog-sort__btn_active {
+  border-color: black;
+  color: black;
+}
+.production-list {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   list-style-type: none;
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
 }
-.catalog-content__list li {
+.production-item {
+  width: calc(100%/4);
+  height: auto;
+  padding: 4px 3px 16px 4px;
+  display: inline-block;
+  border-collapse: collapse;
   margin: 0;
-  border: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  box-sizing: border-box;
 }
-.catalog-content__list figure {
+.production-item a {
+  color: #040404;
+}
+.production-item a:hover {
+  text-decoration: underline;
+}
+.production-item__img {
+  width: 100%;
+  margin: 0 0 9px 0;
+}
+.production-item__title {
   margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.production-item_services .production-item__title {
+  text-transform: none;
+}
+.production-card__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.production-card__img {
+  max-width: 500px;
+  width: 47%;
+}
+.production-card__img img {
+  width: 100%;
+  height: auto;
+}
+.production-card__description {
+  width: 50%;
+}
+.production-card__title {
+  width: 90%;
+  margin: -2px 0 18px 0;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.production-card__paragraph {
+  margin: 0 0 18px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.production-card__paragraph:last-child {
+  margin: 0;
+}
+.production-card_equipment .production-card__title {
+  color: #d67e29;
+}
+.production-card_sleeves .production-card__title {
+  color: #4477b9;
+}
+.production-card_hydraulic .production-card__title {
+  color: #2d4691;
+}
+.production-card_mechanization .production-card__title {
+  color: #cb5329;
+}
+.production-card_services .production-card__title {
+  color: #717171;
 }
 a {
   text-decoration: none;
