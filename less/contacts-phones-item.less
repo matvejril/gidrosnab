@@ -1,0 +1,55 @@
+.contacts-phones-item {
+  padding: 0;
+  margin: 0 0 30px 0;
+  img {
+    margin-right: 36px;
+    display: inline-block;
+  }
+  p {
+    font-family: Arial, sans-serif;
+  }
+  &__caption {
+    display: inline-block;
+    width: calc(~'100% - 160px');
+    font-family: Arial, sans-serif;
+    vertical-align: top;
+  }
+  &__title {
+    margin: 10px 0 7px 0;
+    font-size: 23px;
+    font-weight: normal;
+  }
+  &__phone {
+    margin: 0;
+    font-size: 15px;
+
+  }
+  &__mail {
+    margin: 0;
+    font-size: 15px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_equipment {
+    .contacts-phones-item__title {
+      color: #d67e29;
+    }
+  }
+  &_sleeves {
+    .contacts-phones-item__title {
+      color: #4477b9;
+    }
+  }
+  &_mechanization {
+    .contacts-phones-item__title {
+      color: #ff550e;
+    }
+  }
+  &_hydraulic {
+    .contacts-phones-item__title {
+      color: #2d4691;
+    }
+  }
+}

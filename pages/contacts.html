@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gidrosnab</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="../plugins/jquery-3.3.1.js"></script>
+    <script src="../plugins/slick/slick.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="../scripts/bundle.js"></script>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-box">
+            <a class="logo" href="../index.html">
+                <img src="../images/logo-rus.png" alt="logo">
+            </a>
+            <div class="call-request call-request_header">
+                <p>(383) 363-66-00</p>
+                <a href="#">Заказать звонок</a>
+            </div>
+            <div class="search-block">
+                <div class="search-block__top">
+                    <a class="search-block__mail" href="#">info@nskmz.ru</a>
+                    <div class="change-lang">
+                        <a href="#" class="change-lang__ru change-lang__active">ru</a>/<a href="#" class="change-lang__en">en</a>
+                    </div>
+                </div>
+                <form class="search" name="search">
+                    <input type="text" class="search__input" name="search-input">
+                    <button type="submit" class="search__button" name="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-nav">
+    <div class="container">
+        <ul class="main-nav__list">
+            <li class="main-nav__item">
+                <a href="../index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="./division-main.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="./about-company.html">О компании</a>
+            </li>
+            <li class="main-nav__item  main-nav__item_active">
+                <a href="./contacts.html">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="contacts">
+        <div class="contacts-info">
+            <div class="contacts-address">
+                <h4 class="contacts-address__name">ООО «Гидроснаб ТД НМЗ»</h4>
+                <p class="contacts-address__city">630088, Россия, г. Новосибирск</p>
+                <p class="contacts-address__house">ул. Петухова, 69Б, а/я 239</p>
+                <p class="contacts-address__phone">тел.: (383) 363-66-00</p>
+                <p class="contacts-address__mail">e-mail: info@nskmz.ru</p>
+            </div>
+            <div class="contacts-phones">
+                <figure class="contacts-phones-item contacts-phones-item_equipment">
+                    <img src="../images/contacts/equipment-icon.png" alt="equipment-icon">
+                    <figcaption class="contacts-phones-item__caption">
+                        <h4 class="contacts-phones-item__title">Оборудование</h4>
+                        <p class="contacts-phones-item__phone">тел.: (383) 363-68-69</p>
+                        <p class="contacts-phones-item__mail">e-mail: 8202@nskmz.ru</p>
+                    </figcaption>
+                </figure>
+                <figure class="contacts-phones-item contacts-phones-item_sleeves">
+                    <img src="../images/contacts/sleeves-icon.png" alt="sleeves-icon">
+                    <figcaption class="contacts-phones-item__caption">
+                        <h4 class="contacts-phones-item__title">Гидравлические системы</h4>
+                        <p class="contacts-phones-item__phone">тел.: (383) 363-68-69</p>
+                        <p class="contacts-phones-item__mail">e-mail: 8202@nskmz.ru</p>
+                    </figcaption>
+                </figure>
+                <figure class="contacts-phones-item contacts-phones-item_mechanization">
+                    <img src="../images/contacts/mechanization-icon.png" alt="mechanization-icon">
+                    <figcaption class="contacts-phones-item__caption">
+                        <h4 class="contacts-phones-item__title">Инструмент</h4>
+                        <p class="contacts-phones-item__phone">тел.: (383) 363-68-69</p>
+                        <p class="contacts-phones-item__mail">e-mail: 8202@nskmz.ru</p>
+                    </figcaption>
+                </figure>
+                <figure class="contacts-phones-item contacts-phones-item_hydraulic">
+                    <img src="../images/contacts/hydraulic-icon.png" alt="hydraulic-icon">
+                    <figcaption class="contacts-phones-item__caption">
+                        <h4 class="contacts-phones-item__title">GRACO</h4>
+                        <p class="contacts-phones-item__phone">тел.: (383) 363-68-69</p>
+                        <p class="contacts-phones-item__mail">e-mail: 8202@nskmz.ru</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="contacts-map" id="contact-map">
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__box">
+            <div class="footer__nav">
+                <ul class="footer__nav-1">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфидециальности</a></li>
+                </ul>
+                <ul class="footer__nav-2">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Видеогалерея</a></li>
+                    <li><a href="#">Каталоги pdf</a></li>
+                </ul>
+                <div class="footer-catalog">
+                    <a class="footer-catalog__title" href="#">Каталог</a>
+                    <ul class="footer-catalog__list">
+                        <li><a href="#">Оборудование для ремонта и обслуживания...</a></li>
+                        <li><a href="#">Рукава высокого давления, оборудование...</a></li>
+                        <li><a href="#">Промышленный гидравлический инструмент...</a></li>
+                        <li><a href="#">Решения в области раздачи, перекачивания...</a></li>
+                        <li><a href="#">Ремонт и сервисное обслуживание</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact-us">
+                <div class="call-request call-request_footer">
+                    <p>(383) 363-66-00</p>
+                    <a href="#">Заказать звонок</a>
+                </div>
+                <ul class="social">
+                    <li><a class="social__twitter" href="#"></a></li>
+                    <li><a class="social__tumblr" href="#"></a></li>
+                    <li><a class="social__vk" href="#"></a></li>
+                    <li><a class="social__facebook" href="#"></a></li>
+                    <li><a class="social__gplus" href="#"></a></li>
+                    <li><a class="social__insta" href="#"></a></li>
+                    <li><a class="social__youtube" href="#"></a></li>
+                    <li><a class="social__whatsapp" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__copyrighted">
+        <div class="container">
+            <p>&#169; 2017 НМЗ. Все права защищены. All rights reserved.</p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

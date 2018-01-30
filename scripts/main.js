@@ -3,7 +3,7 @@ window.onload = function () {
     // require('./tab');
     // require('./cases-nav');
 
-    var ourAdvantagesSlider = $('.our-advantages');
+    var ourAdvantagesSlider = $('.our-advantages-slider');
     ourAdvantagesSlider.slick({
         arrows: false,
         infinite: true,
@@ -11,7 +11,7 @@ window.onload = function () {
         speed: 300
     });
 
-    var ourPartnersSlider = $('.our-partners__slider');
+    var ourPartnersSlider = $('.our-partners-slider__list');
     ourPartnersSlider.slick({
         // arrows: false,
         infinite: true,
@@ -21,7 +21,7 @@ window.onload = function () {
         variableWidth: true
     });
 
-    var ourClientsSlider = $('.our-clients__slider');
+    var ourClientsSlider = $('.our-clients-slider__list');
     ourClientsSlider.slick({
         // arrows: false,
         infinite: true,
@@ -31,22 +31,45 @@ window.onload = function () {
         variableWidth: true
     });
 
-
     ymaps.ready(init);
-    var myMap;
-    var myPlacemark;
+    var indexMap;
+    var contactMap;
+    var indexMyPlacemark;
+    var contactMyPlacemark;
+
+    var indexMapId = document.getElementById('index-map');
+    var contactMapId = document.getElementById('contact-map');
+
     function init(){
-        myMap = new ymaps.Map ("map", {
-            type: 'yandex#satellite',
-            center: [54.947851, 82.909305],
-            zoom: 16
-        });
-        myPlacemark = new ymaps.Placemark([54.947851, 82.909305], {
-            balloonContent: 'Гидроснаб ТД НМЗ'
-        }, {
-            preset: 'islands#redIcon'
+        if(indexMapId){
+            indexMap = new ymaps.Map ("index-map", {
+                type: 'yandex#satellite',
+                center: [54.947851, 82.909305],
+                zoom: 16
             });
-        myMap.geoObjects.add(myPlacemark);
-        myMap.behaviors.disable('scrollZoom');
+            indexMyPlacemark = new ymaps.Placemark([54.947851, 82.909305], {
+                balloonContent: 'Гидроснаб ТД НМЗ'
+            }, {
+                preset: 'islands#redIcon'
+            });
+            indexMap.geoObjects.add(indexMyPlacemark);
+            indexMap.behaviors.disable('scrollZoom');
+        }
+
+        if (contactMapId) {
+            contactMap = new ymaps.Map ("contact-map", {
+                type: 'yandex#satellite',
+                center: [54.947851, 82.909305],
+                zoom: 16
+            });
+            contactMyPlacemark = new ymaps.Placemark([54.947851, 82.909305], {
+                balloonContent: 'Гидроснаб ТД НМЗ'
+            }, {
+                preset: 'islands#redIcon'
+            });
+            contactMap.geoObjects.add(contactMyPlacemark);
+            contactMap.behaviors.disable('scrollZoom');
+        }
     }
+
 };

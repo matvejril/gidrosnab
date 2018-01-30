@@ -1,8 +1,8 @@
 .about-company {
-  width: 33%;
-  min-width: 464px;
+  padding-top: 57px;
+  padding-bottom: 45px;
   &__title {
-    margin: 0 0 60px 0;
+    margin: 0 0 32px 0;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -10,10 +10,9 @@
       position: relative;
       width: calc(~"100% - 202px");
       background-color: #505f73;
-      padding: 7px 39px 7px 50px;
-      font-size: 38px;
+      padding: 7px 25px 7px 65px;
+      font-size: 37px;
       margin: 0;
-      font-weight: bold;
       display: inline-block;
       vertical-align: middle;
       &::before {
@@ -31,9 +30,18 @@
       vertical-align: middle;
     }
   }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__backside {
+    width: 45%;
+    background: url("../images/about-company/about-company-bg.png") no-repeat 0 6px;
+  }
   &__content {
     display: inline-block;
-    width: 84%;
+    width: 53.5%;
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 19px;
@@ -41,12 +49,12 @@
     float: right;
     p {
       padding: 0;
-      margin: 0;
+      margin: 0 0 20px 0;
     }
 
     ul {
       padding: 0;
-      margin: 0;
+      margin: 0 0 20px 0;
       list-style-type: none;
     }
   }
