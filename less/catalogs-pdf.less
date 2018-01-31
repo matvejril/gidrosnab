@@ -1,0 +1,39 @@
+.catalogs-pdf {
+  padding: 63px 0 30px;
+  &__title {
+    margin: 0 0 20px 0;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    p {
+      position: relative;
+      width: calc(~"100% - 242px");
+      background-color: #505f73;
+      padding: 7px 5px 7px 33px;
+      font-size: 34px;
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+      &::before {
+        content: '';
+        border: 28px solid transparent;
+        border-left: 16px solid #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    img {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 72.5%;
+  }
+}

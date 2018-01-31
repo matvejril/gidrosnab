@@ -43,7 +43,7 @@ window.onload = function () {
     function init(){
         if(indexMapId){
             indexMap = new ymaps.Map ("index-map", {
-                type: 'yandex#satellite',
+                type: 'yandex#hybrid',
                 center: [54.947851, 82.909305],
                 zoom: 16
             });
@@ -58,7 +58,7 @@ window.onload = function () {
 
         if (contactMapId) {
             contactMap = new ymaps.Map ("contact-map", {
-                type: 'yandex#satellite',
+                type: 'yandex#map',
                 center: [54.947851, 82.909305],
                 zoom: 16
             });
