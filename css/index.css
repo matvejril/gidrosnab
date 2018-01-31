@@ -2828,7 +2828,8 @@ template {
 .main-nav__item {
   display: inline-block;
 }
-.main-nav__item a {
+.main-nav__item a,
+.main-nav__item button {
   padding: 10px 25px;
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -2854,6 +2855,41 @@ template {
 }
 .main-nav_services {
   background-color: #717171;
+}
+.main-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.main-dropdown__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.main-dropdown__nav {
+  padding: 0;
+  border: 1px  solid #87919f;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style-type: none;
+}
+.main-dropdown__nav a {
+  padding: 8px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.main-dropdown__nav a:hover {
+  background-color: #f1f1f1;
+}
+.main-dropdown:hover .main-dropdown__nav {
+  display: block;
 }
 .footer {
   background-color: #E7E7E7;
@@ -4017,7 +4053,23 @@ template {
   color: #cb5329;
 }
 .production-card_services .production-card__title {
+  width: auto;
+  margin-bottom: 20px;
   color: #717171;
+  text-transform: none;
+}
+.production-card_services .production-card__paragraph {
+  margin-bottom: 22px;
+}
+.production-card_services .production-card__imgs {
+  width: 36%;
+}
+.production-card_services .production-card__img {
+  width: auto;
+  margin-bottom: 15px;
+}
+.production-card_services .production-card__description {
+  width: 61%;
 }
 .about-company {
   padding-top: 57px;

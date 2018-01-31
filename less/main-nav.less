@@ -8,13 +8,16 @@
   }
   &__item {
     display: inline-block;
-    a {
+    a, button {
       padding: 10px 25px;
       font-family: Arial, sans-serif;
       font-size: 20px;
       color: #ffffff;
       text-transform: uppercase;
       display: block;
+      //&:hover {
+      //  background-color: #4b596b;
+      //}
     }
   }
   &__item_active {
@@ -37,5 +40,47 @@
   }
   &_services {
     background-color: #717171;
+  }
+}
+
+
+.main-dropdown {
+  position: relative;
+  display: inline-block;
+  &__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  &__nav {
+    padding: 0;
+    border: 1px  solid #87919f;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    a {
+      padding: 8px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      &:hover {
+        background-color: #f1f1f1
+      }
+    }
+  }
+  &:hover {
+    .main-dropdown__btn {
+      //background-color: #4d5b6e;
+    }
+    .main-dropdown__nav {
+      display: block;
+    }
   }
 }
