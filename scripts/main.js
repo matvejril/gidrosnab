@@ -1,4 +1,6 @@
 window.onload = function () {
+    require('./helpers');
+
     // require('./feedback-validate');
     // require('./tab');
     // require('./cases-nav');

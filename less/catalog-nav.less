@@ -1,0 +1,143 @@
+.catalog-nav {
+  width: 400px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  &__item {
+    width: 100%;
+    border-top: 1px solid #bdbdbd;
+    text-align: right;
+    &:last-child {
+      border-bottom: 1px solid #bdbdbd;
+    }
+  }
+  &__head {
+    width: 78%;
+    text-align: left;
+    padding: 7px 0 2px 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #040404;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_hydraulic {
+    .catalog-nav__head {
+      width: 79%;
+      padding: 9px 0 9px 0;
+    }
+  }
+  &_sleeves {
+    .catalog-nav__head {
+      width: 79%;
+      padding: 12px 0 8px 0;
+    }
+  }
+
+
+  //Модификация класса active навигации
+  &_equipment {
+    .catalog-nav__item_active {
+      .catalog-nav__head {
+        color: #d67e29;
+        font-weight: bold;
+      }
+    }
+  }
+  &_hydraulic {
+    .catalog-nav__item_active {
+      .catalog-nav__head {
+        color: #2d4691;
+        font-weight: bold;
+      }
+    }
+  }
+  &_mechanization {
+    .catalog-nav__item_active {
+      .catalog-nav__head {
+        color: #cb5329;
+        font-weight: bold;
+      }
+    }
+  }
+  &_sleeves {
+    .catalog-nav__item_active {
+      .catalog-nav__head {
+        color: #4477b9;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+//Поднавигаци
+.catalog-sub-nav {
+  padding: 0;
+  display: none;
+  &__item {
+    width: 78%;
+    text-align: left;
+    padding: 7px 0 2px 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    a {
+      color: #040404;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &_hydraulic {
+    .catalog-sub-nav__item{
+      width: 79%;
+    }
+  }
+
+
+  //Модификация класса active поднавигации
+  &_equipment {
+    .catalog-sub-nav__item_active {
+      a {
+        color: #d67e29;
+        text-decoration: underline;
+      }
+    }
+  }
+  &_hydraulic {
+    .catalog-sub-nav__item_active {
+      a {
+        color: #2d4691;
+        text-decoration: underline;
+      }
+    }
+  }
+  &_mechanization {
+    .catalog-sub-nav__item_active {
+      a {
+        color: #cb5329;
+        text-decoration: underline;
+      }
+    }
+  }
+  &_sleeves {
+    .catalog-sub-nav__item_active {
+      a {
+        color: #4477b9;
+        text-decoration: underline;
+      }
+    }
+  }
+}
