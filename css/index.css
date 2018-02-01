@@ -3307,24 +3307,25 @@ template {
 .news {
   width: 27.5%;
   min-width: 410px;
-  padding-right: 25px;
+  padding-right: 37px;
   box-sizing: border-box;
 }
 .news__title {
-  margin: 0 0 44px 0;
+  margin: 0 0 47px 0;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
 .news__title p {
   position: relative;
-  width: calc(100% - 207px);
+  width: calc(100% - 196px);
   background-color: #505f73;
   padding: 7px 5px 7px 33px;
   font-size: 34px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
+  letter-spacing: -1px;
 }
 .news__title p::before {
   content: '';
@@ -3350,7 +3351,7 @@ template {
 .news__actions a {
   display: inline-block;
   color: #505f73;
-  margin-right: 15px;
+  margin-right: 8px;
 }
 .news_sm {
   width: 33.2%;
@@ -3373,8 +3374,11 @@ template {
 .news_sm .news__list {
   padding: 0;
 }
+.news_sm .news__actions a {
+  margin-right: 15px;
+}
 .news-item {
-  margin: 0 0 28px 0;
+  margin: 0 0 17px 0;
 }
 .news-item:last-child {
   margin-bottom: 5px;
@@ -3384,7 +3388,7 @@ template {
   width: 160px;
   margin: 0 5px 0 0;
   font-family: Arial, sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   color: #505F73;
   font-weight: bolder;
   vertical-align: top;
@@ -3396,6 +3400,9 @@ template {
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: #000000;
+}
+.news-item_sm {
+  margin-bottom: 28px;
 }
 .news-item_sm .news-item__data {
   font-size: 21px;
@@ -3463,21 +3470,22 @@ template {
 .our-partners-slider__title {
   width: 96%;
   margin: 0 auto 2px auto;
-  font-family: Arial, sans-serif;
+  font-family: "Arial Narrow", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
 .our-partners-slider__title p {
   position: relative;
-  width: calc(100% - 202px);
+  width: calc(100% - 110px);
   background-color: #505f73;
-  padding: 7px 39px 7px 50px;
+  padding: 7px 160px 7px 50px;
   font-size: 38px;
   margin: 0;
-  font-weight: bold;
+  letter-spacing: 9px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  box-sizing: border-box;
 }
 .our-partners-slider__title p::before {
   content: '';
@@ -3531,21 +3539,22 @@ template {
 .our-clients-slider__title {
   width: 96%;
   margin: 0 auto 20px auto;
-  font-family: Arial, sans-serif;
+  font-family: "Arial Narrow", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
 .our-clients-slider__title p {
   position: relative;
-  width: calc(100% - 202px);
+  width: calc(100% - 111px);
   background-color: #505f73;
-  padding: 7px 39px 7px 50px;
+  padding: 7px 160px 7px 50px;
   font-size: 38px;
   margin: 0;
-  font-weight: bold;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  letter-spacing: 9px;
+  box-sizing: border-box;
 }
 .our-clients-slider__title p::before {
   content: '';
@@ -4643,23 +4652,25 @@ template {
   width: 75%;
 }
 .catalogs-pdf {
-  padding: 63px 0 30px;
+  padding: 101px 0 40px;
 }
 .catalogs-pdf__title {
-  margin: 0 0 20px 0;
+  margin: -37px 0 20px 0;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: left;
 }
 .catalogs-pdf__title p {
   position: relative;
-  width: calc(100% - 242px);
+  width: calc(100% - 225px);
   background-color: #505f73;
   padding: 7px 5px 7px 33px;
   font-size: 34px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
+  letter-spacing: -1px;
 }
 .catalogs-pdf__title p::before {
   content: '';
@@ -4683,19 +4694,23 @@ template {
 }
 .catalogs-pdf-nav {
   width: 27.5%;
-  min-width: 420px;
+  min-width: 414px;
   border-right: 1px solid #bdbdbd;
+  padding-right: 10px;
+  box-sizing: border-box;
+  text-align: right;
 }
 .catalogs-pdf-nav__list {
+  width: 52%;
   margin: 0;
-  padding: 0 30px 0 0;
+  padding: 0;
   list-style-type: none;
   text-align: right;
+  display: inline-block;
 }
 .catalogs-pdf-nav__item {
   margin: 0 0 10px 0;
   display: inline-block;
-  width: calc(100% - 190px);
   text-align: left;
 }
 .catalogs-pdf-nav__item:first-child {
@@ -4720,12 +4735,12 @@ template {
   cursor: pointer;
 }
 .catalogs-pdf-sub-nav {
-  padding: 0 0 0 5px;
+  padding: 0 0 0 28px;
   display: none;
   list-style-type: none;
 }
 .catalogs-pdf-sub-nav__item {
-  margin: 0 0 15px 0;
+  margin: 0 0 22px 0;
 }
 .catalogs-pdf-sub-nav__item:last-child {
   margin-bottom: 0;
@@ -4749,13 +4764,12 @@ template {
 }
 .catalogs-pdf-list {
   padding: 0;
-  margin: 34px 0 0 0;
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   list-style-type: none;
   border-top: 1px solid #bdbdbd;
-  border-left: 1px solid #bdbdbd;
 }
 .catalogs-pdf-item {
   width: calc(100%/4);
@@ -4776,7 +4790,7 @@ template {
   text-decoration: underline;
 }
 .catalogs-pdf-card {
-  margin: 40px 0 0 0;
+  margin: 0;
 }
 .catalogs-pdf-card__main {
   text-align: center;
@@ -4793,7 +4807,7 @@ template {
   margin-right: 30px;
 }
 .news-page {
-  padding: 63px 0 37px;
+  padding: 63px 0 40px;
 }
 .news-page__box {
   display: flex;
@@ -4876,23 +4890,24 @@ template {
   line-height: 1.2;
 }
 .photos-page {
-  padding: 63px 0 52px;
+  padding: 101px 0 45px;
 }
 .photos-page__title {
-  margin: 0 0 44px 0;
+  margin: -38px 0 46px 0;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
 .photos-page__title p {
   position: relative;
-  width: calc(100% - 207px);
+  width: calc(100% - 196px);
   background-color: #505f73;
   padding: 7px 5px 7px 33px;
   font-size: 34px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
+  letter-spacing: 3px;
 }
 .photos-page__title p::before {
   content: '';
@@ -4919,7 +4934,7 @@ template {
 .photos-page-nav {
   width: 27.5%;
   min-width: 410px;
-  padding-right: 25px;
+  padding-right: 38px;
   box-sizing: border-box;
   border-right: 1px solid #bdbdbd;
 }
@@ -4934,11 +4949,11 @@ template {
 .photos-page-nav__actions a {
   display: inline-block;
   color: #505f73;
-  margin-right: 15px;
+  margin-right: 8px;
 }
 .photos-page-list {
   padding: 0;
-  margin: 33px 0 0 0;
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -4974,7 +4989,7 @@ template {
   font-weight: 500;
 }
 .photos-page-nav-item {
-  margin: 0 0 28px 0;
+  margin: 0 0 17px 0;
 }
 .photos-page-nav-item:last-child {
   margin-bottom: 5px;
@@ -4984,7 +4999,7 @@ template {
   width: 160px;
   margin: 0 5px 0 0;
   font-family: Arial, sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   color: #505F73;
   font-weight: bolder;
   vertical-align: top;
@@ -4998,30 +5013,31 @@ template {
   color: #000000;
 }
 .photos-page-card {
-  margin-top: 40px;
+  margin: 0;
   text-align: right;
 }
 .photos-page-card img {
   display: inline-block;
 }
 .videos-page {
-  padding: 63px 0 8px;
+  padding: 103px 0 44px;
 }
 .videos-page__title {
-  margin: 0 0 44px 0;
+  margin: -40px 0 47px 0;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
 .videos-page__title p {
   position: relative;
-  width: calc(100% - 207px);
+  width: calc(100% - 195px);
   background-color: #505f73;
   padding: 7px 5px 7px 33px;
   font-size: 34px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
+  letter-spacing: 3px;
 }
 .videos-page__title p::before {
   content: '';
@@ -5048,7 +5064,7 @@ template {
 .videos-page-nav {
   width: 27.5%;
   min-width: 410px;
-  padding-right: 25px;
+  padding-right: 38px;
   box-sizing: border-box;
   border-right: 1px solid #bdbdbd;
 }
@@ -5063,11 +5079,11 @@ template {
 .videos-page-nav__actions a {
   display: inline-block;
   color: #505f73;
-  margin-right: 15px;
+  margin-right: 8px;
 }
 .videos-page-list {
   padding: 0;
-  margin: 33px 0 0 0;
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -5103,7 +5119,7 @@ template {
   font-weight: 500;
 }
 .videos-page-nav-item {
-  margin: 0 0 28px 0;
+  margin: 0 0 17px 0;
 }
 .videos-page-nav-item:last-child {
   margin-bottom: 5px;
@@ -5113,7 +5129,7 @@ template {
   width: 160px;
   margin: 0 5px 0 0;
   font-family: Arial, sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   color: #505F73;
   font-weight: bolder;
   vertical-align: top;
@@ -5127,7 +5143,6 @@ template {
   color: #000000;
 }
 .videos-page-card {
-  margin-top: 40px;
   text-align: right;
 }
 .videos-page-card img {
