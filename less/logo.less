@@ -1,4 +1,31 @@
 .logo {
   padding: 0;
   margin: 0;
+  &__img-mobile {
+    display: none;
+  }
+  &__img-main {
+    width: 476px;
+  }
 }
+
+@media all and (max-width: 768px) {
+  .logo {
+    &__img-main {
+      width: 284px;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .logo {
+    &__img-mobile {
+      width: 190px;
+      display: inline-block;
+    }
+    &__img-main {
+      display: none;
+    }
+  }
+}
+

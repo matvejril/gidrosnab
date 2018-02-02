@@ -30,3 +30,33 @@
     }
   }
 }
+
+@media all and (max-width: 320px) {
+  .our-advantages-item {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    &__img {
+      width: 54px;
+      margin: 0 5px 0 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &__text {
+      width: calc(~"100% - 90px");
+      display: inline-block;
+      vertical-align: top;
+      h3 {
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        span {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

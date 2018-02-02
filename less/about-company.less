@@ -59,3 +59,40 @@
     }
   }
 }
+
+@media all and (max-width: 320px) {
+  .about-company {
+    &__title {
+      margin-bottom: 3px;
+      p {
+        width: calc(~"100% - 133px");
+        padding: 7px 25px 7px 33px;
+        font-size: 13px;
+        &::before {
+          border: 14px solid transparent;
+          border-left: 8px solid #ffffff;
+        }
+      }
+      img {
+        width: 56px;
+        margin: 0;
+      }
+    }
+
+    &__backside {
+      display: none;
+    }
+    &__content {
+      width: calc(~'100% - 70px');
+      padding-left: 57px;
+      p {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+      ul {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -25,7 +25,16 @@
     font-family: "Arial Narrow", sans-serif;
     font-weight: bold;
   }
-
+  &__mini-btn {
+    display: none;
+    button {
+      border: none;
+      background-color: transparent;
+      color: #505f73;
+      outline: none;
+      font-size: 18px;
+    }
+  }
   &_equipment {
     background-color: #d67e29;
   }
@@ -81,6 +90,42 @@
     }
     .main-dropdown__nav {
       display: block;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .main-nav {
+    //display: none;
+    &__list {
+    }
+    &__item {
+      text-align: left;
+      width: 100%;
+      font-size: 12px;
+      border-bottom: 1px solid #465465;
+      a {
+        padding: 5px 5px 5px 15%;
+      }
+    }
+    &__mini-btn {
+      display: block;
+    }
+  }
+  .main-dropdown {
+    padding: 5px 5px 5px 15%;
+    button {
+      padding: 0;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .main-nav {
+    &__mini-btn {
+      button {
+        font-size: 11px;
+      }
     }
   }
 }

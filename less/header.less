@@ -1,27 +1,24 @@
 .header {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 18px 0;
   margin: 0;
   background-color: #e6e6e6;
 }
-
-
 .header-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
 
-  .logo {
-    width: 476px;
-  }
 
-  .call-request {
-    width: 310px;
-    margin-top: 15px;
-    margin-left: 15px;
-    //width: calc(~"100%/3 - 198px");
+@media all and (max-width: 768px) {
+  .header-box {
   }
-  .search-block {
-    width: 23.5%;
-    min-width: 250px;
+}
+
+
+@media all and (max-width: 320px) {
+  .header-box {
+    align-items: center;
+    justify-content: flex-start;
   }
 }

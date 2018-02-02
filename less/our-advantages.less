@@ -34,5 +34,31 @@
     margin: 0 -26px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .our-advantages {
+    &__title {
+      margin-bottom: 11px;
+      p {
+        width: calc(~"100% - 91px");
+        padding: 7px 4px 7px 14px;
+        font-size: 13px;
+        letter-spacing: -0.5px;
+        &::before {
+          border: 14px solid transparent;
+          border-left: 8px solid #ffffff;
+        }
+      }
+      img {
+        width: 56px;
+        margin: 0;
+      }
+    }
+    &__list {
+      margin: 0;
+    }
   }
 }
