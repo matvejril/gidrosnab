@@ -1,5 +1,19 @@
-.banner {
+.banner-lg {
   padding: 18px 0 18px 0;
   background: url(../images/banner/banner-bg.jpg) no-repeat top;
+  display: block;
+}
 
+.banner-md {
+  padding: 10px 0 10px 0;
+  display: none;
+}
+
+@media all and (max-width: 1536px) {
+  .banner-lg {
+    display: none;
+  }
+  .banner-md {
+    display: block;
+  }
 }

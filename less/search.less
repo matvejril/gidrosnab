@@ -1,0 +1,104 @@
+.search {
+    height: 27px;
+    border: 2px solid #c3c3c3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    input {
+        float: left;
+        height: 100%;
+        width: calc(~"100% - 45px");
+        padding: 0 8px 0 8px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    button {
+        height: 100%;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #505F73;
+        font-size: 24px;
+    }
+    &_equipment {
+        i {
+            color: #d67e29;
+        }
+    }
+    &_sleeves {
+        i {
+            color: #4477b9;
+        }
+    }
+    &_hydraulic {
+        i {
+            color: #2d4691;
+        }
+    }
+    &_mechanization {
+        i {
+            color: #cb5329;
+        }
+    }
+    &_services {
+        i {
+            color: #717171;
+        }
+    }
+}
+
+.search-sm {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    .search-sm {
+        display: block;
+        margin-bottom: 5px;
+        text-align: right;
+        button {
+            height: 100%;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #505F73;
+            font-size: 20px;
+        }
+
+        &_equipment {
+            i {
+                color: #d67e29;
+            }
+        }
+        &_sleeves {
+            i {
+                color: #4477b9;
+            }
+        }
+        &_hydraulic {
+            i {
+                color: #2d4691;
+            }
+        }
+        &_mechanization {
+            i {
+                color: #cb5329;
+            }
+        }
+        &_services {
+            i {
+                color: #717171;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .search-sm {
+        button {
+            font-size: 16px;
+        }
+    }
+}

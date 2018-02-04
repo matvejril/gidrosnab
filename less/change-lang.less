@@ -13,20 +13,32 @@
         color: #ff5c00;
     }
 }
+.change-lang-sm {
+    display: none;
+}
 
 @media all and (max-width: 768px) {
     .change-lang {
+        display: none;
+    }
+
+    .change-lang-sm {
+        display: block;
         text-align: center;
-        color: transparent;
-        white-space: nowrap;
-        font-size: 17px;
         a {
-            display: none;
-            color: #505f73;
-        }
-        .change-lang__active {
-            display: block;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            text-transform: uppercase;
             color: #ff5c00;
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .change-lang-sm {
+        a {
+            font-size: 14px;
         }
     }
 }

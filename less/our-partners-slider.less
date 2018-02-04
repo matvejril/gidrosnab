@@ -47,9 +47,8 @@
       text-align: center;
       outline: none;
      img {
-       //margin: 0 20px 0 20px;
-       padding: 0 20px 0 20px;
        display: inline-block;
+       width: 80%;
      }
     }
   }
@@ -70,7 +69,16 @@
       display: block;
     }
   }
-
-
 }
 
+@media all and (max-width: 768px) {
+  .our-partners-slider {
+    &__title {
+      p {
+        text-align: left;
+        letter-spacing: 3.5px;
+        padding: 7px 15px 7px 60px;
+      }
+    }
+  }
+}

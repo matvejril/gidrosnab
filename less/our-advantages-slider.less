@@ -2,9 +2,7 @@
   background-color: #e6e6e6;
   padding: 4px 0 12px 0;
   vertical-align: middle;
-
   .our-advantages-slide {
-    min-height: 130px;
     height: 140px;
     outline: none;
     &__helper {
@@ -17,6 +15,7 @@
         width: 101px;
         margin-left: 12px;
         display: inline-block;
+        align-self: center;
       }
       p {
         display: inline-block;
@@ -28,6 +27,7 @@
         color: #505f73;
         letter-spacing: 0;
         line-height: 1.45;
+        align-self: center;
       }
       span {
         display: inline-block;
@@ -35,6 +35,68 @@
         font-size: 40px;
         line-height: 0.9;
         font-weight: normal;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .our-advantages-slider {
+    padding: 4px 60px 12px 60px;
+    .slick-prev {
+      height: auto;
+      left: 20px;
+      &:before {
+        content: url(../images/slider/arr-left.png);
+        display: inline-block;
+      }
+    }
+    .slick-next {
+      height: auto;
+      right: 20px;
+      &:before {
+        content: url(../images/slider/arr-right.png);
+        display: inline-block;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .our-advantages-slider {
+    padding: 4px 20px 4px 20px;
+    .our-advantages-slide {
+      &__helper {
+        img {
+          width: 50px;
+          margin-left: 7px;
+        }
+        p {
+          width: calc(~'100% - 55px');
+          font-size: 9px;
+          margin: 0 0 0 5px;
+          line-height: 1.25;
+        }
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+    .slick-prev {
+      left: 0;
+      &:before {
+        content: url(../images/slider/arr-left.png);
+        display: inline-block;
+      }
+    }
+    .slick-next {
+      right: 0;
+      &:before {
+        content: url(../images/slider/arr-right.png);
+        display: inline-block;
       }
     }
   }

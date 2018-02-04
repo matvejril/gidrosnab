@@ -54,8 +54,11 @@
   }
   &__contact-us {
     width: 34%;
-    min-width: 475px;
+    //min-width: 475px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   &__copyrighted {
@@ -69,4 +72,47 @@
       color: #505F73;
     }
   }
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    padding-top: 25px;
+    &__box {
+      width: auto;
+      padding: 0 0 14px 0;
+    }
+    &__nav {
+      display: none;
+    }
+    &__contact-us {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__copyrighted {
+      border-width: 2px;
+      text-align: center;
+      p {
+        width: 100%;
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .footer {
+    padding-top: 8px;
+    &__box {
+      padding-bottom: 6px;
+    }
+    &__copyrighted {
+      p {
+        padding: 3px 0 8px 0;
+        font-size: 11px;
+      }
+    }
+   }
 }

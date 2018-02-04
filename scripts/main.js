@@ -10,27 +10,65 @@ window.onload = function () {
         arrows: false,
         infinite: true,
         slidesToShow: 5,
-        speed: 300
+        speed: 300,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    variableWidth: true,
+                    arrows: true,
+                    adaptiveHeight: true
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: true,
+                    adaptiveHeight: true
+                }
+            }
+        ]
     });
 
     var ourPartnersSlider = $('.our-partners-slider__list');
     ourPartnersSlider.slick({
         // arrows: false,
         infinite: true,
-        // slidesToShow: 4,
+        slidesToShow: 4,
         slidesToScroll: 4,
         speed: 300,
-        variableWidth: true
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+
     });
 
     var ourClientsSlider = $('.our-clients-slider__list');
     ourClientsSlider.slick({
         // arrows: false,
         infinite: true,
-        // slidesToShow: 4,
+        slidesToShow: 4,
         slidesToScroll: 4,
-        speed: 300,
-        variableWidth: true
+        speed: 300
+        // variableWidth: true
     });
 
     ymaps.ready(init);

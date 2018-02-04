@@ -52,10 +52,29 @@
   }
 }
 
+.main-sub-nav {
+  &__head {
+    margin: 0;
+    padding: 14px 5px 14px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  &__list {
+    padding-left: 20px;
+    list-style-type: none;
+  }
+  &__item {
+    a {
+      padding: 10px 5px 10px 12px;
+    }
+    font-size: 10px;
+  }
+}
 
 .main-dropdown {
   position: relative;
-  display: inline-block;
   &__btn {
     background-color: transparent;
     border: none;
@@ -94,38 +113,115 @@
   }
 }
 
-@media all and (max-width: 991px) {
+.main-nav-md-hidden {
+  display: inline-block;
+}
+.main-sub-nav {
+  display: none;
+}
+
+
+//991px
+
+@media all and (max-width: 768px) {
   .main-nav {
-    //display: none;
+    display: none;
     &__list {
+      margin: 0 -10px;
     }
     &__item {
       text-align: left;
       width: 100%;
-      font-size: 12px;
       border-bottom: 1px solid #465465;
       a {
-        padding: 5px 5px 5px 15%;
+        font-size: 14px;
+        padding: 14px 5px 14px 15%;
       }
     }
     &__mini-btn {
       display: block;
+      button {
+        padding: 0;
+      }
     }
   }
-  .main-dropdown {
-    padding: 5px 5px 5px 15%;
-    button {
-      padding: 0;
+
+  .main-sub-nav {
+    &__head {
+      font-size: 14px;
+      padding: 10px 5px 10px 15%;
+      border-bottom: 1px solid #465465;
     }
+    &__item {
+      font-weight: normal;
+      a {
+        font-size: 12px;
+        padding: 10px 5px 10px 15%;
+      }
+      &:first-child {
+        a {
+          padding-top: 15px;
+        }
+      }
+      &:last-child {
+        a {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .main-dropdown {
+    display: block;
+    button {
+      width: 30%;
+      padding: 5px 5px 5px 15%;
+      text-align: left;
+    }
+  }
+
+  .main-nav-md-hidden {
+    display: none;
+  }
+
+  .main-sub-nav {
+    display: inline-block;
   }
 }
 
+
 @media all and (max-width: 320px) {
   .main-nav {
+    &__item {
+      a {
+        padding: 14px 5px 14px 12px;
+        font-size: 12px;
+      }
+    }
     &__mini-btn {
       button {
         font-size: 11px;
       }
+    }
+  }
+
+  .main-sub-nav {
+    &__head {
+      font-size: 12px;
+      padding: 10px 5px 10px 15px;
+    }
+    &__item {
+      a {
+        padding: 9px 5px 9px 12px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .main-dropdown {
+    button {
+      font-size: 14px;
+      padding: 9px 5px 9px 12px;
     }
   }
 }

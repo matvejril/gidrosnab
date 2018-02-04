@@ -40,83 +40,74 @@
   }
 }
 
-.search {
-  height: 27px;
-  border: 2px solid #c3c3c3;
-  border-radius: 10px;
-  background-color: #ffffff;
-  input {
-    float: left;
-    height: 100%;
-    width: calc(~"100% - 45px");
-    padding: 0 8px 0 8px;
-    outline: none;
-    border: none;
-    background-color: transparent;
-  }
-  button {
-    height: 100%;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #505F73;
-    font-size: 24px;
-  }
-
-  &_equipment {
-    i {
-      color: #d67e29;
-    }
-  }
-  &_sleeves {
-    i {
-      color: #4477b9;
-    }
-  }
-  &_hydraulic {
-    i {
-      color: #2d4691;
-    }
-  }
-  &_mechanization {
-    i {
-      color: #cb5329;
-    }
-  }
-  &_services {
-    i {
-      color: #717171;
-    }
-  }
+.search-block-sm {
+  display: none;
 }
+
+
+//@media all and (max-width: 768px) {
+//  .search-block {
+//    display: flex;
+//    flex-direction: column-reverse;
+//    justify-content: flex-end;
+//    align-items: center;
+//    width: auto;
+//    min-width: 30px;
+//    margin-top: 11px;
+//    &__top {
+//      margin: 0;
+//    }
+//    &__mail {
+//      display: none;
+//    }
+//  }
+//
+//  .search {
+//    text-align: center;
+//    background: none;
+//    border: none;
+//    &__input {
+//      display: none;
+//    }
+//    button {
+//      font-size: 13px;
+//    }
+//  }
+//}
+
 
 @media all and (max-width: 768px) {
   .search-block {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    width: auto;
-    min-width: 30px;
-    margin-top: 11px;
-    &__top {
-      margin: 0;
-    }
-    &__mail {
-      display: none;
-    }
+    display: none;
   }
 
-  .search {
-    text-align: center;
-    background: none;
-    border: none;
-    &__input {
-      display: none;
+  .search-block-sm {
+    margin-top: 10px;
+    display: block;
+    &_equipment {
+      .search-block__mail {
+        color: #d67e29;
+      }
     }
-    button {
-      font-size: 13px;
+    &_sleeves {
+      .search-block__mail {
+        color: #4477b9;
+      }
+    }
+    &_hydraulic {
+      .search-block__mail {
+        color: #2d4691;
+      }
+    }
+    &_mechanization {
+      .search-block__mail {
+        color: #cb5329;
+      }
+    }
+    &_services {
+      .search-block__mail {
+        color: #717171;
+      }
     }
   }
 }
