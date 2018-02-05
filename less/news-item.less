@@ -42,3 +42,22 @@
     }
   }
 }
+
+@media all and (max-width: 320px) {
+  .news-item {
+    &_sm {
+      margin-bottom: 13px;
+      .news-item__data {
+        width: 87px;
+        font-size: 12px;
+      }
+      .news-item__content {
+        width: calc(~"100% - 96px");
+        font-size: 11px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .contacts-phones-item {
   padding: 0;
   margin: 0 0 30px 0;
+  white-space: nowrap;
   img {
     margin-right: 36px;
     display: inline-block;
@@ -13,6 +14,7 @@
     width: calc(~'100% - 160px');
     font-family: Arial, sans-serif;
     vertical-align: top;
+    white-space: normal;
   }
   &__title {
     margin: 10px 0 7px 0;
@@ -50,6 +52,30 @@
   &_hydraulic {
     .contacts-phones-item__title {
       color: #2d4691;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .contacts-phones-item {
+    margin-bottom: 5px;
+    img {
+      width: 54px;
+      margin-right: 5px;
+    }
+    &__caption {
+      width: auto;
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 10px;
+    }
+    &__phone {
+      margin-bottom: 3px;
+      font-size: 9px;
+    }
+    &__mail {
+      font-size: 9px;
     }
   }
 }

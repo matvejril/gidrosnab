@@ -79,3 +79,34 @@
     }
   }
 }
+
+//@media all and (max-width: 320px) {
+//
+//}
+
+@media all and (max-width: 320px) {
+  .about-company-sm {
+    margin-bottom: 5px;
+    &__title {
+      margin-bottom: 7px;
+      img {
+        width: 52px;
+      }
+      p {
+        text-align: left;
+        width: calc(~"100% - 97px");
+        background-color: #505f73;
+        padding: 3px 5px 3px 30px;
+        font-size: 20px;
+        &:before {
+          border: 14px solid transparent;
+          border-left: 8px solid #ffffff;
+        }
+      }
+    }
+    &__content {
+      width: 80%;
+      font-size: 11px;
+    }
+  }
+}

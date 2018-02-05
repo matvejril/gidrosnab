@@ -20,18 +20,29 @@
 
     <script type="text/javascript" src="../scripts/bundle.js"></script>
 </head>
-
 <body>
+
 <header class="header">
     <div class="container">
         <div class="header-box">
-            <a class="logo" href="../index.html">
-                <img src="../images/logo-rus.png" alt="logo">
+            <div class="main-nav__mini-btn">
+                <button><i class="fa fa-bars fa-2x"></i></button>
+            </div>
+            <a class="logo" href="./index.html">
+                <img class="logo__img-main" src="../images/logo-rus.png" alt="logo">
+                <img class="logo__img-mobile"  src="../images/logo-mobile.png" alt="logo">
             </a>
             <div class="call-request call-request_header">
-                <p>(383) 363-66-00</p>
-                <a href="#">Заказать звонок</a>
+                <a class="call-request__icon" href="tel:01234567890">
+                    <img src="../images/call-request/phone-icon-main.png" alt="phone-icon">
+                </a>
+                <div class="call-request__phone">
+                    <p>(383) 363-66-00</p>
+                    <a href="tel:01234567890">Заказать звонок</a>
+                </div>
             </div>
+
+            <!--Десктопная версия блока-->
             <div class="search-block">
                 <div class="search-block__top">
                     <a class="search-block__mail" href="#">info@nskmz.ru</a>
@@ -46,10 +57,22 @@
                     </button>
                 </form>
             </div>
+
+            <!--Мобильная версия блока-->
+            <div class="search-block-sm">
+                <form class="search-sm" name="search">
+                    <!--<input type="text" class="search-sm__input" name="search-input">-->
+                    <button type="submit" class="search-sm__button" name="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <div class="change-lang-sm">
+                    <a href="#" class="change-lang-sm__ru">ru</a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
-
 
 <div class="main-nav">
     <div class="container">
@@ -60,8 +83,18 @@
             <li class="main-nav__item">
                 <a href="./division-main.html">Каталог</a>
             </li>
-            <li class="main-nav__item">
-                <a href="./about-company.html">О компании</a>
+            <li class="main-nav__item main-nav-md-hidden"><a href="./about-company.html">О компании</a></li>
+            <li class="main-nav__item main-sub-nav">
+                <p class="main-sub-nav__head">О компании</p>
+                <ul class="main-sub-nav__list" style="display: none;">
+                    <li class="main-sub-nav__item"><a href="#">О компании</a></li>
+                    <li class="main-sub-nav__item"><a href="#">История</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши преимущества</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши торговые марки</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши партнеры</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Экскурсия по производству</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Вакансии</a></li>
+                </ul>
             </li>
             <li class="main-nav__item main-nav__item_active">
                 <a href="./contacts.html">Контакты</a>
@@ -157,19 +190,17 @@
                 </div>
             </div>
             <div class="footer__contact-us">
+
                 <div class="call-request call-request_footer">
-                    <p>(383) 363-66-00</p>
-                    <a href="#">Заказать звонок</a>
+                    <a class="call-request__icon" href="tel:01234567890">
+                        <img src="../images/call-request/phone-icon-main.png" alt="phone-icon">
+                    </a>
+                    <div class="call-request__phone">
+                        <p>(383) 363-66-00</p>
+                        <a href="tel:01234567890">Заказать звонок</a>
+                    </div>
                 </div>
-                <ul class="social">
-                    <li><a class="social__twitter" href="#"></a></li>
-                    <li><a class="social__tumblr" href="#"></a></li>
-                    <li><a class="social__vk" href="#"></a></li>
-                    <li><a class="social__facebook" href="#"></a></li>
-                    <li><a class="social__gplus" href="#"></a></li>
-                    <li><a class="social__insta" href="#"></a></li>
-                    <li><a class="social__youtube" href="#"></a></li>
-                    <li><a class="social__whatsapp" href="#"></a></li>
+                <ul class="social"><li><a class="social__twitter" href="#"></a></li><li><a class="social__tumblr" href="#"></a></li><li><a class="social__vk" href="#"></a></li><li><a class="social__facebook" href="#"></a></li><li><a class="social__gplus" href="#"></a></li><li><a class="social__insta" href="#"></a></li><li><a class="social__youtube" href="#"></a></li><li><a class="social__whatsapp" href="#"></a></li>
                 </ul>
             </div>
         </div>
@@ -180,7 +211,6 @@
             <p>&#169; 2017 НМЗ. Все права защищены. All rights reserved.</p>
         </div>
     </div>
-
 </footer>
 
 </body>

@@ -22,16 +22,28 @@
 </head>
 
 <body>
+
 <header class="header">
     <div class="container">
         <div class="header-box">
-            <a class="logo" href="../index.html">
-                <img src="../images/logo-rus.png" alt="logo">
+            <div class="main-nav__mini-btn">
+                <button><i class="fa fa-bars fa-2x"></i></button>
+            </div>
+            <a class="logo" href="./index.html">
+                <img class="logo__img-main" src="../images/logo-rus.png" alt="logo">
+                <img class="logo__img-mobile"  src="../images/logo-mobile.png" alt="logo">
             </a>
             <div class="call-request call-request_header">
-                <p>(383) 363-66-00</p>
-                <a href="#">Заказать звонок</a>
+                <a class="call-request__icon" href="tel:01234567890">
+                    <img src="../images/call-request/phone-icon-main.png" alt="phone-icon">
+                </a>
+                <div class="call-request__phone">
+                    <p>(383) 363-66-00</p>
+                    <a href="tel:01234567890">Заказать звонок</a>
+                </div>
             </div>
+
+            <!--Десктопная версия блока-->
             <div class="search-block">
                 <div class="search-block__top">
                     <a class="search-block__mail" href="#">info@nskmz.ru</a>
@@ -46,6 +58,19 @@
                     </button>
                 </form>
             </div>
+
+            <!--Мобильная версия блока-->
+            <div class="search-block-sm">
+                <form class="search-sm" name="search">
+                    <!--<input type="text" class="search-sm__input" name="search-input">-->
+                    <button type="submit" class="search-sm__button" name="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <div class="change-lang-sm">
+                    <a href="#" class="change-lang-sm__ru">ru</a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -59,8 +84,18 @@
             <li class="main-nav__item main-nav__item_active">
                 <a href="./division-main.html">Каталог</a>
             </li>
-            <li class="main-nav__item">
-                <a href="./about-company.html">О компании</a>
+            <li class="main-nav__item main-nav-md-hidden"><a href="./about-company.html">О компании</a></li>
+            <li class="main-nav__item main-sub-nav">
+                <p class="main-sub-nav__head">О компании</p>
+                <ul class="main-sub-nav__list" style="display: none;">
+                    <li class="main-sub-nav__item"><a href="#">О компании</a></li>
+                    <li class="main-sub-nav__item"><a href="#">История</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши преимущества</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши торговые марки</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши партнеры</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Экскурсия по производству</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Вакансии</a></li>
+                </ul>
             </li>
             <li class="main-nav__item">
                 <a href="./contacts.html">Контакты</a>
@@ -78,13 +113,13 @@
     </div>
 </div>
 
-<div class="banner">
+<div class="banner-lg">
     <div class="container">
-        <div class="banner-nav">
-            <div class="banner-nav__line">
-                <a href="./division-equipment.html" class="banner-nav__item banner-nav__item_equipment">
+        <div class="banner-nav-lg">
+            <div class="banner-nav-lg__line">
+                <div class="banner-nav-lg__item banner-nav-lg__item_equipment">
                     <img usemap="#imgmap-equipment" class="bg0" src="../images/banner/laying-bg-left.png" alt="bg0">
-                    <img class="banner-nav__icon" src="../images/banner/equipment-icon.png" alt="equipment repair">
+                    <img class="banner-nav-lg__icon" src="../images/banner/equipment-icon.png" alt="equipment repair">
                     <p>Оборудование<br>
                         для ремонта<br>
                         и обслуживания <br>
@@ -92,22 +127,22 @@
                         и строительной<br>
                         техники
                     </p>
-                </a>
-                <a href="./division-sleeves.html" class="banner-nav__item banner-nav__item_sleeves">
+                </div>
+                <div class="banner-nav-lg__item banner-nav-lg__item_sleeves">
                     <img usemap="#imgmap-sleeves" class="bg0" src="../images/banner/laying-bg-right.png" alt="bg0">
-                    <img class="banner-nav__icon" src="../images/banner/sleeves-icon.png" alt="sleeves">
+                    <img class="banner-nav-lg__icon" src="../images/banner/sleeves-icon.png" alt="sleeves">
                     <p>Рукава высокого<br>
                         давления,<br>
                         оборудование<br>
                         и комплектующие<br>
                         для их производства
                     </p>
-                </a>
+                </div>
             </div>
-            <div class="banner-nav__line">
-                <div class="banner-nav__item banner-nav__item_hydraulic">
+            <div class="banner-nav-lg__line">
+                <div class="banner-nav-lg__item banner-nav-lg__item_hydraulic">
                     <img usemap="#imgmap-hydraulic" class="bg0" src="../images/banner/laying-bg-left.png" alt="bg0">
-                    <img class="banner-nav__icon" src="../images/banner/hydraulic-icon.png" alt="hydraulic fluid">
+                    <img class="banner-nav-lg__icon" src="../images/banner/hydraulic-icon.png" alt="hydraulic fluid">
                     <p>Решения<br>
                         в области раздачи,<br>
                         перекачивания<br>
@@ -116,9 +151,9 @@
                         и смазки
                     </p>
                 </div>
-                <div class="banner-nav__item banner-nav__item_mechanization">
+                <div class="banner-nav-lg__item banner-nav-lg__item_mechanization">
                     <img usemap="#imgmap-mechanization" class="bg0" src="../images/banner/laying-bg-right.png" alt="bg0">
-                    <img class="banner-nav__icon" src="../images/banner/mechanization-icon.png" alt="small-scale mechanization">
+                    <img class="banner-nav-lg__icon" src="../images/banner/mechanization-icon.png" alt="small-scale mechanization">
                     <p>Промышленный<br>
                         гидравлический<br>
                         инструмент<br>
@@ -128,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-nav__repair-service">
+        <div class="banner-nav-lg_repair-service">
             <img usemap="#imgmap-repair-service" class="bg0" src="../images/banner/laying-bg-right.png" alt="bg0">
             <img class="banner-nav__icon" src="../images/banner/repair-service.png" alt="repair and service">
             <p>Ремонт<br>
@@ -136,6 +171,213 @@
                 обслуживание
             </p>
         </div>
+    </div>
+</div>
+
+<div class="banner-md">
+    <div class="container">
+        <ul class="banner-nav-md">
+            <li class="banner-nav-md__item banner-nav-md__item_equipment">
+                <div class="banner-nav-md__head">
+                    <img class="banner-nav-md__img" src="../images/banner/equipment-icon.png" alt="equipment repair">
+                    <p class="banner-nav-md__text">Оборудование для ремонта и обслуживания карьерной и строительной техники</p>
+                </div>
+                <ul class="banner-1sub-nav-md" style="display: none;">
+                    <li class="banner-1sub-nav-md__item banner-1sub-nav-md__item_active">
+                        <p class="banner-1sub-nav-md__head">Шиномонтажное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для снятия и установки колес</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Самоходное многофункиональное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для подъема и вывешивания техники</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="banner-nav-md__item banner-nav-md__item_sleeves">
+                <div class="banner-nav-md__head">
+                    <img class="banner-nav-md__img" src="../images/banner/sleeves-icon.png" alt="sleeves">
+                    <p class="banner-nav-md__text">Рукава высокого давления, оборудование и комплектующие для их производства</p>
+                </div>
+                <ul class="banner-1sub-nav-md">
+                    <li class="banner-1sub-nav-md__item banner-1sub-nav-md__item_active">
+                        <p class="banner-1sub-nav-md__head">Шиномонтажное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для снятия и установки колес</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Самоходное многофункиональное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для подъема и вывешивания техники</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="banner-nav-md__item banner-nav-md__item_mechanization">
+                <div class="banner-nav-md__head">
+                    <img class="banner-nav-md__img" src="../images/banner/mechanization-icon.png" alt="small-scale mechanization">
+                    <p class="banner-nav-md__text">Промышленный гидравлический инструмент и средства малой механизации</p>
+                </div>
+                <ul class="banner-1sub-nav-md">
+                    <li class="banner-1sub-nav-md__item banner-1sub-nav-md__item_active">
+                        <p class="banner-1sub-nav-md__head">Шиномонтажное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для снятия и установки колес</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Самоходное многофункиональное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для подъема и вывешивания техники</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="banner-nav-md__item banner-nav-md__item_hydraulic">
+                <div class="banner-nav-md__head">
+                    <img class="banner-nav-md__img" src="../images/banner/hydraulic-icon.png" alt="hydraulic fluid">
+                    <p class="banner-nav-md__text">Решения в области раздачи, перекачивания гидравлической жидкости и смазки</p>
+                </div>
+                <ul class="banner-1sub-nav-md">
+                    <li class="banner-1sub-nav-md__item banner-1sub-nav-md__item_active">
+                        <p class="banner-1sub-nav-md__head">Шиномонтажное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для снятия и установки колес</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Самоходное многофункиональное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для подъема и вывешивания техники</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="banner-nav-md__item banner-nav-md__item_repair-service">
+                <div class="banner-nav-md__head">
+                    <img class="banner-nav-md__img" src="../images/banner/repair-service.png" alt="repair and service">
+                    <p class="banner-nav-md__text">Ремонт и сервисное обслуживание</p>
+                </div>
+                <ul class="banner-1sub-nav-md">
+                    <li class="banner-1sub-nav-md__item banner-1sub-nav-md__item_active">
+                        <p class="banner-1sub-nav-md__head">Шиномонтажное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для снятия и установки колес</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Самоходное многофункиональное оборудование</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                    <li class="banner-1sub-nav-md__item">
+                        <p class="banner-1sub-nav-md__head">Оборудование для подъема и вывешивания техники</p>
+                        <ul class="banner-2sub-nav-md">
+                            <li class="banner-2sub-nav-md__item"><a href="#">Мобильный шиномонтажный стенд серии "ШМ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                            <li class="banner-2sub-nav-md__item"><a href="#">Стационарный шиномонтажный стенд серии "NMZ"</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -188,18 +430,15 @@
             </div>
             <div class="footer__contact-us">
                 <div class="call-request call-request_footer">
-                    <p>(383) 363-66-00</p>
-                    <a href="#">Заказать звонок</a>
+                    <a class="call-request__icon" href="tel:01234567890">
+                        <img src="../images/call-request/phone-icon-main.png" alt="phone-icon">
+                    </a>
+                    <div class="call-request__phone">
+                        <p>(383) 363-66-00</p>
+                        <a href="tel:01234567890">Заказать звонок</a>
+                    </div>
                 </div>
-                <ul class="social">
-                    <li><a class="social__twitter" href="#"></a></li>
-                    <li><a class="social__tumblr" href="#"></a></li>
-                    <li><a class="social__vk" href="#"></a></li>
-                    <li><a class="social__facebook" href="#"></a></li>
-                    <li><a class="social__gplus" href="#"></a></li>
-                    <li><a class="social__insta" href="#"></a></li>
-                    <li><a class="social__youtube" href="#"></a></li>
-                    <li><a class="social__whatsapp" href="#"></a></li>
+                <ul class="social"><li><a class="social__twitter" href="#"></a></li><li><a class="social__tumblr" href="#"></a></li><li><a class="social__vk" href="#"></a></li><li><a class="social__facebook" href="#"></a></li><li><a class="social__gplus" href="#"></a></li><li><a class="social__insta" href="#"></a></li><li><a class="social__youtube" href="#"></a></li><li><a class="social__whatsapp" href="#"></a></li>
                 </ul>
             </div>
         </div>
@@ -210,7 +449,6 @@
             <p>&#169; 2017 НМЗ. Все права защищены. All rights reserved.</p>
         </div>
     </div>
-
 </footer>
 
 </body>

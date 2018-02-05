@@ -13,6 +13,7 @@
     box-sizing: border-box;
     a {
         color: #040404;
+        display: block;
         &:hover {
             text-decoration: underline;
         }
@@ -37,6 +38,28 @@
             //font-size: 15px;
             //font-weight: 500;
             text-transform: none;
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .production-item {
+        //width: 100%;
+        padding: 7px 10px 16px 10px;
+        border-top: 1px solid #bdbdbd;
+        border-bottom: none;
+        border-right: none;
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 100%;
+        display: inline-block;
+        &:last-child {
+            border-bottom: 1px solid #bdbdbd;
+        }
+        &__title {
+            text-align: left;
+            font-size: 10px;
+            line-height: 1.2;
         }
     }
 }
