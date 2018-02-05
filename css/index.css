@@ -2930,6 +2930,7 @@ template {
 }
 @media all and (max-width: 768px) {
   .main-nav {
+    background-color: #505f73;
     display: none;
   }
   .main-nav__list {
@@ -2938,7 +2939,7 @@ template {
   .main-nav__item {
     text-align: left;
     width: 100%;
-    border-bottom: 1px solid #465465;
+    border-bottom: 1px solid #464E61;
   }
   .main-nav__item a {
     font-size: 14px;
@@ -3487,6 +3488,7 @@ template {
   cursor: default;
 }
 .call-request__icon img {
+  fill: #ffb600;
   width: 100%;
   display: inline-block;
 }
@@ -3734,6 +3736,9 @@ template {
 @media all and (max-width: 320px) {
   .search-sm button {
     font-size: 16px;
+  }
+  .search-sm i {
+    color: #505F73;
   }
 }
 .change-lang {
@@ -4702,8 +4707,13 @@ template {
   margin-top: -35px;
 }
 @media all and (max-width: 320px) {
+  .catalog {
+    padding-bottom: 45px;
+  }
   .catalog__logo {
+    width: 92%;
     min-height: 66px;
+    margin: 0 auto;
   }
   .catalog__logo img {
     width: 50%;
@@ -4712,6 +4722,7 @@ template {
     flex-wrap: wrap;
   }
   .catalog__content {
+    display: none;
     width: 100%;
   }
 }
@@ -4836,13 +4847,19 @@ template {
 @media all and (max-width: 320px) {
   .catalog-nav {
     width: 92%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 0 auto;
   }
   .catalog-nav__head {
     width: 100%;
-    padding: 9px 0 9px 0;
+    padding: 11px 0 11px 0;
     font-size: 10px;
     line-height: 1.2;
+  }
+  .catalog-nav_hydraulic .catalog-nav__head {
+    width: 100%;
+  }
+  .catalog-nav_sleeves .catalog-nav__head {
+    width: 100%;
   }
   .catalog-sub-nav__item {
     width: 93%;
@@ -4852,6 +4869,9 @@ template {
   }
   .catalog-sub-nav__item:first-child {
     padding-top: 0;
+  }
+  .catalog-sub-nav_hydraulic .catalog-sub-nav__item {
+    width: 93%;
   }
 }
 .catalog-data-list {
@@ -4901,6 +4921,7 @@ template {
   .production-list {
     border: none;
     text-align: center;
+    margin: 0 -10px 0 -10px;
   }
 }
 .production-item {
@@ -4942,8 +4963,6 @@ template {
     border-top: 1px solid #bdbdbd;
     border-bottom: none;
     border-right: none;
-    margin-left: -10px;
-    margin-right: -10px;
     width: 100%;
     display: inline-block;
   }
@@ -5114,6 +5133,10 @@ template {
   list-style-type: none;
 }
 @media all and (max-width: 320px) {
+  .about-company {
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
   .about-company__title {
     margin-bottom: 3px;
   }
@@ -5219,6 +5242,10 @@ template {
   flex-wrap: wrap;
 }
 @media all and (max-width: 320px) {
+  .our-history {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .our-history__title {
     margin-bottom: 11px;
   }
@@ -5270,7 +5297,7 @@ template {
   .our-history-item__text {
     display: inline-block;
     width: calc(100% - 90px);
-    vertical-align: middle;
+    vertical-align: top;
     font-size: 10px;
   }
 }
@@ -5313,6 +5340,10 @@ template {
   flex-wrap: wrap;
 }
 @media all and (max-width: 320px) {
+  .our-advantages {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .our-advantages__title {
     margin-bottom: 11px;
   }
@@ -5432,6 +5463,10 @@ template {
   flex-wrap: wrap;
 }
 @media all and (max-width: 320px) {
+  .our-trade-marks {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .our-trade-marks__title {
     margin: 0 0 12px 0;
   }
@@ -5533,6 +5568,10 @@ template {
   flex-wrap: wrap;
 }
 @media all and (max-width: 320px) {
+  .our-partners {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .our-partners__title {
     margin: 0 0 12px 0;
   }
@@ -5633,6 +5672,10 @@ template {
   display: block;
 }
 @media all and (max-width: 320px) {
+  .excursion {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .excursion__title {
     margin: 0 0 12px 0;
   }
@@ -5709,6 +5752,10 @@ template {
   color: #505F73;
 }
 @media all and (max-width: 320px) {
+  .vacancies {
+    padding-top: 8px;
+    padding-bottom: 15px;
+  }
   .vacancies__title {
     margin: 0 0 3px 0;
   }
