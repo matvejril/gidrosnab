@@ -35,9 +35,42 @@
     justify-content: space-between;
   }
   &__content {
-    //width: calc(~'100% - 442px');
     width: 72.5%;
     padding: 0;
     margin: 0;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .videos-page  {
+    width: 100%;
+    padding: 0;
+    &__box {
+      flex-wrap: wrap;
+    }
+    &__title {
+      padding: 0 0 0 10px;
+      margin: 0 0 -2px 0;
+      p {
+        width: calc(~"100% - 119px");
+        padding: 7px 25px 7px 33px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        &::before {
+          border: 14px solid transparent;
+          border-left: 8px solid #ffffff;
+        }
+      }
+      img {
+        width: 56px;
+        margin: 0;
+      }
+    }
+    &__list {
+      padding: 0;
+    }
+    &__content {
+      width: 100%;
+    }
   }
 }

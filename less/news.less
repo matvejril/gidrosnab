@@ -111,6 +111,34 @@
 
 @media all and (max-width: 320px) {
   .news {
+    width: 100%;
+    padding: 0;
+    min-width: 0;
+    &__box {
+      flex-wrap: wrap;
+    }
+    &__title {
+      padding: 0 0 0 10px;
+      margin: 0 0 -2px 0;
+      p {
+        width: calc(~"100% - 119px");
+        padding: 7px 25px 7px 33px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        &::before {
+          border: 14px solid transparent;
+          border-left: 8px solid #ffffff;
+        }
+      }
+      img {
+        width: 56px;
+        margin: 0;
+      }
+    }
+    &__list {
+      padding: 0;
+    }
+
     &_sm {
       margin-bottom: 5px;
       .news__title {
