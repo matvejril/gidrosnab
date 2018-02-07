@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-align: right;
+    text-align: left;
     display: inline-block;
   }
   &__item {
@@ -71,5 +71,38 @@
   }
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .catalogs-pdf-nav {
+    width: 100%;
+    padding: 0;
+    min-width: 0;
+    border: none;
+    &__list {
+      width: 77%;
+    }
+    &__item {
+      margin: 10px 0 10px 0;
+      a {
+        margin-bottom: 12px;
+        font-size: 9px;
+        line-height: 1.1;
+      }
+    }
+    &__head {
+      margin-bottom: 2px;
+      font-size: 9px;
+    }
+  }
+
+  .catalogs-pdf-sub-nav {
+    &__list {
+      padding-left: 20px;
+    }
+    &__item {
+      margin: 10px 0 10px 0;
+    }
   }
 }

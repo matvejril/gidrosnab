@@ -3226,6 +3226,7 @@ template {
   margin: 0;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .banner-nav-md {
   padding: 0;
@@ -3881,8 +3882,8 @@ template {
   }
 }
 .company-news {
-  padding: 20px 0 20px 0;
-  background: url(../images/company-news-bg.png) no-repeat calc(50% + 45px) 30px;
+  padding: 70px 0 20px 0;
+  background: url(../images/company-news-bg.png) no-repeat 53.5% 30px;
   background-origin: border-box;
 }
 .company-news__box {
@@ -3897,6 +3898,9 @@ template {
   }
 }
 @media all and (max-width: 768px) {
+  .company-news {
+    padding-top: 20px;
+  }
   .company-news__box {
     flex-wrap: wrap;
   }
@@ -4181,7 +4185,7 @@ template {
 .our-partners-slider {
   padding: 22px 0 12px 0;
   background-color: #e6e6e6;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 .our-partners-slider__title {
   width: 96%;
@@ -4670,6 +4674,7 @@ template {
 .catalog__logo {
   white-space: nowrap;
   min-height: 122px;
+  height: 122px;
   display: table;
 }
 .catalog__logo img {
@@ -4713,6 +4718,7 @@ template {
   .catalog__logo {
     width: 92%;
     min-height: 66px;
+    height: 66px;
     margin: 0 auto;
   }
   .catalog__logo img {
@@ -4722,8 +4728,20 @@ template {
     flex-wrap: wrap;
   }
   .catalog__content {
-    display: none;
     width: 100%;
+  }
+  .catalog_services .catalog__logo {
+    height: 70px;
+  }
+  .catalog_services .catalog__logo img {
+    width: 20%;
+  }
+  .catalog_services .catalog__logo p {
+    font-size: 9px;
+    vertical-align: middle;
+  }
+  .catalog_services .catalog__content {
+    margin-top: 0;
   }
 }
 .catalog-sort {
@@ -4749,6 +4767,21 @@ template {
 .catalog-sort__btn_active {
   border-color: black;
   color: black;
+}
+@media all and (max-width: 320px) {
+  .catalog-sort {
+    margin-top: 18px;
+    margin-bottom: 15px;
+  }
+  .catalog-sort__text {
+    margin-right: 15px;
+    font-size: 10px;
+    vertical-align: middle;
+  }
+  .catalog-sort__btn {
+    padding: 5px 12px 4px 12px;
+    font-size: 10px;
+  }
 }
 .catalog-nav {
   width: 400px;
@@ -4907,6 +4940,19 @@ template {
   font-size: 16px;
   color: #000000;
 }
+@media all and (max-width: 320px) {
+  .catalog-data-list__data {
+    width: auto;
+    margin-top: 10px;
+    display: block;
+    font-size: 9px;
+  }
+  .catalog-data-list__link {
+    width: auto;
+    padding: 6px 0 9px 0;
+    font-size: 10px;
+  }
+}
 .production-list {
   padding: 0;
   margin: 0;
@@ -4919,6 +4965,7 @@ template {
 }
 @media all and (max-width: 320px) {
   .production-list {
+    display: none;
     border: none;
     text-align: center;
     margin: 0 -10px 0 -10px;
@@ -5033,7 +5080,7 @@ template {
   font-size: 13px;
 }
 .production-card__table tbody tr:nth-child(2n) {
-  background-color: #cccccc;
+  background-color: #e6e6e6;
 }
 .production-card__table tbody td {
   text-align: center;
@@ -5072,6 +5119,11 @@ template {
 }
 .production-card_services .production-card__description {
   width: 61%;
+}
+@media all and (max-width: 320px) {
+  .production-card {
+    display: none;
+  }
 }
 .about-company {
   padding-top: 57px;
@@ -5964,6 +6016,36 @@ template {
 .catalogs-pdf__content {
   width: 72.5%;
 }
+@media all and (max-width: 320px) {
+  .catalogs-pdf {
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+  .catalogs-pdf__box {
+    flex-wrap: wrap;
+  }
+  .catalogs-pdf__title {
+    padding: 0 0 0 10px;
+    margin: 0;
+  }
+  .catalogs-pdf__title p {
+    width: calc(100% - 123px);
+    padding: 7px 25px 7px 33px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .catalogs-pdf__title p::before {
+    border: 14px solid transparent;
+    border-left: 8px solid #ffffff;
+  }
+  .catalogs-pdf__title img {
+    width: 56px;
+    margin: 0;
+  }
+  .catalogs-pdf__content {
+    width: 100%;
+  }
+}
 .catalogs-pdf-nav {
   width: 27.5%;
   min-width: 414px;
@@ -5977,7 +6059,7 @@ template {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: right;
+  text-align: left;
   display: inline-block;
 }
 .catalogs-pdf-nav__item {
@@ -6034,6 +6116,35 @@ template {
 .catalogs-pdf-sub-nav:last-child {
   margin-bottom: 0;
 }
+@media all and (max-width: 320px) {
+  .catalogs-pdf-nav {
+    width: 100%;
+    padding: 0;
+    min-width: 0;
+    border: none;
+  }
+  .catalogs-pdf-nav__list {
+    width: 77%;
+  }
+  .catalogs-pdf-nav__item {
+    margin: 10px 0 10px 0;
+  }
+  .catalogs-pdf-nav__item a {
+    margin-bottom: 12px;
+    font-size: 9px;
+    line-height: 1.1;
+  }
+  .catalogs-pdf-nav__head {
+    margin-bottom: 2px;
+    font-size: 9px;
+  }
+  .catalogs-pdf-sub-nav__list {
+    padding-left: 20px;
+  }
+  .catalogs-pdf-sub-nav__item {
+    margin: 10px 0 10px 0;
+  }
+}
 .catalogs-pdf-list {
   padding: 0;
   margin: 0;
@@ -6077,6 +6188,23 @@ template {
   height: 55px;
   display: inline-block;
   margin-right: 30px;
+}
+@media all and (max-width: 320px) {
+  .catalogs-pdf-card__main {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .catalogs-pdf-card__main img {
+    width: 100%;
+  }
+  .catalogs-pdf-card__download {
+    background: url(../images/catalogs-pdf/download-button.png) no-repeat center;
+    background-size: cover;
+    width: 200px;
+    height: 46.2px;
+    display: inline-block;
+    margin-right: 46.2px;
+  }
 }
 .news-page {
   padding: 63px 0 40px;

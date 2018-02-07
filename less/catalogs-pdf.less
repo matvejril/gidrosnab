@@ -39,3 +39,34 @@
     width: 72.5%;
   }
 }
+
+@media all and (max-width: 320px) {
+  .catalogs-pdf {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    &__box {
+      flex-wrap: wrap;
+    }
+    &__title {
+      padding: 0 0 0 10px;
+      margin: 0;
+      p {
+        width: calc(~"100% - 123px");
+        padding: 7px 25px 7px 33px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        &::before {
+          border: 14px solid transparent;
+          border-left: 8px solid #ffffff;
+        }
+      }
+      img {
+        width: 56px;
+        margin: 0;
+      }
+    }
+    &__content {
+      width: 100%;
+    }
+  }
+}

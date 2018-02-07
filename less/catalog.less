@@ -3,6 +3,7 @@
   &__logo {
     white-space: nowrap;
     min-height: 122px;
+    height: 122px;
     display: table;
     img {
       vertical-align: middle;
@@ -50,6 +51,7 @@
     &__logo {
       width: 92%;
       min-height: 66px;
+      height: 66px;
       margin: 0 auto;
       img {
         width: 50%;
@@ -59,8 +61,29 @@
       flex-wrap: wrap;
     }
     &__content {
-      display: none;
+      //display: none;
       width: 100%;
     }
+
+    &_services {
+      .catalog__logo {
+        height: 70px;
+        img {
+          width: 20%;
+        }
+
+        p {
+          font-size: 9px;
+          vertical-align: middle;
+        }
+      }
+      .catalog__logo-link {
+      }
+
+      .catalog__content {
+        margin-top: 0;
+      }
+    }
+
   }
 }
