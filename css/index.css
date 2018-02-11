@@ -2795,7 +2795,7 @@ template {
   }
 }
 .header {
-  padding: 20px 0 12px 0;
+  padding: 13px 0 16px 0;
   margin: 0;
   background-color: #e6e6e6;
 }
@@ -4473,11 +4473,11 @@ template {
     height: 189px;
   }
 }
-.division-item {
+.division-carousel {
   padding: 55px 0 55px 0;
   background: url(../images/banner/banner-bg.jpg) no-repeat center top;
 }
-.division-item__box {
+.division-carousel__box {
   width: 89.5%;
   margin: 0 auto;
   display: flex;
@@ -4485,7 +4485,7 @@ template {
 }
 .production-nav {
   width: 664px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
@@ -4550,6 +4550,9 @@ template {
 .production-nav__action i {
   margin-top: -15px;
 }
+.production-nav_equipment {
+  display: flex;
+}
 .production-nav_equipment .production-nav__backside {
   background-color: #d77e2a;
 }
@@ -4580,122 +4583,243 @@ template {
 .production-nav_sleeves .production-nav__action i {
   color: #4477b9;
 }
+.production-nav_service .production-nav__backside {
+  background-color: #717171;
+}
+.production-nav_service .production-nav__front {
+  color: #717171;
+}
+.production-nav_service .production-nav__list li {
+  border-top: 2px solid #717171;
+}
+.production-nav_service .production-nav__list li a {
+  color: #717171;
+}
+.production-nav_service .production-nav__action i {
+  color: #717171;
+}
+.production-nav_mechanization .production-nav__backside {
+  background-color: #cb5329;
+}
+.production-nav_mechanization .production-nav__front {
+  color: #cb5329;
+}
+.production-nav_mechanization .production-nav__list li {
+  border-top: 2px solid #cb5329;
+}
+.production-nav_mechanization .production-nav__list li a {
+  color: #cb5329;
+}
+.production-nav_mechanization .production-nav__action i {
+  color: #cb5329;
+}
+.production-nav_hydraulic .production-nav__backside {
+  background-color: #2d4691;
+}
+.production-nav_hydraulic .production-nav__front {
+  color: #2d4691;
+}
+.production-nav_hydraulic .production-nav__list li {
+  border-top: 2px solid #2d4691;
+}
+.production-nav_hydraulic .production-nav__list li a {
+  color: #2d4691;
+}
+.production-nav_hydraulic .production-nav__action i {
+  color: #2d4691;
+}
 .division-nav {
-  width: 45%;
-  list-style-type: none;
+  width: 50%;
   padding: 0;
-  margin: 109px 0 0 0;
+  margin: 0;
   text-align: right;
+  perspective: 810px;
 }
-.division-nav li {
+.division-nav-item {
+  min-width: 300px;
+  display: table;
+  position: absolute;
+  z-index: 1;
+  margin-right: 0;
+  margin-left: auto;
+  -webkit-transition: top 1s ease-out, right 1s ease-out, background 0.5s linear, border 0.5s linear;
+  -moz-transition: top 1s ease-out, right 1s ease-out, background 0.5s linear, border 0.5s linear;
+  -o-transition: top 1s ease-out, right 1s ease-out, background 0.5s linear, border 0.5s linear;
+  transition: top 1s ease-out, right 1s ease-out, background 0.5s linear, border 0.5s linear;
+}
+.division-nav-item__helper {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  height: 213px;
+}
+.division-nav-item__helper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  border: 108px solid transparent;
+  border-right-width: 60px;
+  z-index: -1;
+  -webkit-transition: border .5s linear;
+  -moz-transition: border .5s linear;
+  -o-transition: border .5s linear;
+  transition: border .5s linear;
+}
+.division-nav-item img {
+  height: auto;
   display: inline-block;
-  position: relative;
+  vertical-align: middle;
+  user-select: none;
 }
-.division-nav a {
+.division-nav-item p {
+  margin: 0;
   display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  vertical-align: middle;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.1;
+  user-select: none;
 }
-.division-nav img {
-  margin-top: -60px;
+.division-nav-item_equipment {
+  background: rgba(231, 130, 36, 0.8);
 }
-.division-nav_equipment .division-nav__item_gray {
-  left: 40px;
-  -moz-transform: rotate(-18.3deg);
-  /* Для Firefox */
-  -ms-transform: rotate(-18.3deg);
-  /* Для IE */
-  -webkit-transform: rotate(-18.3deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-18.3deg);
-  /* Для Opera */
-  transform: rotate(-18.3deg);
+.division-nav-item_equipment .division-nav-item__helper:before {
+  border-right-color: rgba(231, 130, 36, 0.8);
+}
+.division-nav-item_equipment:hover {
+  background: #e78224;
+}
+.division-nav-item_equipment:hover .division-nav-item__helper:before {
+  border-right-color: #e78224;
+}
+.division-nav-item_service {
+  background: rgba(108, 108, 108, 0.8);
+}
+.division-nav-item_service .division-nav-item__helper:before {
+  border-right-color: rgba(108, 108, 108, 0.8);
+}
+.division-nav-item_service:hover {
+  background: #6c6c6c;
+}
+.division-nav-item_service:hover .division-nav-item__helper:before {
+  border-right-color: #6c6c6c;
+}
+.division-nav-item_hydraulic {
+  background: rgba(36, 53, 141, 0.8);
+}
+.division-nav-item_hydraulic .division-nav-item__helper:before {
+  border-right-color: rgba(36, 53, 141, 0.8);
+}
+.division-nav-item_hydraulic:hover {
+  background: #24358d;
+}
+.division-nav-item_hydraulic:hover .division-nav-item__helper:before {
+  border-right-color: #24358d;
+}
+.division-nav-item_mechanization {
+  background: rgba(221, 78, 32, 0.8);
+}
+.division-nav-item_mechanization .division-nav-item__helper:before {
+  border-right-color: rgba(221, 78, 32, 0.8);
+}
+.division-nav-item_mechanization:hover {
+  background: #dd4e20;
+}
+.division-nav-item_mechanization:hover .division-nav-item__helper:before {
+  border-right-color: #dd4e20;
+}
+.division-nav-item_sleeves {
+  background: rgba(38, 105, 182, 0.8);
+}
+.division-nav-item_sleeves .division-nav-item__helper:before {
+  border-right-color: rgba(38, 105, 182, 0.8);
+}
+.division-nav-item_sleeves:hover {
+  background: #2669b6;
+}
+.division-nav-item_sleeves:hover .division-nav-item__helper:before {
+  border-right-color: #2669b6;
+}
+.division-nav-item:hover {
+  cursor: pointer;
+}
+.division-nav-item[data-division-carousel-nav-item='1'] {
+  width: 55%;
+  right: 8px;
+  top: 0;
+  transform: rotateY(-45deg);
+  /* Поворачиваем относительно оси Y */
+  transform-origin: right center;
+  /* Точка поворота справа */
   z-index: 1;
 }
-.division-nav_equipment .division-nav__item_purple {
-  left: -77px;
-  -moz-transform: rotate(-8.9deg);
-  /* Для Firefox */
-  -ms-transform: rotate(-8.9deg);
-  /* Для IE */
-  -webkit-transform: rotate(-8.9deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-8.9deg);
-  /* Для Opera */
-  transform: rotate(-8.9deg);
+.division-nav-item[data-division-carousel-nav-item='1'] img {
+  width: 130px;
+  margin-left: -10px;
+  margin-right: 25px;
+}
+.division-nav-item[data-division-carousel-nav-item='1'] p {
+  width: calc(100% - 170px);
+}
+.division-nav-item[data-division-carousel-nav-item='2'] {
+  width: 54%;
+  top: 175px;
+  right: 96px;
+  transform: rotateY(-39deg);
+  /* Поворачиваем относительно оси Y */
+  transform-origin: right center;
+  /* Точка поворота справа */
   z-index: 2;
 }
-.division-nav_equipment .division-nav__item_orange {
-  left: -188px;
-  margin-top: -21px;
+.division-nav-item[data-division-carousel-nav-item='2'] img {
+  width: 137px;
+  margin-left: -25px;
+  margin-right: 23px;
+}
+.division-nav-item[data-division-carousel-nav-item='2'] p {
+  width: calc(100% - 170px);
+}
+.division-nav-item[data-division-carousel-nav-item='3'] {
+  width: 59%;
+  top: 330px;
+  right: 185px;
+  transform: rotateY(-38deg);
+  /* Поворачиваем относительно оси Y */
+  transform-origin: right center;
+  /* Точка поворота справа */
   z-index: 3;
 }
-.division-nav_equipment .division-nav__item_blue {
-  left: -267px;
-  margin-top: -40px;
-  -moz-transform: rotate(7.3deg);
-  /* Для Firefox */
-  -ms-transform: rotate(7.3deg);
-  /* Для IE */
-  -webkit-transform: rotate(7.3deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(7.3deg);
-  /* Для Opera */
-  transform: rotate(7.3deg);
+.division-nav-item[data-division-carousel-nav-item='3'] img {
+  width: 150px;
+  margin-left: -25px;
+  margin-right: 21px;
+}
+.division-nav-item[data-division-carousel-nav-item='3'] p {
+  width: calc(100% - 170px);
+}
+.division-nav-item[data-division-carousel-nav-item='4'] {
+  width: 69%;
+  top: 470px;
+  right: 275px;
+  transform: rotateY(-39deg);
+  /* Поворачиваем относительно оси Y */
+  transform-origin: right center;
+  /* Точка поворота справа */
   z-index: 4;
 }
-.division-nav_sleeves .division-nav__item_yellow {
-  left: 40px;
-  -moz-transform: rotate(-17.3deg);
-  /* Для Firefox */
-  -ms-transform: rotate(-17.3deg);
-  /* Для IE */
-  -webkit-transform: rotate(-17.3deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-17.3deg);
-  /* Для Opera */
-  transform: rotate(-17.3deg);
-  z-index: 1;
+.division-nav-item[data-division-carousel-nav-item='4'] img {
+  width: 145px;
+  margin-left: -10px;
+  margin-right: 50px;
 }
-.division-nav_sleeves .division-nav__item_gray {
-  margin-top: 10px;
-  left: -50px;
-  -moz-transform: rotate(-18.3deg);
-  /* Для Firefox */
-  -ms-transform: rotate(-18.3deg);
-  /* Для IE */
-  -webkit-transform: rotate(-18.3deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-18.3deg);
-  /* Для Opera */
-  transform: rotate(-18.3deg);
-  z-index: 2;
+.division-nav-item[data-division-carousel-nav-item='4'] p {
+  width: calc(100% - 205px);
 }
-.division-nav_sleeves .division-nav__item_purple {
-  left: -77px;
-  -moz-transform: rotate(-8.9deg);
-  /* Для Firefox */
-  -ms-transform: rotate(-8.9deg);
-  /* Для IE */
-  -webkit-transform: rotate(-8.9deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-8.9deg);
-  /* Для Opera */
-  transform: rotate(-8.9deg);
-  z-index: 3;
-}
-.division-nav_sleeves .division-nav__item_orange {
-  left: -188px;
-  margin-top: -21px;
-  left: 40px;
-  -moz-transform: rotate(-8.9deg);
-  /* Для Firefox */
-  -ms-transform: rotate(-8.9deg);
-  /* Для IE */
-  -webkit-transform: rotate(-8.9deg);
-  /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-8.9deg);
-  /* Для Opera */
-  transform: rotate(-8.9deg);
-  z-index: 4;
+.division-nav-item[data-division-carousel-nav-item='5'] {
+  display: none;
 }
 .catalog {
   padding: 0 0 37px;

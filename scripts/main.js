@@ -1,10 +1,11 @@
 window.onload = function () {
     require('./helpers');
-
+    require('./division-carousel');
     // require('./feedback-validate');
     // require('./tab');
     // require('./cases-nav');
 
+    // Инициализация сладера на index
     var ourAdvantagesSlider = $('.our-advantages-slider');
     ourAdvantagesSlider.slick({
         arrows: false,
@@ -35,6 +36,7 @@ window.onload = function () {
         ]
     });
 
+    // Инициализация сладера на index
     var ourPartnersSlider = $('.our-partners-slider__list');
     ourPartnersSlider.slick({
         // arrows: false,
@@ -58,9 +60,9 @@ window.onload = function () {
                 }
             }
         ]
-
     });
 
+    // Инициализация сладера на index
     var ourClientsSlider = $('.our-clients-slider__list');
     ourClientsSlider.slick({
         // arrows: false,
@@ -86,15 +88,14 @@ window.onload = function () {
         ]
     });
 
+    // Инициализация яндкс карт на index и contacts pages
     ymaps.ready(init);
     var indexMap;
     var contactMap;
     var indexMyPlacemark;
     var contactMyPlacemark;
-
     var indexMapId = document.getElementById('index-map');
     var contactMapId = document.getElementById('contact-map');
-
 
     function init(){
         if(indexMapId){

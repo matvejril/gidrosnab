@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gidrosnab</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src="../plugins/jquery-3.3.1.js"></script>
+    <script src="../plugins/slick/slick.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="../scripts/bundle.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-box">
+            <div class="main-nav__mini-btn">
+                <button><i class="fa fa-bars fa-2x"></i></button>
+            </div>
+            <a class="logo" href="./index.html">
+                <img class="logo__img-main" src="../images/logo-rus.png" alt="logo">
+                <img class="logo__img-mobile"  src="../images/logo-mobile.png" alt="logo">
+            </a>
+            <div class="call-request call-request_header">
+                <a class="call-request__icon" href="tel:01234567890">
+                    <img src="../images/call-request/phone-icon-main.png" alt="phone-icon">
+                </a>
+                <div class="call-request__phone">
+                    <p>(383) 363-66-00</p>
+                    <a href="tel:01234567890">Заказать звонок</a>
+                </div>
+            </div>
+
+            <!--Десктопная версия блока-->
+            <div class="search-block">
+                <div class="search-block__top">
+                    <a class="search-block__mail" href="#">info@nskmz.ru</a>
+                    <div class="change-lang">
+                        <a href="#" class="change-lang__ru change-lang__active">ru</a>/<a href="#" class="change-lang__en">en</a>
+                    </div>
+                </div>
+                <form class="search" name="search">
+                    <input type="text" class="search__input" name="search-input">
+                    <button type="submit" class="search__button" name="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!--Мобильная версия блока-->
+            <div class="search-block-sm">
+                <form class="search-sm" name="search">
+                    <!--<input type="text" class="search-sm__input" name="search-input">-->
+                    <button type="submit" class="search-sm__button" name="search-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <div class="change-lang-sm">
+                    <a href="#" class="change-lang-sm__ru">ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-nav">
+    <div class="container">
+        <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item_active">
+                <a href="../index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="./division-main.html">Каталог</a>
+            </li>
+            <li class="main-nav__item main-nav-md-hidden"><a href="./about-company.html">О компании</a></li>
+            <li class="main-nav__item main-sub-nav">
+                <p class="main-sub-nav__head">О компании</p>
+                <ul class="main-sub-nav__list" style="display: none;">
+                    <li class="main-sub-nav__item"><a href="#">О компании</a></li>
+                    <li class="main-sub-nav__item"><a href="#">История</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши преимущества</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши торговые марки</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Наши партнеры</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Экскурсия по производству</a></li>
+                    <li class="main-sub-nav__item"><a href="#">Вакансии</a></li>
+                </ul>
+            </li>
+            <li class="main-nav__item">
+                <a href="./contacts.html">Контакты</a>
+            </li>
+            <li class="main-nav__item main-dropdown">
+                <button class="main-dropdown__btn"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <ul class="main-dropdown__nav">
+                    <li><a href="./news.html">Новости</a></li>
+                    <li><a href="./photos.html">Фотогалерея</a></li>
+                    <li><a href="./videos.html">Видеогалерея</a></li>
+                    <li><a href="./catalogs-pdf.html">Каталоги PDF</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="division-carousel">
+    <div class="container">
+        <div class="division-carousel__box">
+
+            <div class="production-nav production-nav_service" data-division-carousel-content="1">
+                <div class="production-nav__backside">
+                    <img class="production-nav__logo" src="../images/banner/repair-service.png" alt="sleeves-logo">
+                </div>
+                <div class="production-nav__front">
+                    <h3 class="production-nav__title">
+                        Ремонт и сервисное
+                        обслуживание
+                        карьерной
+                        строительной
+                        и дорожной
+                        техники
+                    </h3>
+                    <ul class="production-nav__list">
+                        <li><a href="#">Шиномонтажное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для снятия<br> и установки колес</a></li>
+                        <li><a href="#">Самоходное<br> многофункциональное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для подъема<br> и вывешивания техники</a></li>
+                        <li><a href="#">Оборудование для<br> ремонта и обслуживания<br> заднего моста и ГМП</a></li>
+                    </ul>
+                    <div class="production-nav__action">
+                        <a href="#">
+                            <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="production-nav production-nav_hydraulic" data-division-carousel-content="2">
+                <div class="production-nav__backside">
+                    <img class="production-nav__logo" src="../images/banner/hydraulic-icon.png" alt="hydraulic-logo">
+                </div>
+                <div class="production-nav__front">
+                    <h3 class="production-nav__title">
+                        Решения
+                        в области раздачи,
+                        перекачивания и
+                        транспортирования
+                        гидравлической
+                        жидкости и смазки
+                    </h3>
+                    <ul class="production-nav__list">
+                        <li><a href="#">Шиномонтажное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для снятия<br> и установки колес</a></li>
+                        <li><a href="#">Самоходное<br> многофункциональное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для подъема<br> и вывешивания техники</a></li>
+                        <li><a href="#">Оборудование для<br> ремонта и обслуживания<br> заднего моста и ГМП</a></li>
+                    </ul>
+                    <div class="production-nav__action">
+                        <a href="#">
+                            <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="production-nav production-nav_mechanization" data-division-carousel-content="3">
+                <div class="production-nav__backside">
+                    <img class="production-nav__logo" src="../images/banner/mechanization-icon.png" alt="-mechanization-logo">
+                </div>
+                <div class="production-nav__front">
+                    <h3 class="production-nav__title">
+                        Промышленный
+                        гидравлический
+                        инструмент
+                        и средства малой
+                        механизации
+                    </h3>
+                    <ul class="production-nav__list">
+                        <li><a href="#">Шиномонтажное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для снятия<br> и установки колес</a></li>
+                        <li><a href="#">Самоходное<br> многофункциональное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для подъема<br> и вывешивания техники</a></li>
+                        <li><a href="#">Оборудование для<br> ремонта и обслуживания<br> заднего моста и ГМП</a></li>
+                    </ul>
+                    <div class="production-nav__action">
+                        <a href="#">
+                            <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="production-nav production-nav_sleeves" data-division-carousel-content="4">
+                <div class="production-nav__backside">
+                    <img class="production-nav__logo" src="../images/banner/sleeves-icon.png" alt="sleeves-logo">
+                    <img class="production-nav__sub-logo" src="../images/banner/bear.png" alt="bear">
+                </div>
+                <div class="production-nav__front">
+                    <h3 class="production-nav__title">
+                        Рукава<br>
+                        высокого давления,<br>
+                        компоненты<br>
+                        гидросистем,<br>
+                        оборудование для<br>
+                        производства РВД
+                    </h3>
+                    <ul class="production-nav__list">
+                        <li><a href="#">Шиномонтажное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для снятия<br> и установки колес</a></li>
+                        <li><a href="#">Самоходное<br> многофункциональное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для подъема<br> и вывешивания техники</a></li>
+                        <li><a href="#">Оборудование для<br> ремонта и обслуживания<br> заднего моста и ГМП</a></li>
+                    </ul>
+                    <div class="production-nav__action">
+                        <a href="#">
+                            <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="production-nav production-nav_equipment" data-division-carousel-content="5">
+                <div class="production-nav__backside">
+                    <img class="production-nav__logo" src="../images/banner/equipment-icon.png" alt="equipment-logo">
+                </div>
+                <div class="production-nav__front">
+                    <h3 class="production-nav__title">
+                        Оборудование<br>
+                        для ремонта<br>
+                        и обслуживания<br>
+                        карьерной<br>
+                        и строительной<br>
+                        техники
+                    </h3>
+                    <ul class="production-nav__list">
+                        <li><a href="#">Шиномонтажное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для снятия<br> и установки колес</a></li>
+                        <li><a href="#">Самоходное<br> многофункциональное<br> оборудование</a></li>
+                        <li><a href="#">Оборудование<br> для подъема<br> и вывешивания техники</a></li>
+                        <li><a href="#">Оборудование для<br> ремонта и обслуживания<br> заднего моста и ГМП</a></li>
+                    </ul>
+                    <div class="production-nav__action">
+                        <a href="#">
+                            <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="division-nav">
+                <div class="division-nav-item division-nav-item_service" data-division-carousel-nav-item="1">
+                    <div class="division-nav-item__helper">
+                        <img src="../images/banner/repair-service.png" alt="repair-service">
+                        <p>Ремонт и сервисное
+                            обслуживание
+                            карьерной
+                            строительной
+                            и дорожной
+                            техники
+                        </p>
+                    </div>
+                </div>
+                <div class="division-nav-item division-nav-item_hydraulic" data-division-carousel-nav-item="2">
+                    <div class="division-nav-item__helper">
+                        <img src="../images/banner/hydraulic-icon.png" alt="hydraulic-icon">
+                        <p>Решения
+                            в области раздачи,
+                            перекачивания и
+                            транспортирования
+                            гидравлической
+                            жидкости и смазки
+                        </p>
+                    </div>
+                </div>
+                <div class="division-nav-item division-nav-item_mechanization" data-division-carousel-nav-item="3">
+                    <div class="division-nav-item__helper">
+                        <img src="../images/banner/mechanization-icon.png" alt="mechanization-icon">
+                        <p>Промышленный
+                            гидравлический
+                            инструмент
+                            и средства малой
+                            механизации
+                        </p>
+                    </div>
+                </div>
+                <div class="division-nav-item division-nav-item_sleeves" data-division-carousel-nav-item="4">
+                    <div class="division-nav-item__helper">
+                        <img src="../images/banner/sleeves-icon.png" alt="sleeves-icon">
+                        <p>Рукава
+                            высокого давления,
+                            компоненты
+                            гидросистем,
+                            оборудование для
+                            произвоства РВД
+                        </p>
+                    </div>
+                </div>
+                <div class="division-nav-item division-nav-item_equipment" data-division-carousel-nav-item="5">
+                    <div class="division-nav-item__helper">
+                        <img src="../images/banner/equipment-icon.png" alt="equipment-icon">
+                        <p>Оборудование
+                            для ремонта
+                            и обслуживания
+                            карьерной
+                            и строительной
+                            техники
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
