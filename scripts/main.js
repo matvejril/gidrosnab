@@ -1,9 +1,7 @@
 window.onload = function () {
     require('./helpers');
     require('./division-carousel');
-    // require('./feedback-validate');
-    // require('./tab');
-    // require('./cases-nav');
+    require('./popups');
 
     // Инициализация сладера на index
     var ourAdvantagesSlider = $('.our-advantages-slider');

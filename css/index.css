@@ -2807,7 +2807,7 @@ template {
   }
 }
 .header {
-  padding: 13px 0 20px 0;
+  padding: 10px 0 20px 0;
   margin: 0;
   background-color: #e6e6e6;
 }
@@ -3450,6 +3450,122 @@ template {
     display: none;
   }
 }
+.popup-confidentiality {
+  width: 498px;
+  height: 436px;
+  padding: 50px 58px 10px 60px;
+  border: 1px solid #505f73;
+  position: absolute;
+  top: 35.5%;
+  left: 48.3%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.popup-confidentiality input {
+  display: inline-block;
+  padding: 2px 10px 0 10px;
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  border: 2px solid #B3B3B3;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.popup-confidentiality input::placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input::-webkit-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input:-ms-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input:-ms-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input:-ms-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input:-ms-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input:-ms-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality input:-ms-input-placeholder {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+.popup-confidentiality label {
+  display: inline-block;
+  width: calc(100% - 170px);
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+}
+.popup-confidentiality__form {
+  display: block;
+  margin: 0 auto 22px auto;
+}
+.popup-confidentiality__form:last-child {
+  margin-bottom: 0;
+}
+.popup-confidentiality__name {
+  width: 100%;
+  margin-bottom: 33px;
+}
+.popup-confidentiality__phone {
+  width: 100%;
+  margin-bottom: 33px;
+}
+.popup-confidentiality__email {
+  width: 100%;
+  margin-bottom: 33px;
+}
+.popup-confidentiality__compliance {
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+.popup-confidentiality__info {
+  margin-left: 50px;
+}
+.popup-confidentiality__info p {
+  line-height: 1.05;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+.popup-confidentiality__info a {
+  text-decoration: underline;
+}
+.popup-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
 .logo {
   padding: 0;
   margin: 0;
@@ -3576,6 +3692,7 @@ template {
   border: none;
   background-color: transparent;
   outline: none;
+  vertical-align: middle;
 }
 .call-request__icon img {
   fill: #ffb600;
@@ -3586,9 +3703,11 @@ template {
   cursor: pointer;
 }
 .call-request__phone {
+  margin-top: -5px;
   margin-left: 10px;
   display: inline-block;
   white-space: normal;
+  vertical-align: top;
 }
 .call-request__phone a {
   margin: 8px 0 10px 0;
@@ -3599,6 +3718,8 @@ template {
 }
 .call-request__phone button {
   padding: 0;
+  margin-top: 8px;
+  margin-left: 4px;
   border: none;
   background: transparent;
   font-family: Arial, sans-serif;
@@ -3607,40 +3728,46 @@ template {
   outline: none;
 }
 .call-request_header {
-  margin-top: 15px;
+  margin-top: 30px;
   margin-left: 15px;
 }
 .call-request_footer {
-  margin: -12px -16px 18px 0;
+  margin: 2px -16px 18px 0;
   display: inline-block;
   text-align: left;
 }
 .call-request_footer p {
   font-weight: bold;
 }
-.call-request_equipment p {
+.call-request_equipment a {
   color: #d67e29;
 }
-.call-request_equipment a {
+.call-request_equipment button {
   color: #505f73;
 }
-.call-request_sleeves p {
+.call-request_sleeves a {
   color: #4477b9;
 }
-.call-request_sleeves a {
+.call-request_sleeves button {
   color: #ff5c00;
-}
-.call-request_hydraulic p {
-  color: #2d4691;
 }
 .call-request_hydraulic a {
+  color: #2d4691;
+}
+.call-request_hydraulic button {
   color: #ff5c00;
 }
-.call-request_mechanization p {
+.call-request_mechanization a {
   color: #cb5329;
 }
-.call-request_mechanization a {
+.call-request_mechanization button {
   color: #516073;
+}
+.call-request_services a {
+  color: #717171;
+}
+.call-request_services button {
+  color: #ff5f05;
 }
 @media all and (max-width: 768px) {
   .call-request {
