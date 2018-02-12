@@ -3,29 +3,39 @@
   white-space: nowrap;
   &__icon {
     display: inline-block;
+    padding: 0;
     margin-left: 0;
-    pointer-events: none;
-    cursor: default;
+    border: none;
+    background-color: transparent;
+    outline: none;
     img {
       fill: #ffb600;
       width: 100%;
       display: inline-block;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   &__phone {
     margin-left: 10px;
     display: inline-block;
-    p {
+    white-space: normal;
+    a {
       margin: 8px 0 10px 0;
       font-family: Arial, sans-serif;
       font-size: 40px;
       color: #505F73;
       white-space: nowrap;
     }
-    a {
+    button {
+      padding: 0;
+      border: none;
+      background: transparent;
       font-family: Arial, sans-serif;
       font-size: 22px;
       color: #ff5c00;
+      outline: none;
     }
   }
 
@@ -91,13 +101,13 @@
     &__phone {
       margin: -4px 0 0 6px;
       vertical-align: top;
-      p {
+      a {
         margin: 0 0 3px 0;
         font-size: 25px;
       }
-      a {
+      button {
         margin: 0;
-        font-size: 16px;
+        font-size: 17px;
       }
     }
     &_header {
@@ -114,7 +124,7 @@
         width: 61px;
       }
       .call-request__phone {
-        p {
+        a {
           font-size: 32px;
           margin-bottom: 8px;
         }

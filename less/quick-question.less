@@ -1,0 +1,36 @@
+.quick-question {
+  position: fixed;
+  top: 22%;
+  right: 0;
+  height: 94px;
+  width: 117px;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+  background: url(../images/quick-logo.jpg) no-repeat left center #ff5c00;
+  background-origin: content-box;
+  opacity: 0.85;
+  z-index: 10;
+
+  -webkit-transition:  opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    border: 47px solid transparent;
+    border-right: 30px solid #ff5c00;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .quick-question {
+    display: none;
+  }
+}

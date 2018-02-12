@@ -1,29 +1,70 @@
 .logo {
   padding: 0;
   margin: 0;
-  &__img-mobile {
-    display: none;
+  &__img {
+    width: 121px;
+    height: auto;
+    vertical-align: middle;
   }
-  &__img-main {
-    width: 476px;
+  &__caption {
+    width: calc(~'100% - 130px');
+    margin: 15px 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__name {
+    font-family: Ariblk, sans-serif;
+    font-size: 50px;
+    color: #505F73;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+  }
+
+  &__slogan {
+    font-family: ArialN, sans-serif;
+    font-size: 13px;
+    color: #505F73;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: -0.8px;
+    font-weight: 600;
   }
 }
 
 @media all and (max-width: 768px) {
   .logo {
-    &__img-main {
-      width: 284px;
+    &__img {
+      width: 72px;
+    }
+    &__caption {
+      width: calc(~'100% - 81px');
+    }
+    &__name {
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+    &__slogan {
+      font-size: 8.5px;
     }
   }
 }
 
 @media all and (max-width: 320px) {
   .logo {
-    &__img-mobile {
-      width: 190px;
-      display: inline-block;
+    &__img {
+      width: 46px;
     }
-    &__img-main {
+    &__caption {
+      width: calc(~'100% - 50px');
+      margin: 0;
+    }
+    &__name {
+      font-size: 20px;
+      margin: 0;
+    }
+    &__slogan {
       display: none;
     }
   }
