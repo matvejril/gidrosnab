@@ -109,6 +109,117 @@
     }
 }
 
+.mobile-popup {
+    width: 305px;
+    height: 310px;
+    padding: 11px 10px 10px 15px;
+    border: 1px solid #505f73;
+    position: absolute;
+    top: 43.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: block;
+    input {
+        padding: 7px 3px 6px 3px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #797979;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    label {
+        width: calc(~'100% - 25px');
+        margin: 0 0 11px -4px;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.1;
+        font-weight: 700;
+        vertical-align: top;
+    }
+
+    &__form {
+
+    }
+
+    &__head {
+        position: relative;
+    }
+    &__title {
+        margin: 0 0 19px 0;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: #000000;
+    }
+
+    &__close {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 23px;
+        padding: 0;
+    }
+
+    &__phone {
+        width: 100%;
+        margin-bottom: 19px;
+    }
+
+    &__name {
+        width: 100%;
+        margin-bottom: 19px;
+    }
+
+    &__compliance {
+        width: 20px;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.1;
+        font-weight: 700;
+        vertical-align: top;
+    }
+
+    &__info {
+        font-family: Arial, sans-serif;
+        margin-left: 16px;
+        font-size: 9px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+        p {
+            margin: 0;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    &__submit {
+        padding: 10px 0 8px 0;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #000000;
+        border-radius: 4px;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+
+
+
 .popup-wrap {
     display: none;
     position: fixed;
