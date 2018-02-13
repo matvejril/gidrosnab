@@ -41,7 +41,7 @@
                 </button>
                 <div class="call-request__phone">
                     <a href="tel:01234567890">(383) 363-66-00</a>
-                    <button>Заказать звонок</button>
+                    <button class="call-request__btn">Заказать звонок</button>
                 </div>
             </div>
 
@@ -194,14 +194,13 @@
                 </div>
             </div>
             <div class="footer__contact-us">
-
                 <div class="call-request call-request_footer">
                     <button class="call-request__icon">
                         <img src="../images/call-request/phone-icon-main.png" alt="phone-icon">
                     </button>
                     <div class="call-request__phone">
                         <a href="tel:01234567890">(383) 363-66-00</a>
-                        <button>Заказать звонок</button>
+                        <button class="call-request__btn">Заказать звонок</button>
                     </div>
                 </div>
                 <ul class="social"><li><a class="social__twitter" href="#"></a></li><li><a class="social__tumblr" href="#"></a></li><li><a class="social__vk" href="#"></a></li><li><a class="social__facebook" href="#"></a></li><li><a class="social__gplus" href="#"></a></li><li><a class="social__insta" href="#"></a></li><li><a class="social__youtube" href="#"></a></li><li><a class="social__whatsapp" href="#"></a></li>
@@ -217,24 +216,47 @@
     </div>
 </footer>
 
-<div class="popup-wrap">
-    <div class="popup-confidentiality">
-        <form class="popup-confidentiality__form" action="#" method="post">
-            <input class="popup-confidentiality__name" type="text" placeholder="Имя" name="catalog-popup-name">
-            <input class="popup-confidentiality__phone" type="text" placeholder="Телефон" name="catalog-popup-phone">
-            <input class="popup-confidentiality__email" type="text" placeholder="E-mail" name="catalog-popup-mail">
-            <input id="confidentiality-compliance" class="popup-confidentiality__compliance" type="checkbox" name="catalog-popup-compliance">
-            <label for="confidentiality-compliance">Согласен на обработку персональных данных</label>
-        </form>
-        <div class="popup-confidentiality__info">
-            <p>Ставя отметку, я даю свое согласие на обработку моих персональных данных в соответствии с законом
-                №152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Политики конфиденциальности</a>
-            </p>
+
+<div class="popup-conf">
+    <div class="popup-conf__window">
+        <div class="popup-conf__content">
+            <form class="popup-conf__form" action="#" method="post">
+                <input class="popup-conf__name" type="text" placeholder="Имя" name="catalog-popup-name">
+                <input class="popup-conf__phone" type="text" placeholder="Телефон" name="catalog-popup-phone">
+                <input class="popup-conf__email" type="text" placeholder="E-mail" name="catalog-popup-mail">
+                <input id="conf-compliance" class="popup-conf__compliance" type="checkbox" name="catalog-popup-compliance">
+                <label for="conf-compliance">Согласен на обработку персональных данных</label>
+                <p class="popup-conf__info">Ставя отметку, я даю свое согласие на обработку моих персональных данных в соответствии с законом
+                    №152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Политики конфиденциальности</a>
+                </p>
+            </form>
         </div>
     </div>
 </div>
-
-
+<div class="popup-mobile">
+    <div class="popup-mobile__window">
+        <div class="popup-mobile__head">
+            <h3 class="popup-mobile__title">
+                Форма заказа звонка
+            </h3>
+            <button class="popup-mobile__close">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="popup-mobile__content">
+            <form class="popup-mobile__form" action="#" method="post">
+                <input class="popup-mobile__phone" type="text" placeholder="Телефон" name="popup-mobile-phone">
+                <input class="popup-mobile__name" type="text" placeholder="Имя" name="popup-mobile-phone">
+                <input id="mobile-compliance" class="popup-mobile__compliance" type="checkbox" name="popup-mobile-compliance">
+                <label for="mobile-compliance">Согласен на обработку персональных данных</label>
+                <p class="popup-mobile__info">Ставя отметку, я даю свое согласие на обработку моих персональных данных в соответствии с законом
+                    №152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Политики конфиденциальности</a>
+                </p>
+                <button class="popup-mobile__submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
