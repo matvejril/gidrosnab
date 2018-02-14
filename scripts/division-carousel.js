@@ -1,4 +1,6 @@
 (function() {
+    console.log(window.location);
+    console.log(window.location.hash.substring(1));
     var divisionNavItems = document.querySelectorAll('.division-nav-item');
     var productionNavItems = document.querySelectorAll('.production-nav');
     for (var i = 0; i < divisionNavItems.length; i++) {

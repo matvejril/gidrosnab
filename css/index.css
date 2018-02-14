@@ -2850,9 +2850,8 @@ template {
   text-transform: uppercase;
   display: block;
 }
-.main-nav__item_active {
-  font-family: "Arial Narrow", sans-serif;
-  font-weight: bold;
+.main-nav__item_active a {
+  font-family: "Arial Black", sans-serif;
 }
 .main-nav__mini-btn {
   display: none;
