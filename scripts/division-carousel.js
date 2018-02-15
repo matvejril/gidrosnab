@@ -1,14 +1,32 @@
 (function() {
-    console.log(window.location);
-    console.log(window.location.hash.substring(1));
+    var carouselPageHash = window.location.hash;
+    var carouselPageHashValue = carouselPageHash.substring(1);
+
     var divisionNavItems = document.querySelectorAll('.division-nav-item');
     var productionNavItems = document.querySelectorAll('.production-nav');
+
     for (var i = 0; i < divisionNavItems.length; i++) {
         divisionNavItems[i].addEventListener('click', changeSlide);
     }
+
+    if (carouselPageHash) {
+        setState ();
+    }
+
+    function setState () {
+        changeSlide();
+        removeHash ();
+    }
+
     function changeSlide() {
-        var clickedSlide = this;
-        var clickedSlideAttr = clickedSlide.getAttribute('data-division-carousel-nav-item');
+        var clickedSlideAttr;
+        var carouselPageHash = window.location.hash;
+        if (carouselPageHash) {
+            clickedSlideAttr = carouselPageHashValue;
+        } else {
+            var clickedSlide = this;
+            clickedSlideAttr = clickedSlide.getAttribute('data-division-carousel-nav-item');
+        }
         var attrValueAdd = (5 - clickedSlideAttr);
         if (clickedSlideAttr) {
             for (var z = 0; z < divisionNavItems.length; z++) {
@@ -21,6 +39,7 @@
             }
             changeProdNav();
         }
+
     }
     function changeProdNav() {
         for (var i = 0; i < productionNavItems.length; i++) {
@@ -32,4 +51,10 @@
             }
         }
     }
+
+    function removeHash () {
+        history.pushState("", document.title, window.location.pathname
+            + window.location.search);
+    }
+
 }());
