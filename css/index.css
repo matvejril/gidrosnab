@@ -4817,8 +4817,10 @@ template {
   }
 }
 .division-carousel {
+  min-height: 81vh;
   padding: 55px 0 55px 0;
   background: url(../images/banner/banner-bg.jpg) no-repeat center top;
+  box-sizing: border-box;
 }
 .division-carousel__box {
   width: 89.5%;
@@ -4850,12 +4852,13 @@ template {
 }
 .production-nav__front {
   width: 53%;
-  padding: 80px 0 0 48px;
+  padding: 80px 0 0 34px;
   margin: 0;
   background-color: #ffffff;
   box-sizing: border-box;
 }
 .production-nav__title {
+  padding-right: 15px;
   margin: 0 0 46px 0;
   font-family: Arial, sans-serif;
   font-size: 30px;
@@ -5166,7 +5169,9 @@ template {
   display: none;
 }
 .catalog {
+  min-height: 81vh;
   padding: 0 0 37px;
+  box-sizing: border-box;
 }
 .catalog__logo {
   white-space: nowrap;
@@ -6334,6 +6339,8 @@ template {
 .contacts {
   padding: 45px 0 40px 0;
   display: flex;
+  min-height: 81vh;
+  box-sizing: border-box;
   justify-content: space-between;
 }
 @media all and (max-width: 320px) {
@@ -6474,6 +6481,8 @@ template {
 }
 .catalogs-pdf {
   padding: 101px 0 40px;
+  min-height: 81vh;
+  box-sizing: border-box;
 }
 .catalogs-pdf__title {
   margin: -37px 0 20px 0;
@@ -6745,7 +6754,9 @@ template {
   }
 }
 .news-page {
+  min-height: 81vh;
   padding: 63px 0 40px;
+  box-sizing: border-box;
 }
 .news-page__box {
   display: flex;
@@ -6850,6 +6861,8 @@ template {
 }
 .photos-page {
   padding: 101px 0 45px;
+  min-height: 81vh;
+  box-sizing: border-box;
 }
 .photos-page__title {
   margin: -38px 0 46px 0;
@@ -7034,6 +7047,8 @@ template {
 }
 .videos-page {
   padding: 103px 0 44px;
+  min-height: 81vh;
+  box-sizing: border-box;
 }
 .videos-page__title {
   margin: -40px 0 47px 0;
