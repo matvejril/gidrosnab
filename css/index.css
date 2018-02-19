@@ -2974,6 +2974,7 @@ template {
     font-weight: normal;
   }
   .main-sub-nav__item a {
+    font-family: Arial, sans-serif;
     font-size: 12px;
     padding: 10px 5px 10px 15%;
   }
@@ -4549,13 +4550,13 @@ template {
   }
 }
 .our-partners-slider {
-  padding: 22px 0 12px 0;
+  padding: 22px 0 25px 0;
   background-color: #e6e6e6;
   margin-bottom: 5px;
 }
 .our-partners-slider__title {
   width: 96%;
-  margin: 0 auto 2px auto;
+  margin: 0 auto 10px auto;
   font-family: "Arial Narrow", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -4675,13 +4676,13 @@ template {
   }
 }
 .our-clients-slider {
-  padding: 22px 0 12px 0;
+  padding: 22px 0 35px 0;
   margin-bottom: 30px;
   background-color: #e6e6e6;
 }
 .our-clients-slider__title {
   width: 96%;
-  margin: 0 auto 2px auto;
+  margin: 0 auto 10px auto;
   font-family: "Arial Narrow", sans-serif;
   text-transform: uppercase;
   color: #ffffff;

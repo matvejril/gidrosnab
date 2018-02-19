@@ -82,4 +82,57 @@
             $(this).next().slideToggle(300);
         }
     }
+
+    // Слайдеры ресайз изображений
+    var ourPartnersSliderImg = document.querySelectorAll(".our-partners-slider__slide-img");
+    var ourClientsSliderImg = document.querySelectorAll(".our-clients-slider__slide-img");
+    for (var i = 0; i < ourPartnersSliderImg.length; i++) {
+        var ourPartnersSliderImgWidth = ourPartnersSliderImg[i].naturalWidth;
+        if (ourPartnersSliderImgWidth < 160) {
+            ourPartnersSliderImg[i].style.width = 45 + '%';
+        }
+    }
+    for (var z = 0; z < ourClientsSliderImg.length; z++) {
+        var ourClientsSliderImgWidth = ourClientsSliderImg[z].naturalWidth;
+        if (ourClientsSliderImgWidth < 250) {
+            ourClientsSliderImg[z].style.width = 55 + '%';
+        }
+    }
+
+    // о кмпании main sub-nav mobile links
+    var anchorPosts = document.querySelectorAll('.anchor_item');
+    var mainNavHashLink = window.location.hash;
+    var mainNavHashLinkValue = mainNavHashLink.substring(1);
+    var subnavItemBtn = document.querySelectorAll('.main-sub-nav__item');
+
+    for (var t = 0; t < subnavItemBtn.length; t++) {
+        subnavItemBtn[t].addEventListener('click', changeAboutUsContent);
+    }
+
+    function changeAboutUsContent() {
+
+        // location.reload();
+        if (screen.width < 768) {
+            for (var j = 0; j < anchorPosts.length; j++) {
+                if (anchorPosts[j].id === mainNavHashLinkValue) {
+                    anchorPosts[j].style.display = 'block';
+                    console.log(anchorPosts[j].id);
+                    console.log(mainNavHashLinkValue);
+                } else {
+                    anchorPosts[j].style.display = 'none';
+                    console.log('id', anchorPosts[j].id);
+                    console.log('hash', mainNavHashLinkValue);
+                }
+            }
+        }
+    }
+
+    // Сбросить секции
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            for (var z = 0; z < anchorPosts.length; z++) {
+                anchorPosts[z].style.display = 'block';
+            }
+        }
+    });
 }());

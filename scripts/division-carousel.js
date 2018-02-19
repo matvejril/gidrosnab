@@ -1,4 +1,5 @@
 (function() {
+    var divisionCarousel = document.querySelector('.division-carousel');
     var carouselPageHash = window.location.hash;
     var carouselPageHashValue = carouselPageHash.substring(1);
 
@@ -9,7 +10,7 @@
         divisionNavItems[i].addEventListener('click', changeSlide);
     }
 
-    if (carouselPageHash) {
+    if (divisionCarousel && carouselPageHash) {
         setState ();
     }
 
