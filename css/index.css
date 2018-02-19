@@ -4200,6 +4200,7 @@ template {
     line-height: 1.25;
   }
   .our-advantages-slider .our-advantages-slide__helper span {
+    margin-left: 0;
     font-size: 18px;
   }
   .our-advantages-slider .slick-prev {

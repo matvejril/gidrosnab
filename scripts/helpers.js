@@ -101,27 +101,21 @@
 
     // о кмпании main sub-nav mobile links
     var anchorPosts = document.querySelectorAll('.anchor_item');
-    var mainNavHashLink = window.location.hash;
-    var mainNavHashLinkValue = mainNavHashLink.substring(1);
-    var subnavItemBtn = document.querySelectorAll('.main-sub-nav__item');
+    var hash = window.location.hash.substring(1);
 
-    for (var t = 0; t < subnavItemBtn.length; t++) {
-        subnavItemBtn[t].addEventListener('click', changeAboutUsContent);
-    }
+    changeContentAboutUs(hash);
+    window.addEventListener("hashchange", function(e) {
+        var hash = window.location.hash.substring(1);
+        changeContentAboutUs(hash);
+    }, false);
 
-    function changeAboutUsContent() {
-
-        // location.reload();
+    function changeContentAboutUs(hash) {
         if (screen.width < 768) {
             for (var j = 0; j < anchorPosts.length; j++) {
-                if (anchorPosts[j].id === mainNavHashLinkValue) {
+                if (anchorPosts[j].id === hash) {
                     anchorPosts[j].style.display = 'block';
-                    console.log(anchorPosts[j].id);
-                    console.log(mainNavHashLinkValue);
                 } else {
                     anchorPosts[j].style.display = 'none';
-                    console.log('id', anchorPosts[j].id);
-                    console.log('hash', mainNavHashLinkValue);
                 }
             }
         }
