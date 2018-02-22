@@ -3146,6 +3146,7 @@ template {
   padding: 18px 0 18px 0;
   background: url(../images/banner/banner-bg.jpg) no-repeat top;
   display: block;
+  background-size: cover;
 }
 .banner-md {
   padding: 10px 0 10px 0;
@@ -3681,6 +3682,7 @@ template {
 .logo {
   padding: 0;
   margin: 0;
+  white-space: nowrap;
 }
 .logo__img {
   width: 121px;
@@ -4463,6 +4465,7 @@ template {
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+  white-space: nowrap;
 }
 .about-company-sm__title p {
   position: relative;
@@ -5731,6 +5734,7 @@ template {
   margin-top: 4px;
   max-width: 376px;
   box-sizing: border-box;
+  display: none;
 }
 .about-company-nav__title {
   margin: 0 0 15px 0;
@@ -6557,7 +6561,6 @@ template {
 .catalogs-pdf-nav {
   width: 27.5%;
   min-width: 414px;
-  border-right: 1px solid #bdbdbd;
   padding-right: 10px;
   box-sizing: border-box;
   text-align: right;
@@ -6665,6 +6668,7 @@ template {
   flex-wrap: wrap;
   list-style-type: none;
   border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
 }
 @media all and (max-width: 320px) {
   .catalogs-pdf-list {
@@ -6943,7 +6947,6 @@ template {
   min-width: 410px;
   padding-right: 38px;
   box-sizing: border-box;
-  border-right: 1px solid #bdbdbd;
 }
 .photos-page-nav__list {
   margin: 0;
@@ -6977,6 +6980,7 @@ template {
   flex-wrap: wrap;
   list-style-type: none;
   border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
 }
 @media all and (max-width: 320px) {
   .photos-page-list {
@@ -7129,7 +7133,6 @@ template {
   min-width: 410px;
   padding-right: 38px;
   box-sizing: border-box;
-  border-right: 1px solid #bdbdbd;
 }
 .videos-page-nav__list {
   margin: 0;
@@ -7163,6 +7166,7 @@ template {
   flex-wrap: wrap;
   list-style-type: none;
   border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
 }
 @media all and (max-width: 320px) {
   .videos-page-list {

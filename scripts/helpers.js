@@ -57,6 +57,28 @@
     });
 
 
+    // Выпадашка about company навигации для десктоп
+    var aboutCompanyNav = document.querySelector('.about-company-nav');
+    var mainNavAboutCompany = document.querySelector('.main-nav__item_about-company');
+
+    if (aboutCompanyNav && $(window).width() > 768) {
+        setTimeout(eventee, 1000);
+
+        function eventee () {
+            mainNavAboutCompany.addEventListener('mouseover', function() {
+                aboutCompanyNav.style.display = 'block';
+            })
+        }
+    }
+
+
+    $(window).resize(function () {
+        if ($(window).width() < 768 && aboutCompanyNav) {
+            aboutCompanyNav.style.display = 'none';
+        }
+    });
+
+
     // Аккордеон навигация банера mobile
     if (accBannerNav) {
         $(document).ready(function() {
@@ -120,7 +142,6 @@
             }
         }
     }
-
     // Сбросить секции
     $(window).resize(function () {
         if ($(window).width() > 768) {
