@@ -46,15 +46,15 @@
             $('.main-nav').removeAttr('style');
         }
     });
-    // // Выпадашка основной навигации для мобилки (about company)
-    $('.main-sub-nav__head').click(function() {
-        $('.main-sub-nav__list').slideToggle(500);
-    });
-    $(window).resize(function() {
-        if ($(window).width() > 768) {
-            $('.main-sub-nav__list').removeAttr('style');
-        }
-    });
+    // Выпадашка основной навигации для мобилки (about company)
+    // $('.main-sub-nav__head').click(function() {
+    //     $('.main-sub-nav__list').slideToggle(500);
+    // });
+    // $(window).resize(function() {
+    //     if ($(window).width() > 768) {
+    //         $('.main-sub-nav__list').removeAttr('style');
+    //     }
+    // });
 
 
     // Выпадашка about company навигации для десктоп

@@ -15,15 +15,9 @@
       color: #ffffff;
       text-transform: uppercase;
       display: block;
-      //&:hover {
-      //  background-color: #4b596b;
-      //}
     }
   }
   &__item_active {
-    //font-weight: 800;
-    //font-family: "Arial Narrow", sans-serif;
-    //font-weight: bold;
     a {
       font-family: "Arial Black", sans-serif;
     }
@@ -56,26 +50,53 @@
 }
 
 .main-sub-nav {
-  &__head {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 376px;
+  box-sizing: border-box;
+  &__title {
+    display: inline-block;
     margin: 0;
-    padding: 14px 5px 14px 12px;
     font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: #ffffff;
+    font-size: 22px;
     text-transform: uppercase;
+    color: #ffffff;
+    background: transparent;
+    border: none;
     &:hover {
       cursor: pointer;
     }
   }
   &__list {
-    padding-left: 20px;
+    width: 340px;
+    border: 1px solid #87919f;
+    background-color: #505f73;
+    position: absolute;
+    padding: 0;
     list-style-type: none;
+    z-index: 3;
+    text-align: left;
+    display: none;
   }
   &__item {
+    display: block;
+    margin-bottom: 0;
+    font-size: 19px;
+    text-transform: uppercase;
     a {
-      padding: 10px 5px 10px 12px;
+      font-family: Arial, sans-serif;
+      padding: 7px 5px 7px 24px;
+      font-size: 18px;
+      &:hover {
+        opacity: 0.8;
+      }
     }
-    font-size: 10px;
+  }
+  &:hover {
+    .main-sub-nav__list {
+      display: block;
+    }
   }
 }
 
@@ -110,9 +131,6 @@
     }
   }
   &:hover {
-    .main-dropdown__btn {
-      //background-color: #4d5b6e;
-    }
     .main-dropdown__nav {
       display: block;
     }
@@ -123,7 +141,7 @@
   display: inline-block;
 }
 .main-sub-nav {
-  display: none;
+  //display: none;
 }
 
 
@@ -160,7 +178,7 @@
       border-bottom: 1px solid #465465;
     }
     &__list {
-      display: none;
+      //display: none;
     }
     &__item {
       font-weight: normal;

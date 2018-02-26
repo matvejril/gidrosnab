@@ -2878,26 +2878,53 @@ template {
 .main-nav_services {
   background-color: #717171;
 }
-.main-sub-nav__head {
+.main-sub-nav {
+  position: relative;
+  padding: 0;
   margin: 0;
-  padding: 14px 5px 14px 12px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #ffffff;
-  text-transform: uppercase;
+  max-width: 376px;
+  box-sizing: border-box;
 }
-.main-sub-nav__head:hover {
+.main-sub-nav__title {
+  display: inline-block;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+}
+.main-sub-nav__title:hover {
   cursor: pointer;
 }
 .main-sub-nav__list {
-  padding-left: 20px;
+  width: 340px;
+  border: 1px solid #87919f;
+  background-color: #505f73;
+  position: absolute;
+  padding: 0;
   list-style-type: none;
+  z-index: 3;
+  text-align: left;
+  display: none;
 }
 .main-sub-nav__item {
-  font-size: 10px;
+  display: block;
+  margin-bottom: 0;
+  font-size: 19px;
+  text-transform: uppercase;
 }
 .main-sub-nav__item a {
-  padding: 10px 5px 10px 12px;
+  font-family: Arial, sans-serif;
+  padding: 7px 5px 7px 24px;
+  font-size: 18px;
+}
+.main-sub-nav__item a:hover {
+  opacity: 0.8;
+}
+.main-sub-nav:hover .main-sub-nav__list {
+  display: block;
 }
 .main-dropdown {
   position: relative;
@@ -2936,9 +2963,6 @@ template {
 .main-nav-md-hidden {
   display: inline-block;
 }
-.main-sub-nav {
-  display: none;
-}
 @media all and (max-width: 768px) {
   .main-nav {
     background-color: #505f73;
@@ -2966,9 +2990,6 @@ template {
     font-size: 14px;
     padding: 10px 5px 10px 15%;
     border-bottom: 1px solid #465465;
-  }
-  .main-sub-nav__list {
-    display: none;
   }
   .main-sub-nav__item {
     font-weight: normal;
