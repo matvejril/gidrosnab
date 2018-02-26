@@ -3147,10 +3147,12 @@ template {
   background: url(../images/banner/banner-bg.jpg) no-repeat top;
   display: block;
   background-size: cover;
+  flex: 1;
 }
 .banner-md {
   padding: 10px 0 10px 0;
   display: none;
+  flex: 1;
 }
 @media all and (max-width: 1536px) {
   .banner-lg {
@@ -5177,6 +5179,7 @@ template {
   min-height: 81vh;
   padding: 0 0 37px;
   box-sizing: border-box;
+  flex: 1;
 }
 .catalog__logo {
   white-space: nowrap;
@@ -6343,14 +6346,16 @@ template {
   }
 }
 .contacts {
+  flex: 1;
+}
+.contacts__box {
   padding: 45px 0 40px 0;
   display: flex;
-  min-height: 81vh;
   box-sizing: border-box;
   justify-content: space-between;
 }
 @media all and (max-width: 320px) {
-  .contacts {
+  .contacts__box {
     padding: 13px 0 10px 0;
     flex-wrap: wrap;
   }
@@ -6489,6 +6494,7 @@ template {
   padding: 101px 0 40px;
   min-height: 81vh;
   box-sizing: border-box;
+  flex: 1;
 }
 .catalogs-pdf__title {
   margin: -37px 0 20px 0;
@@ -6763,6 +6769,7 @@ template {
   min-height: 81vh;
   padding: 63px 0 40px;
   box-sizing: border-box;
+  flex: 1;
 }
 .news-page__box {
   display: flex;
@@ -6913,6 +6920,7 @@ template {
   .photos-page {
     width: 100%;
     padding: 0;
+    flex: 1;
   }
   .photos-page__box {
     flex-wrap: wrap;
@@ -7055,6 +7063,7 @@ template {
   padding: 103px 0 44px;
   min-height: 81vh;
   box-sizing: border-box;
+  flex: 1;
 }
 .videos-page__title {
   margin: -40px 0 47px 0;
@@ -7249,4 +7258,9 @@ textarea:hover {
 .wrap {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+}
+.body-wrap {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }

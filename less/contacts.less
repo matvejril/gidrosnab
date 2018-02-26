@@ -1,14 +1,19 @@
 .contacts {
-  padding: 45px 0 40px 0;
-  display: flex;
-  min-height: 81vh;
-  box-sizing: border-box;
-  justify-content: space-between;
+  flex: 1;
+  &__box {
+    padding: 45px 0 40px 0;
+    display: flex;
+    //min-height: 81vh;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
 }
 
 @media all and (max-width: 320px) {
   .contacts {
-    padding: 13px 0 10px 0;
-    flex-wrap: wrap;
+    &__box {
+      padding: 13px 0 10px 0;
+      flex-wrap: wrap;
+    }
   }
 }

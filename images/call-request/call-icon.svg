@@ -1,0 +1,31 @@
+<?xml-stylesheet href="../css/main.css" type="text/css"?>
+
+<svg class="red" xmlns="http://www.w3.org/2000/svg"
+     xml:space="preserve"
+     width="20.6943mm"
+     height="17.9249mm"
+     version="1.1"
+     style="shape-rendering:geometricPrecision;
+     text-rendering:geometricPrecision;
+     image-rendering:optimizeQuality;
+     fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 641 555"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <!--<style type="text/css">-->
+   <!--<![CDATA[-->
+    <!--.fil0 {fill:#505F73}-->
+   <!--]]>-->
+  <!--</style>-->
+ </defs>
+ <g>
+  <metadata/>
+  <path class="fil0" d="M165 0l311 0 5 0 2 5 155 268 3 5 -3 4 -155 269 -2 4 -5 0 -311 0 -5 0 -2 -4 -155 -269 -3 -4 3 -5
+  155 -268 2 -5 5 0zm21 448l8 6c5,3 49,30 80,25 2,0 4,-1 6,-1 40,-11 96,-67 140,-143 23,-38 40,-77 49,-112 8,-25 14,-61
+   5,-85 -11,-30 -56,-55 -61,-58l-9 -5 -69 118 40 23 -82 138 -39 -23 -68 117zm29 -7l47 -80 39 23 104 -176 -40 -23 47
+   -80c14,9 36,25 42,40 5,15 3,41 -6,72 -9,34 -25,71 -47,107 -40,69 -92,124 -127,133 -1,0 -2,0 -3,0 -16,3 -41,-8 -56,-16zm-21
+   -143l-21 6c-20,-74 25,-150 99,-169l5 21c-62,16 -99,80 -83,142zm49 -13l-21 6c-12,-47 16,-95 63,-107l5 21c-35,9 -56,45
+   -47,80zm227 -267l-300 0 -149 260 149 259 300 0 150 -259 -150 -260z"/>
+ </g>
+</svg>
+
