@@ -2807,9 +2807,13 @@ template {
   }
 }
 .header {
+  width: 100%;
   padding: 10px 0 20px 0;
   margin: 0;
   background-color: #e6e6e6;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
 .header-box {
   display: flex;
@@ -2830,7 +2834,11 @@ template {
   }
 }
 .main-nav {
+  width: 100%;
   background-color: #505f73;
+  position: fixed;
+  z-index: 100;
+  top: 137px;
 }
 .main-nav__list {
   padding: 0;
@@ -7265,6 +7273,10 @@ template {
   .videos-page-card {
     display: none;
   }
+}
+body {
+  position: relative;
+  padding-top: 178px;
 }
 a {
   text-decoration: none;
