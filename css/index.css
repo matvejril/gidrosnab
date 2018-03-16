@@ -2808,7 +2808,7 @@ template {
 }
 .header {
   width: 100%;
-  padding: 10px 0 20px 0;
+  padding: 10px 0 0 0;
   margin: 0;
   background-color: #e6e6e6;
   position: fixed;
@@ -2819,26 +2819,24 @@ template {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .header {
-    padding: 30px 0 35px 0;
+    padding: 30px 0 0 0;
   }
   .header-box {
     align-items: center;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .header {
-    padding: 8px 0 10px 0;
+    padding: 8px 0 0 0;
   }
 }
 .main-nav {
   width: 100%;
   background-color: #505f73;
-  position: fixed;
-  z-index: 100;
-  top: 137px;
 }
 .main-nav__list {
   padding: 0;
@@ -2971,7 +2969,7 @@ template {
 .main-nav-md-hidden {
   display: inline-block;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .main-nav {
     background-color: #505f73;
     display: none;
@@ -3028,7 +3026,7 @@ template {
     display: inline-block;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .main-nav__item a {
     padding: 14px 5px 14px 12px;
     font-size: 12px;
@@ -3114,7 +3112,7 @@ template {
   font-size: 16px;
   color: #505F73;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1179px) {
   .footer {
     padding-top: 25px;
   }
@@ -3141,7 +3139,7 @@ template {
     padding-top: 16px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .footer {
     padding-top: 8px;
   }
@@ -3290,7 +3288,7 @@ template {
   border: 70px solid transparent;
   position: absolute;
   top: 0;
-  right: calc(100% - 42px);
+  right: calc(100% - 43px);
   z-index: -1;
 }
 .banner-nav-md__item:last-child {
@@ -3404,7 +3402,7 @@ template {
   color: #000000;
   border-bottom: 1px solid black;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .banner-nav-md__item {
     padding: 0 0 10px 24px;
     position: relative;
@@ -3914,7 +3912,7 @@ template {
 .call-request_services button {
   color: #ff5f05;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .call-request {
     width: 255px;
     margin: 15px 0 0 0;
@@ -3949,7 +3947,7 @@ template {
     margin-bottom: 8px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .call-request {
     width: 36px;
   }
@@ -7296,4 +7294,9 @@ textarea:hover {
   display: flex;
   height: 100vh;
   flex-direction: column;
+}
+@media all and (max-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
 }
