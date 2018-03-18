@@ -19,8 +19,9 @@
     }
   }
   &__item_active {
+    font-family: "Arial Black", sans-serif!important;
     a {
-      font-family: "Arial Black", sans-serif;
+      font-family: "Arial Black", sans-serif!important;
     }
   }
   &__mini-btn {
@@ -147,7 +148,7 @@
 
 
 //768
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .main-nav {
     background-color: #505f73;
     display: none;
@@ -172,24 +173,26 @@
   }
 
   .main-sub-nav {
-    &__head {
-      font-size: 14px;
-      padding: 10px 5px 10px 15%;
-      border-bottom: 1px solid #465465;
+    max-width: none;
+    .main-sub-nav__title {
+      padding: 14px 5px 8px 15%;
     }
     &__list {
-      //display: none;
+      position: relative;
+      display: block;
+      border: none;
+      width: auto;
     }
     &__item {
       font-weight: normal;
       a {
         font-family: Arial, sans-serif;
         font-size: 12px;
-        padding: 10px 5px 10px 15%;
+        padding: 7px 5px 7px 17%;
       }
       &:first-child {
         a {
-          padding-top: 15px;
+          padding-top: 10px;
         }
       }
       &:last-child {
@@ -203,9 +206,22 @@
   .main-dropdown {
     display: block;
     button {
-      width: 30%;
-      padding: 5px 5px 5px 15%;
-      text-align: left;
+      display: none;
+    }
+    &__nav {
+      display: block;
+      position: relative;
+      border: none;
+      background-color: #505f73;
+      li {
+        border-bottom: 1px solid #464E61;
+      }
+      a {
+        color: #ffffff;
+        &:hover {
+          background-color: transparent;
+        }
+      }
     }
   }
 
@@ -235,13 +251,12 @@
   }
 
   .main-sub-nav {
-    &__head {
-      font-size: 12px;
-      padding: 10px 5px 10px 15px;
+    .main-sub-nav__title {
+      padding: 14px 5px 3px 12px;
     }
     &__item {
       a {
-        padding: 9px 5px 9px 12px;
+        padding: 9px 5px 9px 30px;
         font-size: 10px;
       }
     }

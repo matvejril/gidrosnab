@@ -1,4 +1,5 @@
 .call-request {
+  display: block;
   width: 400px;
   white-space: nowrap;
   &__icon {
@@ -21,9 +22,10 @@
   &__phone {
     margin-top: -5px;
     margin-left: 10px;
-    display: inline-block;
     white-space: normal;
     vertical-align: top;
+    display: inline-block;
+    width: calc(~'100% - 68px');
     a {
       margin: 8px 0 10px 0;
       font-family: Arial, sans-serif;
@@ -101,7 +103,7 @@
 }
 
 //768
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .call-request {
     width: 255px;
     margin: 15px 0 0 0;
@@ -150,7 +152,6 @@
     &__phone {
       display: none;
     }
-
     &_header {
       margin-top: 5px;
       .call-request__icon {
@@ -159,7 +160,6 @@
         width: 36px;
       }
     }
-
     &_footer {
       margin: 0;
       .call-request__icon {

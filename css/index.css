@@ -2801,9 +2801,9 @@ template {
   padding: 0 10px 0 10px;
   position: relative;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .container {
-    max-width: 708px;
+    max-width: 1280px;
   }
 }
 .header {
@@ -2821,7 +2821,7 @@ template {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .header {
     padding: 30px 0 0 0;
   }
@@ -2856,8 +2856,11 @@ template {
   text-transform: uppercase;
   display: block;
 }
+.main-nav__item_active {
+  font-family: "Arial Black", sans-serif !important;
+}
 .main-nav__item_active a {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Arial Black", sans-serif !important;
 }
 .main-nav__mini-btn {
   display: none;
@@ -2969,7 +2972,7 @@ template {
 .main-nav-md-hidden {
   display: inline-block;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .main-nav {
     background-color: #505f73;
     display: none;
@@ -2992,10 +2995,17 @@ template {
   .main-nav__mini-btn button {
     padding: 0;
   }
-  .main-sub-nav__head {
-    font-size: 14px;
-    padding: 10px 5px 10px 15%;
-    border-bottom: 1px solid #465465;
+  .main-sub-nav {
+    max-width: none;
+  }
+  .main-sub-nav .main-sub-nav__title {
+    padding: 14px 5px 8px 15%;
+  }
+  .main-sub-nav__list {
+    position: relative;
+    display: block;
+    border: none;
+    width: auto;
   }
   .main-sub-nav__item {
     font-weight: normal;
@@ -3003,10 +3013,10 @@ template {
   .main-sub-nav__item a {
     font-family: Arial, sans-serif;
     font-size: 12px;
-    padding: 10px 5px 10px 15%;
+    padding: 7px 5px 7px 17%;
   }
   .main-sub-nav__item:first-child a {
-    padding-top: 15px;
+    padding-top: 10px;
   }
   .main-sub-nav__item:last-child a {
     padding-bottom: 15px;
@@ -3015,9 +3025,22 @@ template {
     display: block;
   }
   .main-dropdown button {
-    width: 30%;
-    padding: 5px 5px 5px 15%;
-    text-align: left;
+    display: none;
+  }
+  .main-dropdown__nav {
+    display: block;
+    position: relative;
+    border: none;
+    background-color: #505f73;
+  }
+  .main-dropdown__nav li {
+    border-bottom: 1px solid #464E61;
+  }
+  .main-dropdown__nav a {
+    color: #ffffff;
+  }
+  .main-dropdown__nav a:hover {
+    background-color: transparent;
   }
   .main-nav-md-hidden {
     display: none;
@@ -3034,12 +3057,11 @@ template {
   .main-nav__mini-btn button {
     font-size: 11px;
   }
-  .main-sub-nav__head {
-    font-size: 12px;
-    padding: 10px 5px 10px 15px;
+  .main-sub-nav .main-sub-nav__title {
+    padding: 14px 5px 3px 12px;
   }
   .main-sub-nav__item a {
-    padding: 9px 5px 9px 12px;
+    padding: 9px 5px 9px 30px;
     font-size: 10px;
   }
   .main-dropdown button {
@@ -3112,7 +3134,7 @@ template {
   font-size: 16px;
   color: #505F73;
 }
-@media all and (max-width: 1179px) {
+@media all and (max-width: 1279px) {
   .footer {
     padding-top: 25px;
   }
@@ -3275,7 +3297,8 @@ template {
   margin: 0;
 }
 .banner-nav-md__item {
-  padding: 0 0 10px 42px;
+  padding: 0 0 0 42px;
+  margin-bottom: 10px;
   position: relative;
   list-style-type: none;
   display: inline-block;
@@ -3404,7 +3427,7 @@ template {
 }
 @media all and (max-width: 767px) {
   .banner-nav-md__item {
-    padding: 0 0 10px 24px;
+    padding: 0 0 0 24px;
     position: relative;
     list-style-type: none;
     display: inline-block;
@@ -3475,7 +3498,7 @@ template {
   cursor: pointer;
   opacity: 1;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .quick-question {
     display: none;
   }
@@ -3741,7 +3764,7 @@ template {
   letter-spacing: -0.8px;
   font-weight: 600;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .logo__img {
     width: 72px;
   }
@@ -3756,7 +3779,7 @@ template {
     font-size: 8.5px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .logo__img {
     width: 46px;
   }
@@ -3812,19 +3835,20 @@ template {
 .social__whatsapp {
   background: url(../images/social-icons/whatsApp.svg) no-repeat center;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .social a {
     width: 47px;
     height: 40px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .social a {
     width: 30px;
     height: 25px;
   }
 }
 .call-request {
+  display: block;
   width: 400px;
   white-space: nowrap;
 }
@@ -3848,9 +3872,10 @@ template {
 .call-request__phone {
   margin-top: -5px;
   margin-left: 10px;
-  display: inline-block;
   white-space: normal;
   vertical-align: top;
+  display: inline-block;
+  width: calc(100% - 68px);
 }
 .call-request__phone a {
   margin: 8px 0 10px 0;
@@ -3912,7 +3937,7 @@ template {
 .call-request_services button {
   color: #ff5f05;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .call-request {
     width: 255px;
     margin: 15px 0 0 0;
@@ -4004,7 +4029,7 @@ template {
 .search-block-sm {
   display: none;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .search-block {
     display: none;
   }
@@ -4070,7 +4095,7 @@ template {
 .search-sm {
   display: none;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .search-sm {
     display: block;
     margin-bottom: 5px;
@@ -4101,7 +4126,7 @@ template {
     color: #717171;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .search-sm button {
     font-size: 16px;
   }
@@ -4127,7 +4152,7 @@ template {
 .change-lang-sm {
   display: none;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .change-lang {
     display: none;
   }
@@ -4143,7 +4168,7 @@ template {
     color: #ff5c00;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .change-lang-sm a {
     font-size: 14px;
   }
@@ -4152,6 +4177,7 @@ template {
   background-color: #e6e6e6;
   padding: 4px 0 12px 0;
   vertical-align: middle;
+  visibility: hidden;
 }
 .our-advantages-slider .our-advantages-slide {
   height: 140px;
@@ -4213,7 +4239,7 @@ template {
     cursor: pointer;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-advantages-slider {
     padding: 4px 20px 4px 20px;
   }
@@ -4260,9 +4286,12 @@ template {
   display: flex;
   justify-content: space-between;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .company-news {
     background: none;
+  }
+  .company-news__box {
+    flex-wrap: wrap;
   }
 }
 @media all and (max-width: 768px) {
@@ -4345,21 +4374,10 @@ template {
 .news_sm .news__actions a {
   margin-right: 15px;
 }
-@media all and (max-width: 1280px) {
-  .news_sm {
-    min-width: 0;
-    width: calc(50% - 5px);
-  }
-  .news_sm .news__title p {
-    text-align: center;
-    width: calc(100% - 156px);
-    padding-left: 25px;
-    font-size: 34px;
-  }
-}
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .news_sm {
     width: 100%;
+    max-width: none;
     margin-bottom: 24px;
   }
   .news_sm .news__title {
@@ -4373,7 +4391,7 @@ template {
     font-size: 38px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .news {
     width: 100%;
     padding: 0;
@@ -4461,7 +4479,7 @@ template {
 .news-item_sm .news-item__content {
   font-size: 19px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .news-item_sm {
     margin-bottom: 36px;
   }
@@ -4469,7 +4487,7 @@ template {
     margin-bottom: 10px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .news-item_sm {
     margin-bottom: 13px;
   }
@@ -4537,15 +4555,10 @@ template {
   margin: 0;
   list-style-type: none;
 }
-@media all and (max-width: 1280px) {
-  .about-company-sm {
-    min-width: 0;
-    width: calc(50% - 5px);
-  }
-}
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .about-company-sm {
     width: 100%;
+    max-width: none;
   }
   .about-company-sm__title {
     margin-bottom: 28px;
@@ -4555,7 +4568,7 @@ template {
     padding: 7px 39px 7px 64px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .about-company-sm {
     margin-bottom: 5px;
   }
@@ -4578,7 +4591,9 @@ template {
     left: -1px;
   }
   .about-company-sm__content {
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 55px;
     font-size: 11px;
   }
 }
@@ -4622,6 +4637,7 @@ template {
   vertical-align: middle;
 }
 .our-partners-slider__list {
+  visibility: hidden;
   padding: 0 60px 0 60px;
 }
 .our-partners-slider__list .slick-slide {
@@ -4654,7 +4670,7 @@ template {
   content: url("../images/slider/arr-right.png");
   display: block;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .our-partners-slider {
     padding: 22px 0 24px 0;
   }
@@ -4667,7 +4683,7 @@ template {
     padding: 7px 15px 7px 60px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-partners-slider {
     padding: 6px 0 6px 0;
   }
@@ -4748,6 +4764,7 @@ template {
   vertical-align: middle;
 }
 .our-clients-slider__list {
+  visibility: hidden;
   padding: 0 60px 0 60px;
 }
 .our-clients-slider__list .slick-slide {
@@ -4780,7 +4797,7 @@ template {
   content: url("../images/slider/arr-right.png");
   display: block;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .our-clients-slider {
     padding: 22px 0 27px 0;
   }
@@ -4793,7 +4810,7 @@ template {
     width: auto;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-clients-slider {
     padding: 6px 0 6px 0;
     margin-bottom: 15px;
@@ -4840,12 +4857,12 @@ template {
   height: 750px;
   margin-bottom: 25px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   .our-coordinates {
     height: 430px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-coordinates {
     height: 189px;
   }
@@ -5248,7 +5265,7 @@ template {
 .catalog_services .catalog__content {
   margin-top: -35px;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalog {
     padding-bottom: 45px;
   }
@@ -5305,7 +5322,7 @@ template {
   border-color: black;
   color: black;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalog-sort {
     margin-top: 18px;
     margin-bottom: 15px;
@@ -5414,7 +5431,7 @@ template {
   color: #4477b9;
   text-decoration: underline;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalog-nav {
     width: 92%;
     margin: 0 auto 0 auto;
@@ -5477,7 +5494,7 @@ template {
   font-size: 16px;
   color: #000000;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalog-data-list__data {
     width: auto;
     margin-top: 10px;
@@ -5500,7 +5517,7 @@ template {
   border-top: 1px solid #bdbdbd;
   border-left: 1px solid #bdbdbd;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .production-list {
     display: none;
     border: none;
@@ -5541,7 +5558,7 @@ template {
 .production-item_services .production-item__title {
   text-transform: none;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .production-item {
     padding: 7px 10px 16px 10px;
     border-top: 1px solid #bdbdbd;
@@ -5657,7 +5674,7 @@ template {
 .production-card_services .production-card__description {
   width: 61%;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .production-card {
     display: none;
   }
@@ -5721,7 +5738,7 @@ template {
   margin: 0 0 20px 0;
   list-style-type: none;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .about-company {
     padding-top: 15px;
     padding-bottom: 8px;
@@ -5831,7 +5848,7 @@ template {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-history {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -5872,7 +5889,7 @@ template {
   line-height: 1.55;
   font-size: 16px;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-history-item {
     margin-bottom: 13px;
     width: 100%;
@@ -5929,7 +5946,7 @@ template {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-advantages {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -5986,7 +6003,7 @@ template {
   color: #000000;
   line-height: 1.15;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-advantages-item {
     width: 100%;
     margin-bottom: 20px;
@@ -6052,7 +6069,7 @@ template {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-trade-marks {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -6098,7 +6115,7 @@ template {
 .our-trade-marks-item__description p:last-child {
   margin-bottom: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-trade-marks-item {
     width: 100%;
     margin-bottom: 15px;
@@ -6157,7 +6174,7 @@ template {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-partners {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -6203,7 +6220,7 @@ template {
 .our-partners-item__description p:last-child {
   margin-bottom: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .our-partners-item {
     width: 100%;
     margin-bottom: 15px;
@@ -6261,7 +6278,7 @@ template {
   margin: 0 auto;
   display: block;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .excursion {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -6341,7 +6358,7 @@ template {
 .vacancies__list a {
   color: #505F73;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .vacancies {
     padding-top: 8px;
     padding-bottom: 15px;
@@ -6381,7 +6398,7 @@ template {
   box-sizing: border-box;
   justify-content: space-between;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .contacts__box {
     padding: 13px 0 10px 0;
     flex-wrap: wrap;
@@ -6390,7 +6407,7 @@ template {
 .contacts-info {
   width: 25%;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .contacts-info {
     width: 92%;
     margin: 0 auto 15px auto;
@@ -6414,7 +6431,7 @@ template {
 .contacts-address p:last-child {
   margin-bottom: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .contacts-address {
     margin: 0 0 12px 0;
   }
@@ -6485,7 +6502,7 @@ template {
 .contacts-phones-item_hydraulic .contacts-phones-item__title {
   color: #2d4691;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .contacts-phones-item {
     margin-bottom: 5px;
   }
@@ -6511,7 +6528,7 @@ template {
 .contacts-map {
   width: 75%;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .contacts-map {
     width: 100%;
     height: 189px;
@@ -6561,7 +6578,7 @@ template {
 .catalogs-pdf__content {
   width: 72.5%;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalogs-pdf {
     width: 100%;
     padding: 10px 0 10px 0;
@@ -6660,7 +6677,7 @@ template {
 .catalogs-pdf-sub-nav:last-child {
   margin-bottom: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalogs-pdf-nav {
     width: 100%;
     padding: 0;
@@ -6703,7 +6720,7 @@ template {
   border-top: 1px solid #bdbdbd;
   border-left: 1px solid #bdbdbd;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalogs-pdf-list {
     display: none;
   }
@@ -6764,7 +6781,7 @@ template {
   top: 0;
   left: 100%;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .catalogs-pdf-card__main {
     width: 100%;
     margin-bottom: 5px;
@@ -6807,7 +6824,7 @@ template {
   padding: 0;
   margin: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .news-page {
     padding: 10px 0 10px 0;
   }
@@ -6828,7 +6845,7 @@ template {
   border-top: 1px solid #bdbdbd;
   border-left: 1px solid #bdbdbd;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .news-page-list {
     display: none;
   }
@@ -6894,7 +6911,7 @@ template {
   color: #000000;
   line-height: 1.2;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .news-page-card {
     display: none;
   }
@@ -6943,7 +6960,7 @@ template {
   padding: 0;
   margin: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .photos-page {
     width: 100%;
     padding: 0;
@@ -6996,7 +7013,7 @@ template {
   color: #505f73;
   margin-right: 8px;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .photos-page-nav {
     width: 100%;
     min-width: 0;
@@ -7017,7 +7034,7 @@ template {
   border-top: 1px solid #bdbdbd;
   border-left: 1px solid #bdbdbd;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .photos-page-list {
     display: none;
   }
@@ -7081,7 +7098,7 @@ template {
 .photos-page-card img {
   display: inline-block;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .photos-page-card {
     display: none;
   }
@@ -7131,7 +7148,7 @@ template {
   padding: 0;
   margin: 0;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .videos-page {
     width: 100%;
     padding: 0;
@@ -7183,7 +7200,7 @@ template {
   color: #505f73;
   margin-right: 8px;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .videos-page-nav {
     width: 100%;
     min-width: 0;
@@ -7204,7 +7221,7 @@ template {
   border-top: 1px solid #bdbdbd;
   border-left: 1px solid #bdbdbd;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .videos-page-list {
     display: none;
   }
@@ -7267,7 +7284,7 @@ template {
 .videos-page-card img {
   display: inline-block;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 767px) {
   .videos-page-card {
     display: none;
   }
@@ -7295,8 +7312,13 @@ textarea:hover {
   height: 100vh;
   flex-direction: column;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1279px) {
   body {
-    padding-top: 100px;
+    padding-top: 120px;
+  }
+}
+@media all and (max-width: 767px) {
+  body {
+    padding-top: 80px;
   }
 }
