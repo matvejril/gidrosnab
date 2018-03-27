@@ -4312,7 +4312,14 @@ template {
   display: inline-block;
   align-self: center;
 }
-.our-advantages-slider .our-advantages-slide__helper div {
+.our-advantages-slider .our-advantages-slide__helper p {
+  display: inline-block;
+  margin: 0 0 0 -6px;
+  font-size: 40px;
+  line-height: 0.9;
+  font-weight: normal;
+}
+.our-advantages-slider .our-advantages-slide__title {
   display: inline-block;
   width: calc(100% - 149px);
   margin: 0 12px 0 15px;
@@ -4323,13 +4330,6 @@ template {
   letter-spacing: 0;
   line-height: 1.45;
   align-self: center;
-}
-.our-advantages-slider .our-advantages-slide__helper p {
-  display: inline-block;
-  margin: 0 0 0 -6px;
-  font-size: 40px;
-  line-height: 0.9;
-  font-weight: normal;
 }
 @media all and (max-width: 1280px) {
   .our-advantages-slider {
@@ -4367,14 +4367,14 @@ template {
     margin-left: 7px;
   }
   .our-advantages-slider .our-advantages-slide__helper p {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .our-advantages-slider .our-advantages-slide__title {
     width: calc(100% - 55px);
     font-size: 9px;
     margin: 0 0 0 5px;
     line-height: 1.25;
-  }
-  .our-advantages-slider .our-advantages-slide__helper span {
-    margin-left: 0;
-    font-size: 18px;
   }
   .our-advantages-slider .slick-prev {
     left: 0;
@@ -6100,26 +6100,30 @@ template {
 .our-advantages-item__text {
   line-height: 1.2;
 }
-.our-advantages-item__text h3 {
-  margin: 0 0 10px 0;
-  font-size: 29px;
-  color: #505f73;
-  font-family: "Arial Narrow", sans-serif;
-  font-weight: bold;
-}
-.our-advantages-item__text span {
-  font-family: Arial, sans-serif;
-  font-size: 67px;
-  line-height: 0.7;
-  font-weight: normal;
-  letter-spacing: -2px;
-}
 .our-advantages-item__text p {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 19px;
   color: #000000;
   line-height: 1.15;
+}
+.our-advantages-item__title {
+  margin: 0 0 10px 0;
+  font-size: 29px;
+  color: #505f73;
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: bold;
+}
+.our-advantages-item__title p {
+  font-family: Arial, sans-serif;
+  font-size: 67px;
+  line-height: 0.7;
+  font-weight: normal;
+  letter-spacing: -2px;
+  color: #505f73;
+}
+.our-advantages-item__title .linear {
+  display: inline-block;
 }
 @media all and (max-width: 767px) {
   .our-advantages-item {
@@ -6138,16 +6142,16 @@ template {
     display: inline-block;
     vertical-align: top;
   }
-  .our-advantages-item__text h3 {
+  .our-advantages-item__text p {
+    font-size: 10px;
+  }
+  .our-advantages-item__title {
     font-size: 11px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .our-advantages-item__text h3 span {
+  .our-advantages-item__title p {
     font-size: 20px;
-  }
-  .our-advantages-item__text p {
-    font-size: 10px;
   }
 }
 .our-trade-marks {
