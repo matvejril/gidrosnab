@@ -1,58 +1,45 @@
 (function () {
-    // console.log("hellp");
 
-    // var newsItem = $('.news-item_sm').get(2);
-    // console.log(newsItem);
+    // var newsItems = document.querySelectorAll('.news-item_sm');
+    // var newsTrack1 = document.querySelector('.news__list-track');
 
+    var newsTrackHeightVal;
 
-    // $('.news__act-up').bind('click', function() {
-    //     var newsItem = $('.news-item_sm');
-    //     newsItem.css('top');
-    //     // newsItem.each(function(indx, element) {
-    //     //     var top = $(element).css('top');
-    //     //     var newTop = top - 1;
-    //     //     $(element).css('top', newTop)
-    //     // });
-    // });
-    //
-    // $('.news__act-down').bind('click', function() {
-    //     var newsItem = $('.news-item_sm');
-    //     newsItem.each(function(indx, element) {
-    //         var top = $(element).css('top');
-    //         console.log(element);
-    //         var newTop = top + 1;
-    //         $(element).css('top', newTop)
-    //     });
-    // });
+    $(window).on('resize init', function () {
+        var newsTrackHeight = newsTrack.css('height');
+        newsTrackHeightVal = Number(newsTrackHeight.replace('px', ''));
+    });
 
-
-    var newsItems = document.querySelectorAll('.news-item_sm');
-    //
+    var newsTrack = $('.news__list-track');
     var scrollUpBtn = document.querySelector('.news__act-up');
     var scrollDownBtn = document.querySelector('.news__act-down');
-    //
+
     scrollUpBtn.addEventListener('click', scrollUp);
     scrollDownBtn.addEventListener('click', scrollDown);
 
     function scrollUp () {
-        // console.log("alla")
-        // for (var z = 0; z < newsItems.length; z++) {
-        //     var topPos = newsItems[z].style.top;
-        //     var newTop =  topPos - 5 + 'px';
-        //     console.log(newTop);
-        //     newsItems[z].style.top = newTop;
-        // }
+        var posTop = Number(newsTrack.css('top').replace('px', '')) + 80;
+        if (posTop > 0) {
+            newsTrack.css('top', '0px');
+            scrollUpBtn.style.visibility = "hidden"
+        } else {
+            var newTop = String(posTop + 'px');
+            newsTrack.css('top', newTop);
+            scrollDownBtn.style.visibility = "visible"
+        }
+        // console.log(newTop);
     }
 
     function scrollDown () {
-        // console.log("alla")
-        for (var z = 0; z < newsItems.length; z++) {
-            var topPos = newsItems[z].style.top;
-            console.log(topPos);
-            // var newTop =  topPos + 5 + 'px';
-            // console.log(newTop);
-            // newsItems[z].style.top = newTop;
+        var posTop = Number(newsTrack.css('top').replace('px', '')) - 80;
+        if (posTop < -newsTrackHeightVal) {
+            newsTrack.css('top', String(-newsTrackHeightVal));
+            scrollDownBtn.style.visibility = "hidden"
+        } else {
+            var newTop = String(posTop + 'px');
+            newsTrack.css('top', newTop);
+            scrollUpBtn.style.visibility = "visible"
         }
+        // console.log(newTop);
     }
-
 }());
