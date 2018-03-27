@@ -1,4 +1,4 @@
-.banner-lg {
+.banner {
   padding: 18px 0 18px 0;
   background: url(../images/banner/banner-bg.jpg) no-repeat top;
   display: block;
@@ -6,17 +6,10 @@
   flex: 1;
 }
 
-.banner-md {
-  padding: 10px 0 10px 0;
-  display: none;
-  flex: 1;
-}
+@media all and (max-width: 1280px) {
+  .banner{
+    padding: 10px 0 10px 0;
+    background: none;
+  }
 
-@media all and (max-width: 1536px) {
-  .banner-lg {
-    display: none;
-  }
-  .banner-md {
-    display: block;
-  }
 }

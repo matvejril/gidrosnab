@@ -1,0 +1,261 @@
+.body-wrap {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+
+
+  &_equipment {
+    .call-request_header {
+      .call-request__phone {
+        a {
+          color: #d67e29;
+        }
+        button {
+          color: #505f73;
+        }
+      }
+      .call-request__icon {
+        background: url(../images/call-request/phone-icon-equipment.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+    .search-block__mail {
+      color: #d67e29;
+    }
+    .main-nav {
+      background-color: #d67e29;
+    }
+    .main-sub-nav {
+      &__list {
+        background-color: #d67e29;
+      }
+    }
+    .catalog-nav {
+      &__item_active {
+        .catalog-nav__head {
+          color: #d67e29;
+        }
+      }
+    }
+    .production-card {
+      &__title {
+        color: #d67e29;
+      }
+    }
+  }
+
+
+
+  &_sleeves {
+    .call-request_header {
+      .call-request__phone {
+        a {
+          color: #4477b9;
+        }
+        button {
+          color: #ff5c00;
+        }
+      }
+      .call-request__icon {
+        background: url(../images/call-request/phone-icon-sleeves.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+    .search-block__mail {
+      color: #4477b9;
+    }
+    .main-nav {
+      background-color: #4477b9;
+    }
+    .main-sub-nav {
+      &__list {
+        background-color: #4477b9;
+      }
+    }
+    .catalog-nav {
+      &__head {
+        width: 79%;
+        padding: 12px 0 8px 0;
+      }
+      &__item_active {
+        .catalog-nav__head {
+          color: #4477b9;
+        }
+      }
+    }
+    .production-card {
+      &__title {
+        color: #4477b9;
+      }
+    }
+  }
+
+
+
+  &_hydraulic {
+    .call-request_header {
+      .call-request__phone {
+        a {
+          color: #2d4691;
+        }
+        button {
+          color: #ff5c00;
+        }
+      }
+      .call-request__icon {
+        background: url(../images/call-request/phone-icon-hydraulic.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+    .search-block__mail {
+      color: #2d4691;
+    }
+    .main-nav {
+      background-color: #2d4691;
+    }
+    .main-sub-nav {
+      &__list {
+        background-color: #2d4691;
+      }
+    }
+    .catalog-nav {
+      &__head {
+        width: 79%;
+        padding: 9px 0 9px 0;
+      }
+      &__item_active {
+        .catalog-nav__head {
+          color: #2d4691;
+        }
+      }
+    }
+    .production-card {
+      &__title {
+        color: #2d4691;
+      }
+    }
+  }
+
+
+
+  &_mechanization {
+    .call-request_header {
+      .call-request__phone {
+        a {
+          color: #cb5329;
+        }
+        button {
+          color: #516073;
+        }
+      }
+      .call-request__icon {
+        background: url(../images/call-request/phone-icon-mechanization.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+    .search-block__mail {
+      color: #cb5329;
+    }
+    .main-nav {
+      background-color: #cb5329;
+    }
+    .main-sub-nav {
+      &__list {
+        background-color: #d67e29;
+      }
+    }
+    .catalog-nav {
+      &__item_active {
+        .catalog-nav__head {
+          color: #cb5329;
+        }
+      }
+    }
+    .production-card {
+      &__title {
+        color: #cb5329;
+      }
+    }
+  }
+
+
+
+  &_services {
+    .call-request_header {
+      .call-request__phone {
+        a {
+          color: #717171;
+        }
+        button {
+          color: #ff5f05;
+        }
+      }
+      .call-request__icon {
+        background: url(../images/call-request/phone-icon-service.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+    .search-block__mail {
+      color: #717171;
+    }
+    .main-nav {
+      background-color: #717171;
+    }
+    .main-sub-nav {
+      &__list {
+        background-color: #717171;
+      }
+    }
+    .catalog-nav {
+      &__item_active {
+        .catalog-nav__head {
+
+        }
+      }
+    }
+    .production-card {
+      &__title {
+        width: auto;
+        margin-bottom: 20px;
+        color: #717171;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 1279px) {
+  .body-wrap {
+    &_equipment {
+      .search-block__mail {
+        color: #d67e29;
+      }
+    }
+
+    &_sleeves {
+      .search-block__mail {
+        color: #4477b9;
+      }
+    }
+
+    &_hydraulic {
+      .search-block__mail {
+        color: #2d4691;
+      }
+    }
+
+    &_mechanization {
+      .search-block__mail {
+        color: #cb5329;
+      }
+    }
+
+    &_services {
+      .search-block__mail {
+        color: #717171;
+      }
+    }
+  }
+}

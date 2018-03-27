@@ -2806,6 +2806,161 @@ template {
     max-width: 1280px;
   }
 }
+.body-wrap {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.body-wrap_equipment .call-request_header .call-request__phone a {
+  color: #d67e29;
+}
+.body-wrap_equipment .call-request_header .call-request__phone button {
+  color: #505f73;
+}
+.body-wrap_equipment .call-request_header .call-request__icon {
+  background: url(../images/call-request/phone-icon-equipment.png) no-repeat center;
+  background-size: cover;
+}
+.body-wrap_equipment .search-block__mail {
+  color: #d67e29;
+}
+.body-wrap_equipment .main-nav {
+  background-color: #d67e29;
+}
+.body-wrap_equipment .main-sub-nav__list {
+  background-color: #d67e29;
+}
+.body-wrap_equipment .catalog-nav__item_active .catalog-nav__head {
+  color: #d67e29;
+}
+.body-wrap_equipment .production-card__title {
+  color: #d67e29;
+}
+.body-wrap_sleeves .call-request_header .call-request__phone a {
+  color: #4477b9;
+}
+.body-wrap_sleeves .call-request_header .call-request__phone button {
+  color: #ff5c00;
+}
+.body-wrap_sleeves .call-request_header .call-request__icon {
+  background: url(../images/call-request/phone-icon-sleeves.png) no-repeat center;
+  background-size: cover;
+}
+.body-wrap_sleeves .search-block__mail {
+  color: #4477b9;
+}
+.body-wrap_sleeves .main-nav {
+  background-color: #4477b9;
+}
+.body-wrap_sleeves .main-sub-nav__list {
+  background-color: #4477b9;
+}
+.body-wrap_sleeves .catalog-nav__head {
+  width: 79%;
+  padding: 12px 0 8px 0;
+}
+.body-wrap_sleeves .catalog-nav__item_active .catalog-nav__head {
+  color: #4477b9;
+}
+.body-wrap_sleeves .production-card__title {
+  color: #4477b9;
+}
+.body-wrap_hydraulic .call-request_header .call-request__phone a {
+  color: #2d4691;
+}
+.body-wrap_hydraulic .call-request_header .call-request__phone button {
+  color: #ff5c00;
+}
+.body-wrap_hydraulic .call-request_header .call-request__icon {
+  background: url(../images/call-request/phone-icon-hydraulic.png) no-repeat center;
+  background-size: cover;
+}
+.body-wrap_hydraulic .search-block__mail {
+  color: #2d4691;
+}
+.body-wrap_hydraulic .main-nav {
+  background-color: #2d4691;
+}
+.body-wrap_hydraulic .main-sub-nav__list {
+  background-color: #2d4691;
+}
+.body-wrap_hydraulic .catalog-nav__head {
+  width: 79%;
+  padding: 9px 0 9px 0;
+}
+.body-wrap_hydraulic .catalog-nav__item_active .catalog-nav__head {
+  color: #2d4691;
+}
+.body-wrap_hydraulic .production-card__title {
+  color: #2d4691;
+}
+.body-wrap_mechanization .call-request_header .call-request__phone a {
+  color: #cb5329;
+}
+.body-wrap_mechanization .call-request_header .call-request__phone button {
+  color: #516073;
+}
+.body-wrap_mechanization .call-request_header .call-request__icon {
+  background: url(../images/call-request/phone-icon-mechanization.png) no-repeat center;
+  background-size: cover;
+}
+.body-wrap_mechanization .search-block__mail {
+  color: #cb5329;
+}
+.body-wrap_mechanization .main-nav {
+  background-color: #cb5329;
+}
+.body-wrap_mechanization .main-sub-nav__list {
+  background-color: #d67e29;
+}
+.body-wrap_mechanization .catalog-nav__item_active .catalog-nav__head {
+  color: #cb5329;
+}
+.body-wrap_mechanization .production-card__title {
+  color: #cb5329;
+}
+.body-wrap_services .call-request_header .call-request__phone a {
+  color: #717171;
+}
+.body-wrap_services .call-request_header .call-request__phone button {
+  color: #ff5f05;
+}
+.body-wrap_services .call-request_header .call-request__icon {
+  background: url(../images/call-request/phone-icon-service.png) no-repeat center;
+  background-size: cover;
+}
+.body-wrap_services .search-block__mail {
+  color: #717171;
+}
+.body-wrap_services .main-nav {
+  background-color: #717171;
+}
+.body-wrap_services .main-sub-nav__list {
+  background-color: #717171;
+}
+.body-wrap_services .production-card__title {
+  width: auto;
+  margin-bottom: 20px;
+  color: #717171;
+  text-transform: none;
+}
+@media all and (max-width: 1279px) {
+  .body-wrap_equipment .search-block__mail {
+    color: #d67e29;
+  }
+  .body-wrap_sleeves .search-block__mail {
+    color: #4477b9;
+  }
+  .body-wrap_hydraulic .search-block__mail {
+    color: #2d4691;
+  }
+  .body-wrap_mechanization .search-block__mail {
+    color: #cb5329;
+  }
+  .body-wrap_services .search-block__mail {
+    color: #717171;
+  }
+}
 .header {
   width: 100%;
   padding: 10px 0 0 0;
@@ -2871,21 +3026,6 @@ template {
   color: #505f73;
   outline: none;
   font-size: 18px;
-}
-.main-nav_equipment {
-  background-color: #d67e29;
-}
-.main-nav_sleeves {
-  background-color: #4477b9;
-}
-.main-nav_hydraulic {
-  background-color: #2d4691;
-}
-.main-nav_mechanization {
-  background-color: #cb5329;
-}
-.main-nav_services {
-  background-color: #717171;
 }
 .main-sub-nav {
   position: relative;
@@ -3195,24 +3335,17 @@ template {
   text-overflow: ellipsis;
   text-transform: none;
 }
-.banner-lg {
+.banner {
   padding: 18px 0 18px 0;
   background: url(../images/banner/banner-bg.jpg) no-repeat top;
   display: block;
   background-size: cover;
   flex: 1;
 }
-.banner-md {
-  padding: 10px 0 10px 0;
-  display: none;
-  flex: 1;
-}
-@media all and (max-width: 1536px) {
-  .banner-lg {
-    display: none;
-  }
-  .banner-md {
-    display: block;
+@media all and (max-width: 1280px) {
+  .banner {
+    padding: 10px 0 10px 0;
+    background: none;
   }
 }
 .banner-nav-lg {
@@ -3222,7 +3355,8 @@ template {
   margin-bottom: 18px;
 }
 .banner-nav-lg__item {
-  width: 630px;
+  max-width: 630px;
+  width: 42%;
   display: inline-block;
   padding: 72px 0 72px 0;
   position: relative;
@@ -3243,36 +3377,43 @@ template {
 }
 .banner-nav-lg__item_equipment {
   background: url(../images/banner/bg1.png) no-repeat center;
+  background-size: 100% 100%;
 }
 .banner-nav-lg__item_equipment .banner-nav-lg__icon {
-  margin: 0 40px 0 60px;
+  margin: 0 7% 0 9%;
 }
 .banner-nav-lg__item_sleeves {
   background: url(../images/banner/bg2.png) no-repeat center;
+  background-size: 100% 100%;
   float: right;
 }
 .banner-nav-lg__item_sleeves .banner-nav-lg__icon {
-  margin: 0 32px 0 69px;
+  margin: 0 5% 0 11%;
 }
 .banner-nav-lg__item_hydraulic {
   background: url(../images/banner/bg3.png) no-repeat center;
+  background-size: 100% 100%;
 }
 .banner-nav-lg__item_hydraulic .banner-nav-lg__icon {
-  margin: 0 40px 0 60px;
+  margin: 0 7% 0 9%;
 }
 .banner-nav-lg__item_mechanization {
   background: url(../images/banner/bg4.png) no-repeat center;
+  background-size: 100% 100%;
   float: right;
 }
 .banner-nav-lg__item_mechanization .banner-nav-lg__icon {
-  margin: 0 32px 0 69px;
+  margin: 0 5% 0 11%;
 }
 .banner-nav-lg_repair-service {
-  width: 414px;
+  max-width: 414px;
+  width: 28%;
   position: absolute;
   background: url(../images/banner/bg5.png) no-repeat center;
-  top: calc(50% - 179px);
-  left: calc(50% - 207px);
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   padding: 37px 0 37px 0;
   z-index: 1;
   text-align: center;
@@ -3297,6 +3438,7 @@ template {
   z-index: 2;
 }
 .banner-nav-md {
+  display: none;
   padding: 0;
   margin: 0;
 }
@@ -3428,6 +3570,37 @@ template {
   text-transform: uppercase;
   color: #000000;
   border-bottom: 1px solid black;
+}
+@media all and (max-width: 1536px) {
+  .banner-nav-lg__item {
+    padding: 4% 0 4% 0;
+  }
+  .banner-nav-lg__item p {
+    font-size: 22px;
+  }
+  .banner-nav-lg__item_equipment .banner-nav-lg__icon {
+    margin: 0 5% 0 5%;
+  }
+  .banner-nav-lg__item_sleeves .banner-nav-lg__icon {
+    margin: 0 5% 0 8%;
+  }
+  .banner-nav-lg__item_hydraulic .banner-nav-lg__icon {
+    margin: 0 5% 0 5%;
+  }
+  .banner-nav-lg__item_mechanization .banner-nav-lg__icon {
+    margin: 0 5% 0 8%;
+  }
+  .banner-nav-lg_repair-service p {
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 1280px) {
+  .banner-nav-md {
+    display: block;
+  }
+  .banner-nav-lg {
+    display: none;
+  }
 }
 @media all and (max-width: 767px) {
   .banner-nav-md__item {
@@ -3861,17 +4034,12 @@ template {
   padding: 0;
   margin-left: 0;
   border: none;
-  background-color: transparent;
   outline: none;
   vertical-align: middle;
-}
-.call-request__icon img {
-  fill: #ffb600;
-  width: 100%;
-  display: inline-block;
-}
-.call-request__icon img:hover {
-  cursor: pointer;
+  width: 79px;
+  height: 69px;
+  background: url(../images/call-request/phone-icon-main.png) no-repeat center;
+  background-size: cover;
 }
 .call-request__phone {
   margin-top: -5px;
@@ -3911,36 +4079,6 @@ template {
 .call-request_footer p {
   font-weight: bold;
 }
-.call-request_equipment a {
-  color: #d67e29;
-}
-.call-request_equipment button {
-  color: #505f73;
-}
-.call-request_sleeves a {
-  color: #4477b9;
-}
-.call-request_sleeves button {
-  color: #ff5c00;
-}
-.call-request_hydraulic a {
-  color: #2d4691;
-}
-.call-request_hydraulic button {
-  color: #ff5c00;
-}
-.call-request_mechanization a {
-  color: #cb5329;
-}
-.call-request_mechanization button {
-  color: #516073;
-}
-.call-request_services a {
-  color: #717171;
-}
-.call-request_services button {
-  color: #ff5f05;
-}
 @media all and (max-width: 1279px) {
   .call-request {
     width: 255px;
@@ -3963,6 +4101,7 @@ template {
   }
   .call-request_header .call-request__icon {
     width: 48px;
+    height: 42px;
   }
   .call-request_footer {
     width: 300px;
@@ -3970,6 +4109,7 @@ template {
   }
   .call-request_footer .call-request__icon {
     width: 61px;
+    height: 52px;
   }
   .call-request_footer .call-request__phone a {
     font-size: 32px;
@@ -3990,6 +4130,7 @@ template {
     pointer-events: auto;
     cursor: pointer;
     width: 36px;
+    height: 31px;
   }
   .call-request_footer {
     margin: 0;
@@ -3998,6 +4139,7 @@ template {
     pointer-events: auto;
     cursor: pointer;
     width: 36px;
+    height: 31px;
   }
 }
 .search-block {
@@ -4015,21 +4157,6 @@ template {
   font-size: 27px;
   color: #505F73;
 }
-.search-block_equipment .search-block__mail {
-  color: #d67e29;
-}
-.search-block_sleeves .search-block__mail {
-  color: #4477b9;
-}
-.search-block_hydraulic .search-block__mail {
-  color: #2d4691;
-}
-.search-block_mechanization .search-block__mail {
-  color: #cb5329;
-}
-.search-block_services .search-block__mail {
-  color: #717171;
-}
 .search-block-sm {
   display: none;
 }
@@ -4040,21 +4167,6 @@ template {
   .search-block-sm {
     margin-top: 10px;
     display: block;
-  }
-  .search-block-sm_equipment .search-block__mail {
-    color: #d67e29;
-  }
-  .search-block-sm_sleeves .search-block__mail {
-    color: #4477b9;
-  }
-  .search-block-sm_hydraulic .search-block__mail {
-    color: #2d4691;
-  }
-  .search-block-sm_mechanization .search-block__mail {
-    color: #cb5329;
-  }
-  .search-block-sm_services .search-block__mail {
-    color: #717171;
   }
 }
 .search {
@@ -4200,7 +4312,7 @@ template {
   display: inline-block;
   align-self: center;
 }
-.our-advantages-slider .our-advantages-slide__helper p {
+.our-advantages-slider .our-advantages-slide__helper div {
   display: inline-block;
   width: calc(100% - 149px);
   margin: 0 12px 0 15px;
@@ -4212,9 +4324,9 @@ template {
   line-height: 1.45;
   align-self: center;
 }
-.our-advantages-slider .our-advantages-slide__helper span {
+.our-advantages-slider .our-advantages-slide__helper p {
   display: inline-block;
-  margin-left: -6px;
+  margin: 0 0 0 -6px;
   font-size: 40px;
   line-height: 0.9;
   font-weight: normal;
@@ -5396,6 +5508,9 @@ template {
 .catalog-nav__item:last-child {
   border-bottom: 1px solid #bdbdbd;
 }
+.catalog-nav__item_active .catalog-nav__head {
+  font-weight: bold;
+}
 .catalog-nav__head {
   width: 78%;
   text-align: left;
@@ -5411,30 +5526,6 @@ template {
 }
 .catalog-nav:hover {
   cursor: pointer;
-}
-.catalog-nav_hydraulic .catalog-nav__head {
-  width: 79%;
-  padding: 9px 0 9px 0;
-}
-.catalog-nav_sleeves .catalog-nav__head {
-  width: 79%;
-  padding: 12px 0 8px 0;
-}
-.catalog-nav_equipment .catalog-nav__item_active .catalog-nav__head {
-  color: #d67e29;
-  font-weight: bold;
-}
-.catalog-nav_hydraulic .catalog-nav__item_active .catalog-nav__head {
-  color: #2d4691;
-  font-weight: bold;
-}
-.catalog-nav_mechanization .catalog-nav__item_active .catalog-nav__head {
-  color: #cb5329;
-  font-weight: bold;
-}
-.catalog-nav_sleeves .catalog-nav__item_active .catalog-nav__head {
-  color: #4477b9;
-  font-weight: bold;
 }
 .catalog-sub-nav {
   padding: 0;
@@ -5687,24 +5778,6 @@ template {
 .production-card__table tbody td:first-child {
   padding-left: 30px;
   text-align: left;
-}
-.production-card_equipment .production-card__title {
-  color: #d67e29;
-}
-.production-card_sleeves .production-card__title {
-  color: #4477b9;
-}
-.production-card_hydraulic .production-card__title {
-  color: #2d4691;
-}
-.production-card_mechanization .production-card__title {
-  color: #cb5329;
-}
-.production-card_services .production-card__title {
-  width: auto;
-  margin-bottom: 20px;
-  color: #717171;
-  text-transform: none;
 }
 .production-card_services .production-card__paragraph {
   margin-bottom: 22px;
@@ -7351,11 +7424,6 @@ textarea:hover {
 .wrap {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-}
-.body-wrap {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
 }
 @media all and (max-width: 1279px) {
   body {
