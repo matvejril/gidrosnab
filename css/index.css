@@ -4459,7 +4459,16 @@ template {
   margin: 0;
   padding: 0 0 0 25px;
 }
+.news__list-track {
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease-out;
+}
 .news__actions {
+  position: absolute;
+  top: 117px;
+  right: 50px;
+  height: 77%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4500,11 +4509,6 @@ template {
   padding: 0;
   height: 320px;
   overflow: hidden;
-}
-.news_sm .news__list-track {
-  position: relative;
-  top: 0;
-  transition: top 0.5s ease-out;
 }
 .news_sm .news__actions {
   position: absolute;

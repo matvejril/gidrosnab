@@ -1,9 +1,9 @@
 (function () {
     // var newsItems = $('.news-item_sm');
-    var newSm = document.querySelector('.news_sm');
+    // var newSm = document.querySelector('.news_sm');
+    var newsList = document.querySelector('.news__list');
 
-
-    if (newSm) {
+    if (newsList) {
         var newsItems = document.querySelectorAll('.news-item_sm');
         var totalHeight = 0;
         $(window).bind('resize init', function () {
