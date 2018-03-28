@@ -6421,14 +6421,67 @@ template {
     width: 56px;
     margin: 0;
   }
-  .excursion__video {
-    padding-bottom: 10px;
-    margin: 0;
-  }
-  .excursion__video video {
-    width: 100%;
-    padding: 0;
-  }
+}
+.excursion-gallery {
+  padding-bottom: 10px;
+  max-width: 900px;
+  min-width: 150px;
+  margin: 0 auto;
+}
+.excursion-gallery__actions {
+  position: relative;
+}
+.excursion-gallery__actions button {
+  margin: 0 5px;
+}
+.excursion-gallery__actions .next-slide {
+  background: url('../images/photo-galery/arr-r.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 35px;
+}
+.excursion-gallery__actions .fullscreen {
+  background: url('../images/photo-galery/fullscreen.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.excursion-gallery__actions .autoplay {
+  background: url('../images/photo-galery/autoplay.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 33px;
+  height: 33px;
+}
+.excursion-gallery__actions .perv-slide {
+  background: url('../images/photo-galery/arr-l.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 35px;
+}
+.excursion-gallery__actions .perv-album {
+  background: url('../images/photo-galery/2ar-l.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+}
+.excursion-gallery__actions .next-album {
+  background: url('../images/photo-galery/2arr-r.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+}
+.excursion-gallery__actions-center {
+  margin: 20px auto 0 auto;
+  width: 210px;
 }
 .vacancies {
   padding: 38px 0 24px 0;
@@ -7081,6 +7134,66 @@ template {
   width: 72.5%;
   padding: 0;
   margin: 0;
+}
+.photos-page-gallery {
+  max-width: 900px;
+  min-width: 150px;
+  margin: 0 auto;
+}
+.photos-page-gallery__actions {
+  position: relative;
+}
+.photos-page-gallery__actions button {
+  margin: 0 5px;
+}
+.photos-page-gallery__actions .next-slide {
+  background: url('../images/photo-galery/arr-r.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 35px;
+}
+.photos-page-gallery__actions .fullscreen {
+  background: url('../images/photo-galery/fullscreen.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.photos-page-gallery__actions .autoplay {
+  background: url('../images/photo-galery/autoplay.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 33px;
+  height: 33px;
+}
+.photos-page-gallery__actions .perv-slide {
+  background: url('../images/photo-galery/arr-l.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 35px;
+}
+.photos-page-gallery__actions .perv-album {
+  background: url('../images/photo-galery/2ar-l.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+}
+.photos-page-gallery__actions .next-album {
+  background: url('../images/photo-galery/2arr-r.png') no-repeat center;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+}
+.photos-page-gallery__actions-center {
+  margin: 20px auto 0 auto;
+  width: 210px;
 }
 @media all and (max-width: 767px) {
   .photos-page {

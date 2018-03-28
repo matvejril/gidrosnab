@@ -10,15 +10,22 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
+    <link rel='stylesheet' href='../plugins/unitegallery/css/unite-gallery.css' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css"/>
+
+
     <script src="../plugins/jquery-3.3.1.js"></script>
     <script src="../plugins/slick/slick.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css"/>
+    <script type='text/javascript' src='../plugins/unitegallery/js/unitegallery.min.js'></script>
+    <script type='text/javascript' src='../plugins/unitegallery/themes/compact/ug-theme-compact.js'></script>
 
     <script type="text/javascript" src="../scripts/bundle.js"></script>
+
+
 </head>
 <body>
 
@@ -508,8 +515,31 @@
                 <img src="../images/about-company/icons/compas-icon.png" alt="compas-icon">
                 <p>Экскурсия по производству</p>
             </div>
-            <div class="excursion__video">
-                <video src="#" poster="../images/about-company/excursion-banner.jpg"></video>
+            <div class="excursion-gallery">
+                <div class="excursion-gallery__list" id="gallery" style="display:none;">
+                    <img alt="Preview Image 1"
+                         src="../content/gallery-photo/photo-card-img.jpg">
+
+                    <img alt="Preview Image 2"
+                         src="../content/gallery-photo/photo-card-img.jpg">
+
+                    <img alt="Preview Image 3"
+                         src="../content/gallery-photo/photo-card-img.jpg">
+
+                    <img alt="Preview Image 4"
+                         src="../content/gallery-photo/photo-card-img.jpg">
+                </div>
+                <div class="excursion-gallery__actions">
+                    <div class="photos-page-gallery__actions-center">
+                        <button class="perv-album"></button>
+                        <button class="perv-slide"></button>
+                        <button class="autoplay"></button>
+                        <button class="next-slide"></button>
+                        <button class="next-album"></button>
+                    </div>
+                    <button class="fullscreen"></button>
+                </div>
+
             </div>
         </div>
 

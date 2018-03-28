@@ -5,4 +5,5 @@ window.onload = function () {
     require('./popups');
     require('./ymap');
     require('./sliders');
+    require('./gallery')
 };
